@@ -6,34 +6,30 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Dune Part Two",
-            "showtimes": [
-              "10:00 AM",
-              "1:30 PM",
-              "5:00 PM",
-              "8:30 PM"
-            ]
-          },
-          {
-            "title": "Godzilla Minus One",
-            "showtimes": [
-              "11:15 AM",
-              "2:45 PM",
-              "6:15 PM"
-            ]
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
           }
         ]
       },
       "2026-03-29": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-04-04": {
+        "day": "Saturday",
         "movies": [
           {
-            "title": "Dune Part Two",
-            "showtimes": [
-              "10:00 AM",
-              "1:30 PM",
-              "5:00 PM"
-            ]
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
+          }
+        ]
+      },
+      "2026-04-05": {
+        "day": "Sunday",
+        "movies": [
+          {
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
           }
         ]
       }
@@ -46,18 +42,32 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Killers of the Flower Moon",
-            "showtimes": [
-              "12:00 PM",
-              "3:30 PM",
-              "7:00 PM"
-            ]
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
           }
         ]
       },
       "2026-03-29": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-04-04": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
+          }
+        ]
+      },
+      "2026-04-05": {
+        "day": "Sunday",
+        "movies": [
+          {
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
+          }
+        ]
       }
     }
   },
@@ -66,19 +76,22 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-03-29": {
+        "day": "Sunday",
         "movies": [
           {
-            "title": "Oppenheimer",
-            "showtimes": [
-              "11:00 AM",
-              "2:30 PM",
-              "6:00 PM",
-              "9:15 PM"
-            ]
+            "title": "Join for FREE and start earning points towards $5 Rewards.Sign In or Join",
+            "showtimes": []
           }
         ]
       },
-      "2026-03-29": {
+      "2026-04-04": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-04-05": {
         "day": "Sunday",
         "movies": []
       }
