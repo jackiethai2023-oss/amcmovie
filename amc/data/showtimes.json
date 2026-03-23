@@ -1,0 +1,87 @@
+{
+  "Century City IMAX": {
+    "name": "Century City IMAX",
+    "dates": {
+      "2026-03-28": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Dune Part Two",
+            "showtimes": [
+              "10:00 AM",
+              "1:30 PM",
+              "5:00 PM",
+              "8:30 PM"
+            ]
+          },
+          {
+            "title": "Godzilla Minus One",
+            "showtimes": [
+              "11:15 AM",
+              "2:45 PM",
+              "6:15 PM"
+            ]
+          }
+        ]
+      },
+      "2026-03-29": {
+        "day": "Sunday",
+        "movies": [
+          {
+            "title": "Dune Part Two",
+            "showtimes": [
+              "10:00 AM",
+              "1:30 PM",
+              "5:00 PM"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Century City Dolby Cinema": {
+    "name": "Century City Dolby Cinema",
+    "dates": {
+      "2026-03-28": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Killers of the Flower Moon",
+            "showtimes": [
+              "12:00 PM",
+              "3:30 PM",
+              "7:00 PM"
+            ]
+          }
+        ]
+      },
+      "2026-03-29": {
+        "day": "Sunday",
+        "movies": []
+      }
+    }
+  },
+  "Universal CityWalk IMAX": {
+    "name": "Universal CityWalk IMAX",
+    "dates": {
+      "2026-03-28": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Oppenheimer",
+            "showtimes": [
+              "11:00 AM",
+              "2:30 PM",
+              "6:00 PM",
+              "9:15 PM"
+            ]
+          }
+        ]
+      },
+      "2026-03-29": {
+        "day": "Sunday",
+        "movies": []
+      }
+    }
+  }
+}
