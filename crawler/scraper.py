@@ -11,6 +11,7 @@ import logging
 from datetime import datetime, timedelta
 import os
 import sys
+import re
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -77,18 +78,26 @@ def fetch_showtimes(theater, date_str):
         movies = []
 
         # 方案1：查找具体的排片卡片或列表项
-        # AMC网站的结构可能包含在data属性或特定class中
-
         # 尝试多种选择器获取电影信息
         movie_items = soup.find_all('div', {'data-testid': 'showtimeMovieCard'})
 
         if not movie_items:
-            # 备选方案：查找其他可能的电影容器
+            # 方案2：查找其他可能的电影容器
             movie_items = soup.find_all('article', class_='MovieCard')
 
         if not movie_items:
-            # 再次备选：查找具有特定属性的容器
+            # 方案3：查找具有特定属性的容器
             movie_items = soup.find_all(attrs={'data-movie-title': True})
+
+        if not movie_items:
+            # 方案4：查找div with specific classes or attributes
+            movie_items = soup.find_all('div', class_=re.compile(r'movie|film|showtime', re.I))
+            # Filter out containers with 'ad' or 'promo' in class
+            movie_items = [m for m in movie_items if not re.search(r'ad|promo|banner|advertisement', m.get('class', ''), re.I)]
+
+        if not movie_items:
+            # 方案5：查找包含时间信息的容器
+            movie_items = soup.find_all('li', class_=re.compile(r'movie', re.I))
 
         for item in movie_items:
             try:
@@ -145,29 +154,66 @@ def extract_fallback_movies(soup):
     """备选方案：尝试从HTML中提取电影信息"""
     movies = []
 
-    # 查找所有可能包含电影信息的div
-    content_area = soup.find('main') or soup.find('div', class_='showtimes-container')
+    # 广告和促销关键词过滤
+    ad_keywords = [
+        'sign in', 'join', 'reward', 'points', 'free', 'save',
+        'offer', 'promotion', 'special', 'deal', 'coupon', 'discount',
+        'member', 'card', 'reserve', 'imax', 'dolby', 'premium format',
+        'coming soon', 'now showing', 'rated', '©',
+        'advertisement', 'ad', 'banner', 'sponsored', 'click here',
+        'learn more', 'buy', 'gift', 'concessions'
+    ]
+
+    # 查找特定的电影列表容器
+    content_area = None
+
+    # 尝试多个容器选择器
+    content_area = soup.find('div', {'data-testid': re.compile(r'showtimes|movies', re.I)})
+    if not content_area:
+        content_area = soup.find('section', class_=re.compile(r'showtime|movie', re.I))
+    if not content_area:
+        content_area = soup.find('ul', class_=re.compile(r'movie|film', re.I))
+    if not content_area:
+        # 最后的备选：使用main但会更严格地过滤
+        content_area = soup.find('main')
 
     if content_area:
-        # 查找所有包含时间格式(HH:MM AM/PM)的元素
+        # 获取文本但排除特定容器
+        # 移除脚本和样式元素
+        for script in content_area(['script', 'style']):
+            script.decompose()
+
         text = content_area.get_text()
         lines = [line.strip() for line in text.split('\n') if line.strip()]
 
         current_movie = None
         for line in lines:
-            # 检查是否是时间格式
-            if ':' in line and ('AM' in line or 'PM' in line or 'am' in line or 'pm' in line):
+            # 跳过广告/促销内容
+            if any(keyword.lower() in line.lower() for keyword in ad_keywords):
+                continue
+
+            # 检查是否是时间格式（更严格的正则表达式）
+            time_match = re.search(r'\b(1[0-2]|0?[1-9]):[0-5]\d\s*([AP]M|am|pm)\b', line)
+            if time_match:
+                # 这是一个有效的时间格式
                 if current_movie:
                     current_movie['showtimes'].append(line)
-            elif len(line) > 0 and len(line) < 100:  # 可能是电影标题
-                if current_movie:
+            # 检查是否是电影标题候选（不是广告，合理长度）
+            elif 0 < len(line) < 100 and not re.search(r'^\d+$', line):
+                # 避免只有数字的行
+                if current_movie and current_movie['showtimes']:
+                    # 只有当当前电影有场次时才保存
                     movies.append(current_movie)
-                current_movie = {
-                    'title': line,
-                    'showtimes': []
-                }
+                    current_movie = None
+                # 开始新电影
+                if current_movie is None or len(current_movie['showtimes']) > 0:
+                    current_movie = {
+                        'title': line,
+                        'showtimes': []
+                    }
 
-        if current_movie:
+        # 保存最后一个电影（如果有场次）
+        if current_movie and current_movie['showtimes']:
             movies.append(current_movie)
 
     return movies
