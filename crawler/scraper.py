@@ -95,23 +95,32 @@ def extract_format(theater_name):
 
 def validate_format_in_html(html, format_name):
     """
-    验证返回的HTML中是否包含所请求的格式
-    检查是否存在该格式的排片信息
+    验证返回的HTML中是否真的包含所请求格式的排片信息。
+    通过检查RSC payload中的格式标识ID来判断：
+      IMAX有排片时：会出现 'imaxwithlaseratamc-' （带连字符，表示具体场次条目）
+      Dolby有排片时：会出现 'dolbycinemaatamcprime' （表示具体场次格式条目）
+    如果这些标识不存在，说明页面显示的是fallback内容（其他格式的排片），应返回False。
     """
     if not format_name:
         return True
 
-    # 对于IMAX，搜索'IMAX'字样
-    if format_name == 'IMAX':
-        # 在HTML中搜索IMAX相关内容
-        if 'imax' in html.lower():
-            return True
-    # 对于Dolby，搜索'Dolby'或'dolbycinema'字样
-    elif format_name == 'Dolby':
-        if 'dolby' in html.lower():
-            return True
+    html_lower = html.lower()
 
-    return False
+    if format_name == 'IMAX':
+        if 'imaxwithlaseratamc-' in html_lower:
+            logger.info("  [FORMAT] 找到IMAX场次标识 'imaxwithlaseratamc-'，确认有IMAX排片")
+            return True
+        logger.info("  [FORMAT] 未找到IMAX场次标识，该日期无IMAX排片")
+        return False
+
+    elif format_name == 'Dolby':
+        if 'dolbycinemaatamcprime' in html_lower:
+            logger.info("  [FORMAT] 找到Dolby场次标识 'dolbycinemaatamcprime'，确认有Dolby排片")
+            return True
+        logger.info("  [FORMAT] 未找到Dolby场次标识，该日期无Dolby排片")
+        return False
+
+    return True
 
 
 def fetch_showtimes(theater, date_str, session=None):
