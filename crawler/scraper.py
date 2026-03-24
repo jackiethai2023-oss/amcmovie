@@ -10,6 +10,8 @@ import logging
 import os
 import re
 from datetime import datetime, timedelta
+from urllib3.util.retry import Retry
+from requests.adapters import HTTPAdapter
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -31,10 +33,37 @@ THEATERS = [
 ]
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Cache-Control': 'max-age=0',
+    'Referer': 'https://www.amctheatres.com/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
 }
+
+def create_session():
+    """创建带有重试机制的requests session"""
+    session = requests.Session()
+
+    # 禁用代理（解决ProxyError问题）
+    session.trust_env = False
+
+    # 添加重试策略（3次重试）
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=['GET']
+    )
+
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
+    return session
 
 
 def get_weekend_dates():
@@ -53,16 +82,27 @@ def slug_to_title(slug):
     return slug.replace('-', ' ').title()
 
 
-def fetch_showtimes(theater, date_str):
+def fetch_showtimes(theater, date_str, session=None):
     """
     抓取指定影厅和日期的排片信息
     从 RSC Payload 中用正则提取电影和场次数据
     """
+    if session is None:
+        session = create_session()
+
     url = f"{theater['url']}{date_str}"
     logger.info(f"抓取 {theater['name']} {date_str} -> {url}")
 
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
+        # 使用session发送请求，禁用代理，增加超时
+        resp = session.get(
+            url,
+            headers=HEADERS,
+            timeout=15,
+            proxies={},  # 显式禁用代理
+            allow_redirects=True,
+            verify=True
+        )
         resp.raise_for_status()
         html = resp.text
         logger.info(f"获取到 HTML，长度: {len(html)}")
@@ -215,6 +255,9 @@ def main():
     """主函数"""
     logger.info("开始AMC排片爬虫任务...")
 
+    # 创建会话，复用连接
+    session = create_session()
+
     weekend_dates = get_weekend_dates()
     logger.info(f"计划抓取日期: {[d.strftime('%Y-%m-%d (%A)') for d in weekend_dates]}")
 
@@ -234,7 +277,7 @@ def main():
             date_str = date_obj.strftime('%Y-%m-%d')
             day_name = date_obj.strftime('%A')
 
-            movies = fetch_showtimes(theater, date_str)
+            movies = fetch_showtimes(theater, date_str, session)
 
             theater_data['dates'][date_str] = {
                 'day': day_name,
@@ -260,6 +303,9 @@ def main():
             'timezone': 'UTC'
         }, f, ensure_ascii=False, indent=2)
     logger.info(f"更新时间已保存到 {update_file}")
+
+    # 关闭session
+    session.close()
     logger.info("爬虫任务完成！")
 
 
