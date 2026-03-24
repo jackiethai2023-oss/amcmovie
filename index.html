@@ -294,6 +294,18 @@
             color: #ffffff;
         }
 
+        a.movie-title {
+            color: #ff8c42;
+            text-decoration: none;
+            transition: color 0.15s;
+            cursor: pointer;
+        }
+
+        a.movie-title:hover {
+            color: #ffaa66;
+            text-decoration: underline;
+        }
+
         .empty {
             font-size: 0.625rem;
             color: rgba(255, 255, 255, 0.05);
@@ -537,8 +549,16 @@
                             for (const movie of dateData.movies) {
                                 const status = getStatusLabel(movie.showtimes?.length || 0);
                                 html += '<div class="movie-info">';
+                                // 生成购票链接：theater URL + 日期
+                                const theaterUrl = showtimes[theaterKey]?.url;
+                                const ticketLink = theaterUrl
+                                    ? `${theaterUrl}${date}`
+                                    : null;
+                                const movieLink = ticketLink
+                                    ? `<a class="movie-title" href="${escapeHtml(ticketLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(movie.title)}</a>`
+                                    : `<span class="movie-title">${escapeHtml(movie.title)}</span>`;
                                 html += `<div class="movie-header">
-                                    <span class="movie-title">${escapeHtml(movie.title)}</span>
+                                    ${movieLink}
                                     <span class="status-badge ${status.class}">● ${status.text}</span>
                                 </div>`;
                                 if (movie.showtimes && movie.showtimes.length > 0) {

@@ -332,6 +332,7 @@ def parse_rsc_payload(html):
                 title = option_titles.get(clean_slug, slug_to_title(clean_slug))
             movies.append({
                 'title': title,
+                'slug': slug,  # 保存电影slug用于购票链接
                 'showtimes': showtimes
             })
             logger.info(f"  电影: {title}, 场次: {showtimes}")
@@ -361,6 +362,7 @@ def main():
     for theater in THEATERS:
         theater_data = {
             'name': theater['name'],
+            'url': theater['url'],  # 保存购票URL用于前端跳转
             'dates': {}
         }
 
