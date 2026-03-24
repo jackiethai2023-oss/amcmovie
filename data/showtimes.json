@@ -93,41 +93,11 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Stranger Things: Tales From '85 Theatrical Preview",
-            "showtimes": [
-              "12:00pm",
-              "3:00pm"
-            ]
-          },
-          {
-            "title": "BTS WORLD TOUR 'ARIRANG' IN JAPAN: LIVE VIEWING",
-            "showtimes": [
-              "1:00pm",
-              "5:00pm"
-            ]
-          },
-          {
-            "title": "You, Me & Tuscany",
-            "showtimes": [
-              "4:45pm",
-              "7:30pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "You, Me & Tuscany",
-            "showtimes": [
-              "4:45pm",
-              "7:30pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-04-25": {
         "day": "Saturday",
@@ -161,104 +131,11 @@
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Met Opera Eugene Onegin",
-            "showtimes": [
-              "10:00am"
-            ]
-          },
-          {
-            "title": "The Devil Wears Prada 2",
-            "showtimes": [
-              "10:30am",
-              "1:30pm",
-              "4:30pm",
-              "7:30pm",
-              "10:30pm",
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm",
-              "12:00pm",
-              "11:15am",
-              "2:15pm",
-              "5:15pm",
-              "8:15pm",
-              "11:15pm",
-              "3:00pm",
-              "6:00pm",
-              "9:00pm"
-            ]
-          },
-          {
-            "title": "Animal Farm",
-            "showtimes": [
-              "1:00pm",
-              "10:15am",
-              "3:45pm",
-              "6:30pm",
-              "9:15pm"
-            ]
-          },
-          {
-            "title": "Michael",
-            "showtimes": [
-              "12:30pm",
-              "3:45pm",
-              "7:00pm",
-              "10:15pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Devil Wears Prada 2",
-            "showtimes": [
-              "10:30am",
-              "1:30pm",
-              "4:30pm",
-              "7:30pm",
-              "10:30pm",
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm",
-              "12:00pm",
-              "11:15am",
-              "2:15pm",
-              "5:15pm",
-              "8:15pm",
-              "3:00pm",
-              "6:00pm",
-              "9:00pm"
-            ]
-          },
-          {
-            "title": "Animal Farm",
-            "showtimes": [
-              "10:15am",
-              "1:00pm",
-              "3:45pm",
-              "6:30pm",
-              "9:15pm"
-            ]
-          },
-          {
-            "title": "Michael",
-            "showtimes": [
-              "12:30pm",
-              "3:45pm",
-              "7:00pm",
-              "10:15pm"
-            ]
-          }
-        ]
+        "movies": []
       }
     }
   },
@@ -457,32 +334,11 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Project Hail Mary",
-            "showtimes": [
-              "8:30am",
-              "12:15pm",
-              "4:00pm",
-              "7:45pm",
-              "11:30pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-03-29": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Project Hail Mary",
-            "showtimes": [
-              "11:30am",
-              "3:15pm",
-              "7:00pm",
-              "10:45pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-04-04": {
         "day": "Saturday",
@@ -597,121 +453,11 @@
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Private Theatre Rental",
-            "showtimes": [
-              "12:00pm"
-            ]
-          },
-          {
-            "title": "The Devil Wears Prada 2",
-            "showtimes": [
-              "11:00am",
-              "2:00pm",
-              "5:00pm",
-              "8:00pm",
-              "11:00pm",
-              "11:45am",
-              "10:15am",
-              "12:30pm",
-              "1:15pm",
-              "2:45pm",
-              "3:30pm",
-              "4:15pm",
-              "5:45pm",
-              "6:30pm",
-              "7:15pm",
-              "8:45pm",
-              "9:30pm",
-              "10:15pm"
-            ]
-          },
-          {
-            "title": "Animal Farm",
-            "showtimes": [
-              "11:00am",
-              "1:40pm",
-              "4:20pm",
-              "7:00pm",
-              "9:40pm"
-            ]
-          },
-          {
-            "title": "Michael",
-            "showtimes": [
-              "11:45am",
-              "3:00pm",
-              "6:15pm",
-              "9:30pm"
-            ]
-          },
-          {
-            "title": "The Story of Everything",
-            "showtimes": [
-              "1:00pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Private Theatre Rental",
-            "showtimes": [
-              "12:00pm"
-            ]
-          },
-          {
-            "title": "The Devil Wears Prada 2",
-            "showtimes": [
-              "11:00am",
-              "2:00pm",
-              "5:00pm",
-              "8:00pm",
-              "11:00pm",
-              "11:45am",
-              "10:15am",
-              "12:30pm",
-              "1:15pm",
-              "2:45pm",
-              "3:30pm",
-              "4:15pm",
-              "5:45pm",
-              "6:30pm",
-              "7:15pm",
-              "8:45pm",
-              "9:30pm",
-              "10:15pm"
-            ]
-          },
-          {
-            "title": "Animal Farm",
-            "showtimes": [
-              "11:00am",
-              "1:40pm",
-              "4:20pm",
-              "7:00pm",
-              "9:40pm"
-            ]
-          },
-          {
-            "title": "Michael",
-            "showtimes": [
-              "11:45am",
-              "3:00pm",
-              "6:15pm",
-              "9:30pm"
-            ]
-          },
-          {
-            "title": "The Story of Everything",
-            "showtimes": [
-              "1:00pm"
-            ]
-          }
-        ]
+        "movies": []
       }
     }
   }
