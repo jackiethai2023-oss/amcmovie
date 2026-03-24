@@ -82,6 +82,38 @@ def slug_to_title(slug):
     return slug.replace('-', ' ').title()
 
 
+def extract_format(theater_name):
+    """
+    从theater名称中提取格式标识符（IMAX或Dolby Cinema）
+    """
+    if 'IMAX' in theater_name.upper():
+        return 'IMAX'
+    elif 'DOLBY' in theater_name.upper():
+        return 'Dolby'  # 使用简化形式
+    return None
+
+
+def validate_format_in_html(html, format_name):
+    """
+    验证返回的HTML中是否包含所请求的格式
+    检查是否存在该格式的排片信息
+    """
+    if not format_name:
+        return True
+
+    # 对于IMAX，搜索'IMAX'字样
+    if format_name == 'IMAX':
+        # 在HTML中搜索IMAX相关内容
+        if 'imax' in html.lower():
+            return True
+    # 对于Dolby，搜索'Dolby'或'dolbycinema'字样
+    elif format_name == 'Dolby':
+        if 'dolby' in html.lower():
+            return True
+
+    return False
+
+
 def fetch_showtimes(theater, date_str, session=None):
     """
     抓取指定影厅和日期的排片信息
@@ -132,6 +164,13 @@ def fetch_showtimes(theater, date_str, session=None):
                 logger.info(f"  [DEBUG] 中部({pat_label}): ...{mid[max(0,pos-100):pos+200]}...")
             else:
                 logger.info(f"  [DEBUG] 中部无 '{pat_label}'")
+
+        # 验证返回的HTML是否包含请求的格式
+        # 从theater['name']中提取格式（IMAX或Dolby Cinema）
+        format_name = extract_format(theater['name'])
+        if format_name and not validate_format_in_html(html, format_name):
+            logger.warning(f"HTML中未找到格式 '{format_name}'，返回空列表以避免误匹配")
+            return []
 
         # 从 RSC Payload 中提取电影和场次
         movies = parse_rsc_payload(html)
