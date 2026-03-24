@@ -67,6 +67,43 @@ def fetch_showtimes(theater, date_str):
         html = resp.text
         logger.info(f"获取到 HTML，长度: {len(html)}")
 
+        # 诊断：搜索HTML中和电影/时间相关的关键模式
+        debug_patterns = {
+            'display': r'"display"',
+            'time': r'"time"\s*:\s*"',
+            'amPm': r'"amPm"',
+            'showtime': r'showtime',
+            'Showtime': r'Showtime',
+            'aria-describedby': r'"aria-describedby"',
+            'movieId': r'"movieId"',
+            'movieName': r'"movieName"',
+            'movie': r'"movie"',
+            'title': r'"title"\s*:\s*"',
+            'name': r'"name"\s*:\s*"',
+            'slug': r'"slug"\s*:\s*"',
+            'performanceNumber': r'"performanceNumber"',
+            'AM/PM time': r'\d{1,2}:\d{2}\s*(am|pm|AM|PM)',
+            'ISO time': r'T\d{2}:\d{2}:\d{2}',
+        }
+        for label, pat in debug_patterns.items():
+            matches = re.findall(pat, html)
+            if matches:
+                logger.info(f"  [DEBUG] '{label}' 出现 {len(matches)} 次")
+                # 显示第一个匹配的上下文
+                m = re.search(pat, html)
+                if m:
+                    start = max(0, m.start() - 80)
+                    end = min(len(html), m.end() + 80)
+                    context = html[start:end].replace('\n', ' ')
+                    logger.info(f"  [DEBUG] 上下文: ...{context}...")
+
+        # 额外：保存前2000字符的HTML到日志，帮助分析结构
+        logger.info(f"  [DEBUG] HTML前500字符: {html[:500]}")
+        logger.info(f"  [DEBUG] 搜索 script 标签...")
+        script_tags = re.findall(r'<script[^>]*>(.*?)</script>', html[:50000], re.DOTALL)
+        for i, script in enumerate(script_tags[:5]):
+            logger.info(f"  [DEBUG] script[{i}] 长度={len(script)}, 前200字符: {script[:200]}")
+
         # 从 RSC Payload 中提取电影和场次
         movies = parse_rsc_payload(html)
 
