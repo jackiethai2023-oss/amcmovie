@@ -306,6 +306,22 @@
             text-decoration: underline;
         }
 
+        /* "SOON"状态的电影 - 不可购票 */
+        .movie-info.status-soon {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .movie-info.status-soon a.movie-title {
+            color: rgba(255, 140, 66, 0.5);
+            cursor: not-allowed;
+        }
+
+        .movie-info.status-soon a.movie-title:hover {
+            color: rgba(255, 140, 66, 0.5);
+            text-decoration: none;
+        }
+
         .empty {
             font-size: 0.625rem;
             color: rgba(255, 255, 255, 0.05);
@@ -548,7 +564,8 @@
                         if (dateData.movies && dateData.movies.length > 0) {
                             for (const movie of dateData.movies) {
                                 const status = getStatusLabel(movie.showtimes?.length || 0);
-                                html += '<div class="movie-info">';
+                                const statusClass = status.text === 'SOON' ? 'status-soon' : '';
+                                html += `<div class="movie-info ${statusClass}">`;
                                 // 生成购票链接：theater URL + 日期
                                 const theaterUrl = showtimes[theaterKey]?.url;
                                 const ticketLink = theaterUrl

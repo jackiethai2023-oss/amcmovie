@@ -340,6 +340,29 @@ def parse_rsc_payload(html):
     if not movies:
         logger.warning("未解析到任何电影，请检查 HTML 结构是否变化")
 
+    # 检查是否存在"Available Soon"的电影（不可购买）
+    # 统计页面中"Available Soon"的出现次数
+    available_soon_count = html.lower().count('available soon')
+
+    if available_soon_count > 0:
+        logger.warning(f"页面中检测到{available_soon_count}个'Available Soon'标记")
+
+        # 如果某个电影的时间数等于或接近"Available Soon"的出现次数，说明该电影的所有时间都是"Available Soon"
+        # 这种情况下，清空该电影的showtimes，让它显示为SOON状态
+        filtered_movies = []
+        for movie in movies:
+            showtimes_count = len(movie.get('showtimes', []))
+
+            # 如果该电影的所有时间都对应"Available Soon"（启发式判断）
+            # 标准：电影有多个时间，且数量与页面的"Available Soon"数量接近
+            if showtimes_count > 0 and showtimes_count >= available_soon_count * 0.8:
+                logger.warning(f"电影'{movie['title']}'的{showtimes_count}个时间可能都是'Available Soon'，清空排片")
+                movie['showtimes'] = []
+
+            filtered_movies.append(movie)
+
+        movies = filtered_movies
+
     return movies
 
 
