@@ -151,102 +151,49 @@ def fetch_showtimes(theater, date_str, session=None):
 
 def parse_rsc_payload(html):
     """
-    从 HTML 中的 RSC Payload 解析电影和场次信息
+    从 HTML 中解析电影和场次信息。
 
-    RSC Payload 中包含类似这样的模式:
-    - 场次时间: "display":{"time":"10:30","amPm":"am"}
-    - 电影 slug: "aria-describedby":"movie-slug-here"
+    AMC 网站实际 HTML 结构：
+    - 每部电影有一个 <div aria-label="Showtimes for [Movie Title]"> 的容器
+    - 场次时间在容器内的 <a href="/showtimes/[id]"> 链接的文字中
     """
-    movies_dict = {}  # slug -> list of showtimes
+    from bs4 import BeautifulSoup
 
-    # 提取所有场次时间
-    # 模式: "display":{"time":"HH:MM","amPm":"am/pm"}
-    time_pattern = re.compile(
-        r'"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
-    )
-
-    # 提取电影 slug
-    # 模式: "aria-describedby":"some-movie-slug"
-    slug_pattern = re.compile(
-        r'"aria-describedby"\s*:\s*"([a-z0-9][a-z0-9\-]+[a-z0-9])"'
-    )
-
-    # 策略：找到每个电影 slug，然后在它附近找场次时间
-    # RSC payload 中，一个电影的数据块通常包含 slug 和多个 display time
-
-    # 先尝试按块解析：查找电影slug和时间的关联
-    # 在 RSC payload 中，数据通常按电影分组
-
-    # 找到所有 slug 出现的位置
-    slugs_found = []
-    for match in slug_pattern.finditer(html):
-        slug = match.group(1)
-        pos = match.start()
-        # 过滤掉明显不是电影的 slug
-        if len(slug) < 3 or slug in ('null', 'undefined', 'true', 'false'):
-            continue
-        # 过滤掉常见非电影 slug
-        skip_keywords = ['sign-in', 'join', 'reward', 'promo', 'banner',
-                         'header', 'footer', 'nav', 'menu', 'modal',
-                         'cookie', 'consent', 'stubs', 'a-list']
-        if any(kw in slug for kw in skip_keywords):
-            continue
-        slugs_found.append((slug, pos))
-
-    # 找到所有时间出现的位置
-    times_found = []
-    for match in time_pattern.finditer(html):
-        time_val = match.group(1)
-        ampm = match.group(2)
-        pos = match.start()
-        times_found.append((f"{time_val} {ampm.upper()}", pos))
-
-    logger.info(f"找到 {len(slugs_found)} 个电影slug, {len(times_found)} 个场次时间")
-
-    if not times_found:
-        logger.warning("未找到任何场次时间")
-        return []
-
-    # 将每个时间关联到最近的前一个 slug
-    # 按位置排序所有找到的元素
-    all_items = []
-    for slug, pos in slugs_found:
-        all_items.append(('slug', slug, pos))
-    for time_str, pos in times_found:
-        all_items.append(('time', time_str, pos))
-    all_items.sort(key=lambda x: x[2])
-
-    current_slug = None
-    for item_type, value, pos in all_items:
-        if item_type == 'slug':
-            current_slug = value
-            if current_slug not in movies_dict:
-                movies_dict[current_slug] = []
-        elif item_type == 'time' and current_slug:
-            if value not in movies_dict[current_slug]:
-                movies_dict[current_slug].append(value)
-
-    # 如果上面的方法没找到关联，尝试全局提取
-    if not movies_dict and times_found:
-        logger.warning("无法关联电影和场次，尝试全局提取...")
-        # 收集所有唯一的 slug
-        unique_slugs = list(dict.fromkeys(s for s, _ in slugs_found))
-        all_times = [t for t, _ in times_found]
-
-        if len(unique_slugs) == 1:
-            movies_dict[unique_slugs[0]] = all_times
-        elif unique_slugs:
-            # 平均分配时间给电影（最后手段）
-            movies_dict[unique_slugs[0]] = all_times
-
-    # 转换为输出格式
+    soup = BeautifulSoup(html, 'html.parser')
     movies = []
-    for slug, showtimes in movies_dict.items():
-        if showtimes:  # 只包含有场次的电影
+
+    # 找所有电影 section：aria-label 以 "Showtimes for " 开头
+    movie_sections = soup.find_all(
+        attrs={'aria-label': re.compile(r'^Showtimes for ')}
+    )
+    logger.info(f"找到 {len(movie_sections)} 个电影 section")
+
+    for section in movie_sections:
+        title = section.get('aria-label', '').replace('Showtimes for ', '').strip()
+        if not title:
+            continue
+
+        # 在该 section 内找所有场次链接 <a href="/showtimes/数字">
+        time_links = section.find_all('a', href=re.compile(r'^/showtimes/\d+'))
+        times = []
+        for a in time_links:
+            # 只取第一个直接文本节点，跳过 <span>（如 "UP TO 15% OFF"）
+            raw = a.find(string=True, recursive=False)
+            if raw:
+                t = raw.strip()
+                if re.match(r'^\d{1,2}:\d{2}[ap]m$', t):
+                    times.append(t)
+
+        logger.info(f"  电影: {title}, 场次: {times}")
+
+        if times:
             movies.append({
-                'title': slug_to_title(slug),
-                'showtimes': showtimes
+                'title': title,
+                'showtimes': times
             })
+
+    if not movies:
+        logger.warning("未解析到任何电影，请检查 HTML 结构是否变化")
 
     return movies
 
