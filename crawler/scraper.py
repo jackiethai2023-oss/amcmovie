@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 """
 AMC电影院周末排片爬虫
-抓取Century City IMAX、Century City Dolby Cinema、Universal CityWalk IMAX的排片信息
+通过 requests 抓取 HTML，用正则从 React Server Components (RSC) Payload 中提取排片数据
 """
 
 import requests
-from bs4 import BeautifulSoup
 import json
 import logging
-from datetime import datetime, timedelta
 import os
-import sys
 import re
+from datetime import datetime, timedelta
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# 目标影厅配置
+# 目标影厅配置（只修改日期部分）
 THEATERS = [
     {
         'name': 'Century City IMAX',
@@ -32,112 +30,49 @@ THEATERS = [
     }
 ]
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
+
+
 def get_weekend_dates():
     """获取未来2周的周末日期（周六和周日）"""
     today = datetime.now()
     weekend_dates = []
-
-    # 计算接下来14天内的所有周末
     for i in range(14):
         check_date = today + timedelta(days=i)
-        # 周六=5，周日=6
-        if check_date.weekday() in [5, 6]:
+        if check_date.weekday() in [5, 6]:  # 周六=5, 周日=6
             weekend_dates.append(check_date)
-
     return weekend_dates
+
+
+def slug_to_title(slug):
+    """把 movie slug 转为可读标题，如 'project-hail-mary' -> 'Project Hail Mary'"""
+    return slug.replace('-', ' ').title()
+
 
 def fetch_showtimes(theater, date_str):
     """
     抓取指定影厅和日期的排片信息
-
-    Args:
-        theater: 影厅配置字典
-        date_str: 日期字符串 (YYYY-MM-DD)
-
-    Returns:
-        列表，包含电影信息
+    从 RSC Payload 中用正则提取电影和场次数据
     """
     url = f"{theater['url']}{date_str}"
+    logger.info(f"抓取 {theater['name']} {date_str} -> {url}")
 
     try:
-        logger.info(f"抓取 {theater['name']} {date_str}...")
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        html = resp.text
+        logger.info(f"获取到 HTML，长度: {len(html)}")
 
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
+        # 从 RSC Payload 中提取电影和场次
+        movies = parse_rsc_payload(html)
 
-        response = requests.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
-
-        soup = BeautifulSoup(response.content, 'html.parser')
-
-        # 查找电影容器
-        movies = []
-
-        # 方案1：查找具体的排片卡片或列表项
-        # 尝试多种选择器获取电影信息
-        movie_items = soup.find_all('div', {'data-testid': 'showtimeMovieCard'})
-
-        if not movie_items:
-            # 方案2：查找其他可能的电影容器
-            movie_items = soup.find_all('article', class_='MovieCard')
-
-        if not movie_items:
-            # 方案3：查找具有特定属性的容器
-            movie_items = soup.find_all(attrs={'data-movie-title': True})
-
-        if not movie_items:
-            # 方案4：查找div with specific classes or attributes
-            movie_items = soup.find_all('div', class_=re.compile(r'movie|film|showtime', re.I))
-            # Filter out containers with 'ad' or 'promo' in class
-            movie_items = [m for m in movie_items if not re.search(r'ad|promo|banner|advertisement', m.get('class', ''), re.I)]
-
-        if not movie_items:
-            # 方案5：查找包含时间信息的容器
-            movie_items = soup.find_all('li', class_=re.compile(r'movie', re.I))
-
-        for item in movie_items:
-            try:
-                # 提取电影标题
-                title_elem = item.find('h2') or item.find('h3') or item.find(attrs={'data-movie-title': True})
-                title = title_elem.get_text(strip=True) if title_elem else 'Unknown'
-
-                # 提取场次信息
-                times_elem = item.find_all('button', class_='ShowtimeButton')
-                if not times_elem:
-                    times_elem = item.find_all('a', class_='showtime')
-                if not times_elem:
-                    times_elem = item.find_all(attrs={'data-showtime': True})
-
-                showtimes = []
-                for time_elem in times_elem:
-                    time_text = time_elem.get_text(strip=True)
-                    if time_text:
-                        showtimes.append(time_text)
-
-                if title and showtimes:
-                    movies.append({
-                        'title': title,
-                        'showtimes': showtimes
-                    })
-                elif title:
-                    # 即使没有抓到具体时间，也记录电影标题
-                    movies.append({
-                        'title': title,
-                        'showtimes': []
-                    })
-
-            except Exception as e:
-                logger.warning(f"处理电影项目时出错: {e}")
-                continue
-
-        if not movies:
-            # 如果上述方法都失败，尝试更宽泛的HTML解析
-            # 在HTML中查找包含时间信息的文本
-            logger.warning(f"未能从{theater['name']}获取电影信息，尝试备选方案...")
-            movies = extract_fallback_movies(soup)
-
-        logger.info(f"成功获取 {theater['name']} {len(movies)} 部电影")
+        logger.info(f"成功获取 {theater['name']} {date_str}: {len(movies)} 部电影")
+        for m in movies:
+            logger.info(f"  - {m['title']}: {m['showtimes']}")
         return movies
 
     except requests.RequestException as e:
@@ -147,87 +82,120 @@ def fetch_showtimes(theater, date_str):
         logger.error(f"解析失败 ({theater['name']} {date_str}): {e}")
         return []
 
-def extract_fallback_movies(soup):
-    """备选方案：尝试从HTML中提取电影信息"""
+
+def parse_rsc_payload(html):
+    """
+    从 HTML 中的 RSC Payload 解析电影和场次信息
+
+    RSC Payload 中包含类似这样的模式:
+    - 场次时间: "display":{"time":"10:30","amPm":"am"}
+    - 电影 slug: "aria-describedby":"movie-slug-here"
+    """
+    movies_dict = {}  # slug -> list of showtimes
+
+    # 提取所有场次时间
+    # 模式: "display":{"time":"HH:MM","amPm":"am/pm"}
+    time_pattern = re.compile(
+        r'"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
+    )
+
+    # 提取电影 slug
+    # 模式: "aria-describedby":"some-movie-slug"
+    slug_pattern = re.compile(
+        r'"aria-describedby"\s*:\s*"([a-z0-9][a-z0-9\-]+[a-z0-9])"'
+    )
+
+    # 策略：找到每个电影 slug，然后在它附近找场次时间
+    # RSC payload 中，一个电影的数据块通常包含 slug 和多个 display time
+
+    # 先尝试按块解析：查找电影slug和时间的关联
+    # 在 RSC payload 中，数据通常按电影分组
+
+    # 找到所有 slug 出现的位置
+    slugs_found = []
+    for match in slug_pattern.finditer(html):
+        slug = match.group(1)
+        pos = match.start()
+        # 过滤掉明显不是电影的 slug
+        if len(slug) < 3 or slug in ('null', 'undefined', 'true', 'false'):
+            continue
+        # 过滤掉常见非电影 slug
+        skip_keywords = ['sign-in', 'join', 'reward', 'promo', 'banner',
+                         'header', 'footer', 'nav', 'menu', 'modal',
+                         'cookie', 'consent', 'stubs', 'a-list']
+        if any(kw in slug for kw in skip_keywords):
+            continue
+        slugs_found.append((slug, pos))
+
+    # 找到所有时间出现的位置
+    times_found = []
+    for match in time_pattern.finditer(html):
+        time_val = match.group(1)
+        ampm = match.group(2)
+        pos = match.start()
+        times_found.append((f"{time_val} {ampm.upper()}", pos))
+
+    logger.info(f"找到 {len(slugs_found)} 个电影slug, {len(times_found)} 个场次时间")
+
+    if not times_found:
+        logger.warning("未找到任何场次时间")
+        return []
+
+    # 将每个时间关联到最近的前一个 slug
+    # 按位置排序所有找到的元素
+    all_items = []
+    for slug, pos in slugs_found:
+        all_items.append(('slug', slug, pos))
+    for time_str, pos in times_found:
+        all_items.append(('time', time_str, pos))
+    all_items.sort(key=lambda x: x[2])
+
+    current_slug = None
+    for item_type, value, pos in all_items:
+        if item_type == 'slug':
+            current_slug = value
+            if current_slug not in movies_dict:
+                movies_dict[current_slug] = []
+        elif item_type == 'time' and current_slug:
+            if value not in movies_dict[current_slug]:
+                movies_dict[current_slug].append(value)
+
+    # 如果上面的方法没找到关联，尝试全局提取
+    if not movies_dict and times_found:
+        logger.warning("无法关联电影和场次，尝试全局提取...")
+        # 收集所有唯一的 slug
+        unique_slugs = list(dict.fromkeys(s for s, _ in slugs_found))
+        all_times = [t for t, _ in times_found]
+
+        if len(unique_slugs) == 1:
+            movies_dict[unique_slugs[0]] = all_times
+        elif unique_slugs:
+            # 平均分配时间给电影（最后手段）
+            movies_dict[unique_slugs[0]] = all_times
+
+    # 转换为输出格式
     movies = []
-
-    # 广告和促销关键词过滤
-    ad_keywords = [
-        'sign in', 'join', 'reward', 'points', 'free', 'save',
-        'offer', 'promotion', 'special', 'deal', 'coupon', 'discount',
-        'member', 'card', 'reserve', 'imax', 'dolby', 'premium format',
-        'coming soon', 'now showing', 'rated', '©',
-        'advertisement', 'ad', 'banner', 'sponsored', 'click here',
-        'learn more', 'buy', 'gift', 'concessions'
-    ]
-
-    # 查找特定的电影列表容器
-    content_area = None
-
-    # 尝试多个容器选择器
-    content_area = soup.find('div', {'data-testid': re.compile(r'showtimes|movies', re.I)})
-    if not content_area:
-        content_area = soup.find('section', class_=re.compile(r'showtime|movie', re.I))
-    if not content_area:
-        content_area = soup.find('ul', class_=re.compile(r'movie|film', re.I))
-    if not content_area:
-        # 最后的备选：使用main但会更严格地过滤
-        content_area = soup.find('main')
-
-    if content_area:
-        # 获取文本但排除特定容器
-        # 移除脚本和样式元素
-        for script in content_area(['script', 'style']):
-            script.decompose()
-
-        text = content_area.get_text()
-        lines = [line.strip() for line in text.split('\n') if line.strip()]
-
-        current_movie = None
-        for line in lines:
-            # 跳过广告/促销内容
-            if any(keyword.lower() in line.lower() for keyword in ad_keywords):
-                continue
-
-            # 检查是否是时间格式（更严格的正则表达式）
-            time_match = re.search(r'\b(1[0-2]|0?[1-9]):[0-5]\d\s*([AP]M|am|pm)\b', line)
-            if time_match:
-                # 这是一个有效的时间格式
-                if current_movie:
-                    current_movie['showtimes'].append(line)
-            # 检查是否是电影标题候选（不是广告，合理长度）
-            elif 0 < len(line) < 100 and not re.search(r'^\d+$', line):
-                # 避免只有数字的行
-                if current_movie and current_movie['showtimes']:
-                    # 只有当当前电影有场次时才保存
-                    movies.append(current_movie)
-                    current_movie = None
-                # 开始新电影
-                if current_movie is None or len(current_movie['showtimes']) > 0:
-                    current_movie = {
-                        'title': line,
-                        'showtimes': []
-                    }
-
-        # 保存最后一个电影（如果有场次）
-        if current_movie and current_movie['showtimes']:
-            movies.append(current_movie)
+    for slug, showtimes in movies_dict.items():
+        if showtimes:  # 只包含有场次的电影
+            movies.append({
+                'title': slug_to_title(slug),
+                'showtimes': showtimes
+            })
 
     return movies
+
 
 def main():
     """主函数"""
     logger.info("开始AMC排片爬虫任务...")
 
-    # 获取周末日期
     weekend_dates = get_weekend_dates()
     logger.info(f"计划抓取日期: {[d.strftime('%Y-%m-%d (%A)') for d in weekend_dates]}")
 
     if not weekend_dates:
         logger.warning("未找到任何周末日期")
-        weekend_dates = [datetime.now() + timedelta(days=5)]  # 备选：抓取5天后的日期
+        weekend_dates = [datetime.now() + timedelta(days=5)]
 
-    # 收集所有影厅的排片数据
     all_showtimes = {}
 
     for theater in THEATERS:
@@ -238,7 +206,7 @@ def main():
 
         for date_obj in weekend_dates:
             date_str = date_obj.strftime('%Y-%m-%d')
-            day_name = date_obj.strftime('%A')  # 英文星期几
+            day_name = date_obj.strftime('%A')
 
             movies = fetch_showtimes(theater, date_str)
 
@@ -249,29 +217,25 @@ def main():
 
         all_showtimes[theater['name']] = theater_data
 
-    # 创建输出目录
+    # 保存排片数据
     output_dir = 'data'
     os.makedirs(output_dir, exist_ok=True)
 
-    # 保存排片数据
     output_file = os.path.join(output_dir, 'showtimes.json')
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_showtimes, f, ensure_ascii=False, indent=2)
-
     logger.info(f"排片数据已保存到 {output_file}")
 
     # 保存更新时间
-    last_updated = {
-        'timestamp': datetime.now().isoformat(),
-        'timezone': 'UTC'
-    }
-
     update_file = os.path.join(output_dir, 'last_updated.json')
     with open(update_file, 'w', encoding='utf-8') as f:
-        json.dump(last_updated, f, ensure_ascii=False, indent=2)
-
+        json.dump({
+            'timestamp': datetime.now().isoformat(),
+            'timezone': 'UTC'
+        }, f, ensure_ascii=False, indent=2)
     logger.info(f"更新时间已保存到 {update_file}")
     logger.info("爬虫任务完成！")
+
 
 if __name__ == '__main__':
     main()
