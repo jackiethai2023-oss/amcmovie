@@ -4,19 +4,82 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "11:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "3:15pm",
+              "7:00pm",
+              "10:45pm"
+            ]
+          }
+        ]
       },
       "2026-03-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "11:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "3:15pm",
+              "7:00pm",
+              "10:45pm"
+            ]
+          }
+        ]
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "9:45am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ]
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "10:00am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "12:45pm",
+              "3:30pm",
+              "6:15pm",
+              "9:00pm"
+            ]
+          }
+        ]
       }
     }
   },
@@ -25,19 +88,81 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "10:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "2:15pm",
+              "6:00pm",
+              "9:45pm"
+            ]
+          }
+        ]
       },
       "2026-03-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "10:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "2:15pm",
+              "6:00pm",
+              "9:45pm"
+            ]
+          }
+        ]
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "10:45am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "1:30pm",
+              "4:15pm",
+              "7:00pm",
+              "9:45pm"
+            ]
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "11:00am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ]
+          }
+        ]
       }
     }
   },
@@ -46,19 +171,82 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "8:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "12:15pm",
+              "4:00pm",
+              "7:45pm",
+              "11:30pm"
+            ]
+          }
+        ]
       },
       "2026-03-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary 76779 Details",
+            "showtimes": [
+              "11:30am"
+            ]
+          },
+          {
+            "title": "Project Hail Mary",
+            "showtimes": [
+              "3:15pm",
+              "7:00pm",
+              "10:45pm"
+            ]
+          }
+        ]
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "11:00am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ]
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie 71465 Details",
+            "showtimes": [
+              "11:00am"
+            ]
+          },
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "showtimes": [
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ]
+          }
+        ]
       }
     }
   }
