@@ -195,12 +195,29 @@ def parse_rsc_payload(html):
         r'"aria-describedby"\s*:\s*"([a-z0-9][a-z0-9\- ]+?)"'
     )
 
+    def normalize_slug(raw_slug):
+        """
+        将 aria-describedby 的第一个词标准化为电影唯一标识。
+        例如:
+          project-hail-mary-76779-details              -> project-hail-mary-76779
+          project-hail-mary-76779-amc-century-city-15  -> project-hail-mary-76779
+          ready-or-not-2-here-i-come-80592             -> ready-or-not-2-here-i-come-80592
+        规则：找第一个 4 位及以上的纯数字词（AMC 电影 ID），截取到该位置（含）。
+        这样可以区分电影标题中的短数字（如续集 "2"）和真正的 AMC 电影 ID（5 位数字）。
+        """
+        parts = raw_slug.split('-')
+        for i, part in enumerate(parts):
+            if part.isdigit() and len(part) >= 4:
+                return '-'.join(parts[:i + 1])
+        return raw_slug
+
     # 找到所有 slug 出现的位置
     slugs_found = []
     for match in slug_pattern.finditer(normalized):
         full_value = match.group(1)
-        # 取第一个空格前的部分作为电影 slug
-        slug = full_value.split(' ')[0].strip()
+        # 取第一个空格前的部分，再标准化
+        raw_slug = full_value.split(' ')[0].strip()
+        slug = normalize_slug(raw_slug)
         pos = match.start()
         if len(slug) < 3:
             continue

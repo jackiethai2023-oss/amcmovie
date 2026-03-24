@@ -380,7 +380,9 @@
 
                 for (const date of sortedDates) {
                     const dateData = theater.dates[date];
-                    const dateObj = new Date(date + 'T00:00:00Z');
+                    // 用本地时间解析日期，避免 UTC 转本地时区导致日期偏移一天
+                    const [y, m, d] = date.split('-').map(Number);
+                    const dateObj = new Date(y, m - 1, d);
                     const dateStr = dateObj.toLocaleDateString('zh-CN', {
                         month: '2-digit',
                         day: '2-digit'
