@@ -231,41 +231,11 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Stranger Things: Tales From '85 Theatrical Preview",
-            "showtimes": [
-              "12:00pm",
-              "3:00pm"
-            ]
-          },
-          {
-            "title": "BTS WORLD TOUR 'ARIRANG' IN JAPAN: LIVE VIEWING",
-            "showtimes": [
-              "1:00pm",
-              "5:00pm"
-            ]
-          },
-          {
-            "title": "You, Me & Tuscany",
-            "showtimes": [
-              "4:45pm",
-              "7:30pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "You, Me & Tuscany",
-            "showtimes": [
-              "4:45pm",
-              "7:30pm"
-            ]
-          }
-        ]
+        "movies": []
       },
       "2026-04-25": {
         "day": "Saturday",
