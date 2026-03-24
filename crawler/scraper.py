@@ -20,18 +20,15 @@ logger = logging.getLogger(__name__)
 THEATERS = [
     {
         'name': 'Century City IMAX',
-        'url_prefix': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes',
-        'premium': 'imax'
+        'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date='
     },
     {
         'name': 'Century City Dolby Cinema',
-        'url_prefix': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes',
-        'premium': 'dolbycinemaatamcprime'
+        'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date='
     },
     {
         'name': 'Universal CityWalk IMAX',
-        'url_prefix': 'https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes',
-        'premium': 'imax'
+        'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date='
     }
 ]
 
@@ -60,7 +57,7 @@ def fetch_showtimes(theater, date_str):
     Returns:
         列表，包含电影信息
     """
-    url = f"{theater['url_prefix']}?premium-offering={theater['premium']}&date={date_str}"
+    url = f"{theater['url']}{date_str}"
 
     try:
         logger.info(f"抓取 {theater['name']} {date_str}...")
