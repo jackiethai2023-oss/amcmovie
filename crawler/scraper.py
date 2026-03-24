@@ -98,7 +98,7 @@ def validate_format_in_html(html, format_name):
     验证返回的HTML中是否真的包含所请求格式的排片信息。
     通过检查RSC payload中的格式标识ID来判断：
       IMAX有排片时：会出现 'imaxwithlaseratamc-' （带连字符，表示具体场次条目）
-      Dolby有排片时：会出现 'dolbycinemaatamcprime' （表示具体场次格式条目）
+      Dolby有排片时：会出现 'dolbycinemaatamcprime-' （带连字符，表示具体场次条目，而非URL参数）
     如果这些标识不存在，说明页面显示的是fallback内容（其他格式的排片），应返回False。
     """
     if not format_name:
@@ -114,8 +114,9 @@ def validate_format_in_html(html, format_name):
         return False
 
     elif format_name == 'Dolby':
-        if 'dolbycinemaatamcprime' in html_lower:
-            logger.info("  [FORMAT] 找到Dolby场次标识 'dolbycinemaatamcprime'，确认有Dolby排片")
+        # 检查带连字符的格式ID（表示真实场次条目，而不是URL参数）
+        if 'dolbycinemaatamcprime-' in html_lower:
+            logger.info("  [FORMAT] 找到Dolby场次标识 'dolbycinemaatamcprime-'，确认有Dolby排片")
             return True
         logger.info("  [FORMAT] 未找到Dolby场次标识，该日期无Dolby排片")
         return False
