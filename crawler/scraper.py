@@ -67,42 +67,31 @@ def fetch_showtimes(theater, date_str):
         html = resp.text
         logger.info(f"获取到 HTML，长度: {len(html)}")
 
-        # 诊断：搜索HTML中和电影/时间相关的关键模式
-        debug_patterns = {
-            'display': r'"display"',
-            'time': r'"time"\s*:\s*"',
-            'amPm': r'"amPm"',
-            'showtime': r'showtime',
-            'Showtime': r'Showtime',
-            'aria-describedby': r'"aria-describedby"',
-            'movieId': r'"movieId"',
-            'movieName': r'"movieName"',
-            'movie': r'"movie"',
-            'title': r'"title"\s*:\s*"',
-            'name': r'"name"\s*:\s*"',
-            'slug': r'"slug"\s*:\s*"',
-            'performanceNumber': r'"performanceNumber"',
-            'AM/PM time': r'\d{1,2}:\d{2}\s*(am|pm|AM|PM)',
-            'ISO time': r'T\d{2}:\d{2}:\d{2}',
-        }
-        for label, pat in debug_patterns.items():
-            matches = re.findall(pat, html)
-            if matches:
-                logger.info(f"  [DEBUG] '{label}' 出现 {len(matches)} 次")
-                # 显示第一个匹配的上下文
-                m = re.search(pat, html)
-                if m:
-                    start = max(0, m.start() - 80)
-                    end = min(len(html), m.end() + 80)
-                    context = html[start:end].replace('\n', ' ')
-                    logger.info(f"  [DEBUG] 上下文: ...{context}...")
+        # 诊断1: 搜索 Next.js RSC payload 格式 (__next_f)
+        next_f = re.findall(r'self\.__next_f\.push\(\[.*?\]\)', html[:200000])
+        logger.info(f"  [DEBUG] '__next_f' 出现: {len(next_f)} 次")
+        if next_f:
+            logger.info(f"  [DEBUG] 第一个: {next_f[0][:300]}")
 
-        # 额外：保存前2000字符的HTML到日志，帮助分析结构
-        logger.info(f"  [DEBUG] HTML前500字符: {html[:500]}")
-        logger.info(f"  [DEBUG] 搜索 script 标签...")
-        script_tags = re.findall(r'<script[^>]*>(.*?)</script>', html[:50000], re.DOTALL)
-        for i, script in enumerate(script_tags[:5]):
-            logger.info(f"  [DEBUG] script[{i}] 长度={len(script)}, 前200字符: {script[:200]}")
+        # 诊断2: 搜索 option 下拉菜单里的电影 (这个之前确认存在)
+        option_movies = re.findall(r'<option value="([^"]+)">([^<]+)</option>', html)
+        logger.info(f"  [DEBUG] <option> 电影选项: {option_movies[:10]}")
+
+        # 诊断3: 全文搜索 script 标签内容（不限50000字符）
+        all_scripts = re.findall(r'<script[^>]*>([\s\S]*?)</script>', html)
+        non_empty = [(i, s) for i, s in enumerate(all_scripts) if len(s.strip()) > 10]
+        logger.info(f"  [DEBUG] 共 {len(all_scripts)} 个script标签, 非空 {len(non_empty)} 个")
+        for i, script in non_empty[:5]:
+            logger.info(f"  [DEBUG] script[{i}] 长度={len(script)}, 前300字符: {script[:300]}")
+
+        # 诊断4: 搜索HTML中间部分（250KB附近）是否有排片数据
+        mid = html[200000:210000]
+        for pat_label, pat in [('time/amPm', r'"amPm"'), ('display', r'"display"'), ('next_f', r'__next_f')]:
+            if re.search(pat, mid):
+                pos = re.search(pat, mid).start()
+                logger.info(f"  [DEBUG] 中部({pat_label}): ...{mid[max(0,pos-100):pos+200]}...")
+            else:
+                logger.info(f"  [DEBUG] 中部无 '{pat_label}'")
 
         # 从 RSC Payload 中提取电影和场次
         movies = parse_rsc_payload(html)
