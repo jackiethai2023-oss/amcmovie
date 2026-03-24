@@ -67,10 +67,10 @@ def create_session():
 
 
 def get_weekend_dates():
-    """获取未来2周的周末日期（周六和周日）"""
+    """获取未来6周的周末日期（周六和周日）"""
     today = datetime.now()
     weekend_dates = []
-    for i in range(14):
+    for i in range(42):
         check_date = today + timedelta(days=i)
         if check_date.weekday() in [5, 6]:  # 周六=5, 周日=6
             weekend_dates.append(check_date)
