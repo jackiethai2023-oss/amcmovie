@@ -151,46 +151,124 @@ def fetch_showtimes(theater, date_str, session=None):
 
 def parse_rsc_payload(html):
     """
-    从 HTML 中解析电影和场次信息。
+    从 HTML 中的 RSC (React Server Components) Payload 解析电影和场次信息。
 
-    AMC 网站实际 HTML 结构：
-    - 每部电影有一个 <div aria-label="Showtimes for [Movie Title]"> 的容器
-    - 场次时间在容器内的 <a href="/showtimes/[id]"> 链接的文字中
+    AMC 网站是 Next.js 应用，场次时间不在 SSR HTML 的 DOM 中，
+    而是在 <script>self.__next_f.push(...)</script> 的 RSC Payload 里。
+    Payload 中的 JSON 使用转义引号 (\")，需要先替换为普通引号再匹配。
+
+    RSC Payload 数据结构：
+      "display":{"time":"11:30","amPm":"am"}
+      "aria-describedby":"project-hail-mary-76779 ..."
     """
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(html, 'html.parser')
-    movies = []
 
-    # 找所有电影 section：aria-label 以 "Showtimes for " 开头
-    movie_sections = soup.find_all(
-        attrs={'aria-label': re.compile(r'^Showtimes for ')}
+    # 第一步：提取所有 RSC payload script 标签的内容
+    rsc_text = ''
+    for script in soup.find_all('script'):
+        text = script.string or ''
+        if '__next_f' in text:
+            rsc_text += text + '\n'
+
+    logger.info(f"RSC payload 文本总长度: {len(rsc_text)}")
+
+    if not rsc_text:
+        logger.warning("未找到 RSC payload，尝试从整个 HTML 解析")
+        rsc_text = html
+
+    # 第二步：将转义引号 \" 替换为普通引号 "
+    # RSC payload 中的 JSON 数据使用 \" 作为引号
+    normalized = rsc_text.replace('\\"', '"')
+
+    # 第三步：提取所有场次时间
+    # 格式: "display":{"time":"HH:MM","amPm":"am/pm"}
+    time_pattern = re.compile(
+        r'"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
     )
-    logger.info(f"找到 {len(movie_sections)} 个电影 section")
 
-    for section in movie_sections:
-        title = section.get('aria-label', '').replace('Showtimes for ', '').strip()
-        if not title:
+    # 第四步：提取电影 slug（从 aria-describedby 中）
+    # 格式: "aria-describedby":"movie-slug-12345 movie-slug-12345-theater ..."
+    # 取第一个空格前的 slug 即为电影标识
+    slug_pattern = re.compile(
+        r'"aria-describedby"\s*:\s*"([a-z0-9][a-z0-9\- ]+?)"'
+    )
+
+    # 找到所有 slug 出现的位置
+    slugs_found = []
+    for match in slug_pattern.finditer(normalized):
+        full_value = match.group(1)
+        # 取第一个空格前的部分作为电影 slug
+        slug = full_value.split(' ')[0].strip()
+        pos = match.start()
+        if len(slug) < 3:
             continue
+        # 过滤非电影 slug
+        skip_keywords = ['sign-in', 'join', 'reward', 'promo', 'banner',
+                         'header', 'footer', 'nav', 'menu', 'modal',
+                         'cookie', 'consent', 'stubs', 'a-list', 'osano']
+        if any(kw in slug for kw in skip_keywords):
+            continue
+        slugs_found.append((slug, pos))
 
-        # 在该 section 内找所有场次链接 <a href="/showtimes/数字">
-        time_links = section.find_all('a', href=re.compile(r'^/showtimes/\d+'))
-        times = []
-        for a in time_links:
-            # 只取第一个直接文本节点，跳过 <span>（如 "UP TO 15% OFF"）
-            raw = a.find(string=True, recursive=False)
-            if raw:
-                t = raw.strip()
-                if re.match(r'^\d{1,2}:\d{2}[ap]m$', t):
-                    times.append(t)
+    # 找到所有时间出现的位置
+    times_found = []
+    for match in time_pattern.finditer(normalized):
+        time_val = match.group(1)
+        ampm = match.group(2)
+        pos = match.start()
+        times_found.append((f"{time_val}{ampm}", pos))
 
-        logger.info(f"  电影: {title}, 场次: {times}")
+    logger.info(f"找到 {len(slugs_found)} 个电影slug, {len(times_found)} 个场次时间")
 
-        if times:
+    if not times_found:
+        logger.warning("未找到任何场次时间")
+        return []
+
+    # 第五步：将每个时间关联到最近的前一个 slug
+    movies_dict = {}
+    all_items = []
+    for slug, pos in slugs_found:
+        all_items.append(('slug', slug, pos))
+    for time_str, pos in times_found:
+        all_items.append(('time', time_str, pos))
+    all_items.sort(key=lambda x: x[2])
+
+    current_slug = None
+    for item_type, value, pos in all_items:
+        if item_type == 'slug':
+            current_slug = value
+            if current_slug not in movies_dict:
+                movies_dict[current_slug] = []
+        elif item_type == 'time' and current_slug:
+            if value not in movies_dict[current_slug]:
+                movies_dict[current_slug].append(value)
+
+    # 第六步：用 <option> 标签中的电影名获取可读标题
+    option_titles = {}
+    for option in soup.find_all('option'):
+        val = option.get('value', '')
+        text = option.get_text(strip=True)
+        if val and text:
+            option_titles[val] = text
+
+    # 转换为输出格式
+    movies = []
+    for slug, showtimes in movies_dict.items():
+        if showtimes:
+            # 优先使用 <option> 中的标题，否则从 slug 转换
+            # slug 可能带数字后缀（如 project-hail-mary-76779），需去掉
+            title = option_titles.get(slug)
+            if not title:
+                # 去掉末尾数字部分
+                clean_slug = re.sub(r'-\d+$', '', slug)
+                title = option_titles.get(clean_slug, slug_to_title(clean_slug))
             movies.append({
                 'title': title,
-                'showtimes': times
+                'showtimes': showtimes
             })
+            logger.info(f"  电影: {title}, 场次: {showtimes}")
 
     if not movies:
         logger.warning("未解析到任何电影，请检查 HTML 结构是否变化")
