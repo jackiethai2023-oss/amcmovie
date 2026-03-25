@@ -170,6 +170,22 @@
       "2026-05-03": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-05-09": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-10": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-05-16": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-17": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -363,6 +379,22 @@
             ]
           }
         ]
+      },
+      "2026-05-09": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-10": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-05-16": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-17": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -445,6 +477,15 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:30am",
+              "2:15pm",
+              "7:00pm"
+            ]
+          },
+          {
             "title": "2DIE4",
             "slug": "2die4-82811",
             "showtimes": [
@@ -456,6 +497,11 @@
       "2026-04-19": {
         "day": "Sunday",
         "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": []
+          },
           {
             "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
             "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
@@ -509,6 +555,22 @@
         "movies": []
       },
       "2026-05-03": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-05-09": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-10": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-05-16": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-17": {
         "day": "Sunday",
         "movies": []
       }
