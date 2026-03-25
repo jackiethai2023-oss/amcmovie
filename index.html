@@ -322,6 +322,13 @@
             text-decoration: none;
         }
 
+        /* SOON电影的排片时间 - 灰色显示 */
+        .movie-info.status-soon .showtime {
+            background-color: rgba(107, 114, 128, 0.15);
+            border-color: rgba(107, 114, 128, 0.3);
+            color: rgba(156, 163, 175, 0.8);
+        }
+
         .empty {
             font-size: 0.625rem;
             color: rgba(255, 255, 255, 0.05);
@@ -579,8 +586,12 @@
                         const dateData = showtimes[theaterKey].dates[date];
                         if (dateData.movies && dateData.movies.length > 0) {
                             for (const movie of dateData.movies) {
-                                const status = getStatusLabel(movie.showtimes?.length || 0);
-                                const statusClass = status.text === 'SOON' ? 'status-soon' : '';
+                                // is_coming_soon 直接来自爬虫，优先级高于场次数量判断
+                                const isComingSoon = movie.is_coming_soon === true;
+                                const status = isComingSoon
+                                    ? { text: 'SOON', class: 'status-soon' }
+                                    : getStatusLabel(movie.showtimes?.length || 0);
+                                const statusClass = isComingSoon ? 'status-soon' : '';
                                 html += `<div class="movie-info ${statusClass}">`;
                                 // 生成购票链接：theater URL + 日期
                                 const theaterUrl = showtimes[theaterKey]?.url;

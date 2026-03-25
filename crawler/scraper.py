@@ -239,10 +239,11 @@ def parse_rsc_payload(html):
     # RSC payload 中的 JSON 数据使用 \" 作为引号
     normalized = rsc_text.replace('\\"', '"')
 
-    # 第三步：提取所有场次时间
-    # 格式: "display":{"time":"HH:MM","amPm":"am/pm"}
+    # 第三步：提取所有场次时间，同时捕获 status 字段以过滤 "ComingSoon"
+    # RSC 数据格式: "status":"AlmostFull","display":{"time":"HH:MM","amPm":"am/pm"}
+    # "ComingSoon" 对应 AMC 网站的 "AVAILABLE SOON"（不可购票），需排除
     time_pattern = re.compile(
-        r'"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
+        r'"status"\s*:\s*"(\w+)"[^{]{0,200}?"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
     )
 
     # 第四步：提取电影 slug（从 aria-describedby 中）
@@ -286,38 +287,51 @@ def parse_rsc_payload(html):
             continue
         slugs_found.append((slug, pos))
 
-    # 找到所有时间出现的位置
-    times_found = []
+    # 找到所有时间出现的位置，同时记录是否 ComingSoon
+    # ComingSoon = AMC 网站的 "AVAILABLE SOON"，不可购票但仍需显示（灰色）
+    times_found = []       # (time_str, pos, is_coming_soon)
     for match in time_pattern.finditer(normalized):
-        time_val = match.group(1)
-        ampm = match.group(2)
-        pos = match.start()
-        times_found.append((f"{time_val}{ampm}", pos))
+        status   = match.group(1)
+        time_val = match.group(2)
+        ampm     = match.group(3)
+        pos      = match.start()
+        is_cs    = (status == 'ComingSoon')
+        times_found.append((f"{time_val}{ampm}", pos, is_cs))
+        if is_cs:
+            logger.info(f"  [ComingSoon] {time_val}{ampm}")
 
-    logger.info(f"找到 {len(slugs_found)} 个电影slug, {len(times_found)} 个场次时间")
+    purchasable = [t for t in times_found if not t[2]]
+    coming_soon = [t for t in times_found if t[2]]
+    logger.info(f"找到 {len(slugs_found)} 个电影slug, {len(purchasable)} 个可购票, {len(coming_soon)} 个ComingSoon")
 
     if not times_found:
         logger.warning("未找到任何场次时间")
         return []
 
     # 第五步：将每个时间关联到最近的前一个 slug
+    # movies_dict: slug -> {'showtimes': [...], 'coming_soon_times': [...]}
     movies_dict = {}
     all_items = []
     for slug, pos in slugs_found:
-        all_items.append(('slug', slug, pos))
-    for time_str, pos in times_found:
-        all_items.append(('time', time_str, pos))
+        all_items.append(('slug', slug, pos, None))
+    for time_str, pos, is_cs in times_found:
+        all_items.append(('time', time_str, pos, is_cs))
     all_items.sort(key=lambda x: x[2])
 
     current_slug = None
-    for item_type, value, pos in all_items:
+    for item_type, value, pos, meta in all_items:
         if item_type == 'slug':
             current_slug = value
             if current_slug not in movies_dict:
-                movies_dict[current_slug] = []
+                movies_dict[current_slug] = {'showtimes': [], 'coming_soon_times': []}
         elif item_type == 'time' and current_slug:
-            if value not in movies_dict[current_slug]:
-                movies_dict[current_slug].append(value)
+            is_cs = meta
+            if is_cs:
+                if value not in movies_dict[current_slug]['coming_soon_times']:
+                    movies_dict[current_slug]['coming_soon_times'].append(value)
+            else:
+                if value not in movies_dict[current_slug]['showtimes']:
+                    movies_dict[current_slug]['showtimes'].append(value)
 
     # 第六步：用 <option> 标签中的电影名获取可读标题
     option_titles = {}
@@ -329,61 +343,54 @@ def parse_rsc_payload(html):
 
     # 转换为输出格式
     movies = []
-    for slug, showtimes in movies_dict.items():
-        if showtimes:
-            # 优先使用 <option> 中的标题，否则从 slug 转换
-            # slug 可能带数字后缀（如 project-hail-mary-76779），需去掉
-            title = option_titles.get(slug)
-            if not title:
-                # 去掉末尾数字部分
-                clean_slug = re.sub(r'-\d+$', '', slug)
-                title = option_titles.get(clean_slug, slug_to_title(clean_slug))
+    for slug, data in movies_dict.items():
+        purchasable_times = data['showtimes']
+        cs_times          = data['coming_soon_times']
 
-            # 检测是否是IMAX 70MM格式
-            # 通过搜索该slug附近是否有'imax70mm'来判断
-            is_70mm = 'imax70mm' in normalized.lower() and slug.lower() in normalized.lower()
-            if is_70mm:
-                # 进一步确认：检查该slug是否在imax70mm格式ID的上下文中
-                pattern = r'imax70mm[^}]*' + re.escape(slug)
-                if not re.search(pattern, normalized.lower()):
-                    is_70mm = False
+        # 跳过完全没有任何场次的 slug（非电影条目）
+        if not purchasable_times and not cs_times:
+            continue
 
-            movies.append({
-                'title': title,
-                'slug': slug,  # 保存电影slug用于购票链接
-                'showtimes': showtimes,
-                'is_70mm': is_70mm  # 标记是否为IMAX 70MM格式
-            })
-            log_msg = f"  电影: {title}, 场次: {showtimes}"
-            if is_70mm:
-                log_msg += " [IMAX 70MM]"
-            logger.info(log_msg)
+        # 优先使用 <option> 中的标题，否则从 slug 转换
+        title = option_titles.get(slug)
+        if not title:
+            clean_slug = re.sub(r'-\d+$', '', slug)
+            title = option_titles.get(clean_slug, slug_to_title(clean_slug))
+
+        # 决定最终 showtimes 和 is_coming_soon 标志
+        # 若全部场次都是 ComingSoon，保留这些时间并标记
+        # 若有可购票场次，只保留可购票场次
+        if purchasable_times:
+            final_showtimes = purchasable_times
+            is_coming_soon  = False
+        else:
+            # 全部是 ComingSoon
+            final_showtimes = cs_times
+            is_coming_soon  = True
+
+        # 检测是否是IMAX 70MM格式
+        is_70mm = 'imax70mm' in normalized.lower() and slug.lower() in normalized.lower()
+        if is_70mm:
+            pattern = r'imax70mm[^}]*' + re.escape(slug)
+            if not re.search(pattern, normalized.lower()):
+                is_70mm = False
+
+        movies.append({
+            'title':          title,
+            'slug':           slug,
+            'showtimes':      final_showtimes,
+            'is_coming_soon': is_coming_soon,
+            'is_70mm':        is_70mm
+        })
+        log_msg = f"  电影: {title}, 场次: {final_showtimes}"
+        if is_coming_soon:
+            log_msg += " [ComingSoon - 不可购票]"
+        if is_70mm:
+            log_msg += " [IMAX 70MM]"
+        logger.info(log_msg)
 
     if not movies:
         logger.warning("未解析到任何电影，请检查 HTML 结构是否变化")
-
-    # 检查是否存在"Available Soon"的电影（不可购买）
-    # 统计页面中"Available Soon"的出现次数
-    available_soon_count = html.lower().count('available soon')
-
-    if available_soon_count > 0:
-        logger.warning(f"页面中检测到{available_soon_count}个'Available Soon'标记")
-
-        # 如果某个电影的时间数等于或接近"Available Soon"的出现次数，说明该电影的所有时间都是"Available Soon"
-        # 这种情况下，清空该电影的showtimes，让它显示为SOON状态
-        filtered_movies = []
-        for movie in movies:
-            showtimes_count = len(movie.get('showtimes', []))
-
-            # 如果该电影的所有时间都对应"Available Soon"（启发式判断）
-            # 标准：电影有多个时间，且数量与页面的"Available Soon"数量接近
-            if showtimes_count > 0 and showtimes_count >= available_soon_count * 0.8:
-                logger.warning(f"电影'{movie['title']}'的{showtimes_count}个时间可能都是'Available Soon'，清空排片")
-                movie['showtimes'] = []
-
-            filtered_movies.append(movie)
-
-        movies = filtered_movies
 
     return movies
 
