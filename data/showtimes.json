@@ -37,6 +37,26 @@
           }
         ]
       },
+      "2026-04-03": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
+        "holiday": "Good Friday"
+      },
       "2026-04-04": {
         "day": "Saturday",
         "movies": [
@@ -248,6 +268,25 @@
             "is_70mm": false
           }
         ]
+      },
+      "2026-04-03": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:45am",
+              "1:30pm",
+              "4:15pm",
+              "7:00pm",
+              "9:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
+        "holiday": "Good Friday"
       },
       "2026-04-04": {
         "day": "Saturday",
@@ -482,6 +521,25 @@
             "is_70mm": true
           }
         ]
+      },
+      "2026-04-03": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
+        "holiday": "Good Friday"
       },
       "2026-04-04": {
         "day": "Saturday",
