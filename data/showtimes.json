@@ -338,37 +338,11 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "10:00am",
-              "12:45pm",
-              "3:30pm",
-              "6:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "10:00am",
-              "12:45pm",
-              "3:30pm",
-              "6:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-25": {
         "day": "Saturday",
@@ -610,15 +584,6 @@
       "2026-04-19": {
         "day": "Sunday",
         "movies": [
-          {
-            "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
-            "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
-            "showtimes": [
-              "11:45am"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          },
           {
             "title": "2DIE4",
             "slug": "2die4-82811",
