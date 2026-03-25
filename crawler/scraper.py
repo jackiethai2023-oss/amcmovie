@@ -97,7 +97,7 @@ def validate_format_in_html(html, format_name):
     """
     验证返回的HTML中是否真的包含所请求格式的排片信息。
     通过检查RSC payload中的格式标识ID来判断：
-      IMAX有排片时：会出现 'imaxwithlaseratamc-' （带连字符，表示具体场次条目）
+      IMAX有排片时：会出现 'imaxwithlaseratamc-' 或 'imax70mm-' （带连字符，表示具体场次条目）
       Dolby有排片时：会出现 'dolbycinemaatamcprime-' （带连字符，表示具体场次条目，而非URL参数）
     如果这些标识不存在，说明页面显示的是fallback内容（其他格式的排片），应返回False。
     """
@@ -107,9 +107,17 @@ def validate_format_in_html(html, format_name):
     html_lower = html.lower()
 
     if format_name == 'IMAX':
-        if 'imaxwithlaseratamc-' in html_lower:
+        # 支持两种IMAX格式：普通IMAX和70MM IMAX
+        has_imax_laser = 'imaxwithlaseratamc-' in html_lower
+        has_imax_70mm = 'imax70mm-' in html_lower
+
+        if has_imax_laser:
             logger.info("  [FORMAT] 找到IMAX场次标识 'imaxwithlaseratamc-'，确认有IMAX排片")
             return True
+        elif has_imax_70mm:
+            logger.info("  [FORMAT] 找到IMAX 70MM场次标识 'imax70mm-'，确认有IMAX 70MM排片")
+            return True
+
         logger.info("  [FORMAT] 未找到IMAX场次标识，该日期无IMAX排片")
         return False
 
@@ -330,12 +338,26 @@ def parse_rsc_payload(html):
                 # 去掉末尾数字部分
                 clean_slug = re.sub(r'-\d+$', '', slug)
                 title = option_titles.get(clean_slug, slug_to_title(clean_slug))
+
+            # 检测是否是IMAX 70MM格式
+            # 通过搜索该slug附近是否有'imax70mm'来判断
+            is_70mm = 'imax70mm' in normalized.lower() and slug.lower() in normalized.lower()
+            if is_70mm:
+                # 进一步确认：检查该slug是否在imax70mm格式ID的上下文中
+                pattern = r'imax70mm[^}]*' + re.escape(slug)
+                if not re.search(pattern, normalized.lower()):
+                    is_70mm = False
+
             movies.append({
                 'title': title,
                 'slug': slug,  # 保存电影slug用于购票链接
-                'showtimes': showtimes
+                'showtimes': showtimes,
+                'is_70mm': is_70mm  # 标记是否为IMAX 70MM格式
             })
-            logger.info(f"  电影: {title}, 场次: {showtimes}")
+            log_msg = f"  电影: {title}, 场次: {showtimes}"
+            if is_70mm:
+                log_msg += " [IMAX 70MM]"
+            logger.info(log_msg)
 
     if not movies:
         logger.warning("未解析到任何电影，请检查 HTML 结构是否变化")

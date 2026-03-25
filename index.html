@@ -358,6 +358,22 @@
             display: inline-block;
         }
 
+        /* 70MM Badge */
+        .badge-70mm {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.125rem 0.25rem;
+            background-color: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 0.25rem;
+            font-size: 0.45rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ef4444;
+            letter-spacing: 0.02em;
+            margin-left: 0.25rem;
+        }
+
         /* Showtimes */
         .showtimes {
             display: flex;
@@ -574,8 +590,9 @@
                                 const movieLink = ticketLink
                                     ? `<a class="movie-title" href="${escapeHtml(ticketLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(movie.title)}</a>`
                                     : `<span class="movie-title">${escapeHtml(movie.title)}</span>`;
+                                const badge70mm = movie.is_70mm ? '<span class="badge-70mm">70MM</span>' : '';
                                 html += `<div class="movie-header">
-                                    ${movieLink}
+                                    ${movieLink}${badge70mm}
                                     <span class="status-badge ${status.class}">● ${status.text}</span>
                                 </div>`;
                                 if (movie.showtimes && movie.showtimes.length > 0) {
