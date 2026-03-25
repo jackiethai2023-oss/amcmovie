@@ -10,11 +10,15 @@ import logging
 import os
 import re
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# 洛杉矶时区配置（自动处理夏令时）
+LA_TZ = ZoneInfo('America/Los_Angeles')
 
 # 目标影厅配置（只修改日期部分）
 THEATERS = [
@@ -67,8 +71,8 @@ def create_session():
 
 
 def get_weekend_dates():
-    """获取未来8周的周末日期（周六和周日）"""
-    today = datetime.now()
+    """获取未来8周的周末日期（周六和周日）— 使用洛杉矶时区，自动处理夏令时"""
+    today = datetime.now(LA_TZ).replace(hour=0, minute=0, second=0, microsecond=0)
     weekend_dates = []
     for i in range(56):
         check_date = today + timedelta(days=i)
@@ -407,7 +411,7 @@ def main():
 
     if not weekend_dates:
         logger.warning("未找到任何周末日期")
-        weekend_dates = [datetime.now() + timedelta(days=5)]
+        weekend_dates = [datetime.now(LA_TZ) + timedelta(days=5)]
 
     all_showtimes = {}
 
@@ -440,12 +444,12 @@ def main():
         json.dump(all_showtimes, f, ensure_ascii=False, indent=2)
     logger.info(f"排片数据已保存到 {output_file}")
 
-    # 保存更新时间
+    # 保存更新时间（洛杉矶时区）
     update_file = os.path.join(output_dir, 'last_updated.json')
     with open(update_file, 'w', encoding='utf-8') as f:
         json.dump({
-            'timestamp': datetime.now().isoformat(),
-            'timezone': 'UTC'
+            'timestamp': datetime.now(LA_TZ).isoformat(),
+            'timezone': 'America/Los_Angeles'
         }, f, ensure_ascii=False, indent=2)
     logger.info(f"更新时间已保存到 {update_file}")
 

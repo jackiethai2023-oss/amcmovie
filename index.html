@@ -560,8 +560,14 @@
 
             for (const date of sortedDates) {
                 const [y, m, d] = date.split('-').map(Number);
-                const dateObj = new Date(y, m - 1, d);
-                const dayStr = dateObj.toLocaleString('en-US', { weekday: 'short' }).toUpperCase();
+                // 从任何一个剧院数据中获取 day 名称（所有剧院的同一日期都有相同的 day 值）
+                let dayStr = '';
+                for (const theaterKey in showtimes) {
+                    if (showtimes[theaterKey].dates[date]?.day) {
+                        dayStr = showtimes[theaterKey].dates[date].day.substring(0, 3).toUpperCase();
+                        break;
+                    }
+                }
                 const dateStr = `${m}/${d}`;
 
                 html += '<div class="table-row">';
