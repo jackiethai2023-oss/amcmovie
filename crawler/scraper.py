@@ -313,6 +313,42 @@ def fetch_showtimes(theater, date_str, session=None):
         return []
 
 
+def extract_movie_ratings(html, movie_slug):
+    """
+    尝试从 HTML 中提取电影评分（Rotten Tomatoes）
+    返回 (critics_score, audience_score) 元组，未找到则为 None
+
+    注意：评分通常通过 JavaScript 动态加载，可能无法从原始 HTML 获取
+    """
+    try:
+        # 移除转义符号
+        normalized = html.replace('\\"', '"').replace('\\/', '/')
+
+        # 搜索与 slug 相关的评分数据
+        # 格式示例: "94%\nCritics Score" 或 96%\nAudience
+        # 先尝试找到 slug 附近的百分比数据
+
+        # 简单方法：搜索常见的 Rotten Tomatoes 分数格式
+        # 如果找到 "95%" 或类似的数据，尝试识别它是 critics 还是 audience
+        import re
+
+        # 寻找格式: "XX%\nCritics" 或类似的模式
+        critics_match = re.search(r'"(\d{1,3})%"[^}]*Critics', normalized, re.IGNORECASE)
+        audience_match = re.search(r'"(\d{1,3})%"[^}]*Audience', normalized, re.IGNORECASE)
+
+        critics_score = int(critics_match.group(1)) if critics_match else None
+        audience_score = int(audience_match.group(1)) if audience_match else None
+
+        if critics_score or audience_score:
+            logger.debug(f"找到 {movie_slug} 评分: Critics={critics_score}%, Audience={audience_score}%")
+
+        return critics_score, audience_score
+
+    except Exception as e:
+        logger.debug(f"提取评分失败: {e}")
+        return None, None
+
+
 def parse_rsc_payload(html):
     """
     从 HTML 中的 RSC (React Server Components) Payload 解析电影和场次信息。
@@ -482,13 +518,24 @@ def parse_rsc_payload(html):
             if not re.search(pattern, normalized.lower()):
                 is_70mm = False
 
-        movies.append({
+        # 提取电影评分
+        critics_score, audience_score = extract_movie_ratings(html, slug)
+
+        movie_data = {
             'title':          title,
             'slug':           slug,
             'showtimes':      final_showtimes,
             'is_coming_soon': is_coming_soon,
             'is_70mm':        is_70mm
-        })
+        }
+
+        # 只有在有评分数据时才添加评分字段
+        if critics_score is not None:
+            movie_data['critics_score'] = critics_score
+        if audience_score is not None:
+            movie_data['audience_score'] = audience_score
+
+        movies.append(movie_data)
         log_msg = f"  电影: {title}, 场次: {final_showtimes}"
         if is_coming_soon:
             log_msg += " [ComingSoon - 不可购票]"

@@ -471,6 +471,144 @@
             height: 0.5rem;
             vertical-align: -0.0625rem;
         }
+
+        /* Movie Filter Panel */
+        .movie-filter-section {
+            background-color: rgba(10, 10, 10, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1rem 0.75rem;
+        }
+
+        .movie-filter-container {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .filter-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .filter-header:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .filter-toggle-btn {
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            cursor: pointer;
+            padding: 0;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter-header-text {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .filter-hidden-count {
+            margin-left: auto;
+            font-size: 0.6875rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .filter-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            max-height: 500px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .filter-content.collapsed {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        @media (max-width: 640px) {
+            .filter-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 0.375rem;
+            font-size: 0.6875rem;
+            line-height: 1.2;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .filter-item:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .filter-checkbox {
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .filter-item-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1875rem;
+        }
+
+        .filter-item-title {
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .filter-item-scores {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.6rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .filter-score-critics {
+            color: #fca5a5;
+        }
+
+        .filter-score-audience {
+            color: #fbbf24;
+        }
+
+        /* 隐藏电影样式 */
+        .movie-info.hidden-movie {
+            opacity: 0.35;
+            color: #6B7280;
+            pointer-events: none;
+        }
+
+        .movie-info.hidden-movie .showtime {
+            background-color: rgba(107, 114, 128, 0.15);
+            border-color: rgba(107, 114, 128, 0.3);
+            color: rgba(156, 163, 175, 0.8);
+        }
     </style>
 </head>
 <body>
@@ -492,6 +630,20 @@
             </button>
         </div>
     </header>
+
+    <!-- Movie Filter Section -->
+    <section class="movie-filter-section" id="movieFilterSection">
+        <div class="movie-filter-container">
+            <div class="filter-header" onclick="toggleFilterPanel()">
+                <button class="filter-toggle-btn" id="filterToggleBtn">▼</button>
+                <span class="filter-header-text">Filter Movies</span>
+                <span class="filter-hidden-count" id="filterHiddenCount"></span>
+            </div>
+            <div class="filter-content" id="filterContent">
+                <div id="filterList"></div>
+            </div>
+        </div>
+    </section>
 
     <main id="mainContent">
         <div class="loading-container">
@@ -569,7 +721,138 @@
             return { text: 'SOON', class: 'status-soon' };
         }
 
+        // Movie Filter Functions
+        const HIDDEN_MOVIES_KEY = 'amcmovie_hidden_movies';
+
+        function buildMovieList(showtimes) {
+            const movieMap = new Map();
+            for (const theaterKey in showtimes) {
+                const theater = showtimes[theaterKey];
+                for (const date in theater.dates) {
+                    const dateData = theater.dates[date];
+                    if (dateData.movies) {
+                        for (const movie of dateData.movies) {
+                            if (!movieMap.has(movie.slug)) {
+                                movieMap.set(movie.slug, {
+                                    slug: movie.slug,
+                                    title: movie.title,
+                                    critics_score: movie.critics_score || null,
+                                    audience_score: movie.audience_score || null
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            return Array.from(movieMap.values());
+        }
+
+        function sortMoviesByRating(movies) {
+            return movies.sort((a, b) => {
+                const scoreA = a.critics_score || a.audience_score || 0;
+                const scoreB = b.critics_score || b.audience_score || 0;
+                return scoreB - scoreA;
+            });
+        }
+
+        function getHiddenMovies() {
+            const stored = localStorage.getItem(HIDDEN_MOVIES_KEY);
+            return stored ? JSON.parse(stored) : [];
+        }
+
+        function saveHiddenMovies(slugs) {
+            localStorage.setItem(HIDDEN_MOVIES_KEY, JSON.stringify(slugs));
+        }
+
+        function renderMovieFilter(movies) {
+            const sortedMovies = sortMoviesByRating(movies);
+            const hiddenMovies = getHiddenMovies();
+            let html = '';
+
+            for (const movie of sortedMovies) {
+                const isHidden = hiddenMovies.includes(movie.slug);
+                const scoreText = [];
+                if (movie.critics_score !== null) {
+                    scoreText.push(`<span class="filter-score-critics">${movie.critics_score}%</span>`);
+                }
+                if (movie.audience_score !== null) {
+                    scoreText.push(`<span class="filter-score-audience">${movie.audience_score}%</span>`);
+                }
+
+                html += `
+                    <label class="filter-item">
+                        <input type="checkbox" class="filter-checkbox" data-slug="${escapeHtml(movie.slug)}" ${!isHidden ? 'checked' : ''}>
+                        <div class="filter-item-content">
+                            <div class="filter-item-title">${escapeHtml(movie.title)}</div>
+                            ${scoreText.length > 0 ? `<div class="filter-item-scores">${scoreText.join(' | ')}</div>` : ''}
+                        </div>
+                    </label>
+                `;
+            }
+
+            document.getElementById('filterList').innerHTML = html;
+
+            // 绑定勾选框事件
+            document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', (e) => {
+                    const slug = e.target.dataset.slug;
+                    const hidden = getHiddenMovies();
+                    if (e.target.checked) {
+                        const idx = hidden.indexOf(slug);
+                        if (idx > -1) hidden.splice(idx, 1);
+                    } else {
+                        if (!hidden.includes(slug)) hidden.push(slug);
+                    }
+                    saveHiddenMovies(hidden);
+                    applyMovieFilters(window.currentShowtimes);
+                    updateFilterStatus(sortedMovies.length);
+                });
+            });
+
+            updateFilterStatus(sortedMovies.length);
+        }
+
+        function updateFilterStatus(totalMovies) {
+            const hidden = getHiddenMovies();
+            const count = hidden.length;
+            const statusEl = document.getElementById('filterHiddenCount');
+            if (count > 0) {
+                statusEl.textContent = `(${count} of ${totalMovies} hidden)`;
+            } else {
+                statusEl.textContent = '';
+            }
+        }
+
+        function toggleFilterPanel() {
+            const content = document.getElementById('filterContent');
+            const btn = document.getElementById('filterToggleBtn');
+            content.classList.toggle('collapsed');
+            btn.textContent = content.classList.contains('collapsed') ? '▶' : '▼';
+        }
+
+        function applyMovieFilters(showtimes) {
+            const hidden = getHiddenMovies();
+            document.querySelectorAll('.movie-info').forEach(el => {
+                // 从元素中提取 slug（从标题附近的数据）
+                const titleEl = el.querySelector('.movie-title');
+                if (titleEl) {
+                    const slug = titleEl.dataset.slug;
+                    if (slug && hidden.includes(slug)) {
+                        el.classList.add('hidden-movie');
+                    } else {
+                        el.classList.remove('hidden-movie');
+                    }
+                }
+            });
+        }
+
         function renderData(showtimes) {
+            // 保存 showtimes 以供后续过滤使用
+            window.currentShowtimes = showtimes;
+
+            // 构建电影过滤器
+            const movies = buildMovieList(showtimes);
+            renderMovieFilter(movies);
             const allDates = new Set();
             const theaterOrder = ['Century City IMAX', 'Century City Dolby Cinema', 'Universal CityWalk IMAX'];
 
@@ -634,15 +917,15 @@
                                     ? { text: 'SOON', class: 'status-soon' }
                                     : getStatusLabel(movie.showtimes?.length || 0);
                                 const statusClass = isComingSoon ? 'status-soon' : '';
-                                html += `<div class="movie-info ${statusClass}">`;
+                                html += `<div class="movie-info ${statusClass}" data-slug="${escapeHtml(movie.slug)}">`;
                                 // 生成购票链接：theater URL + 日期
                                 const theaterUrl = showtimes[theaterKey]?.url;
                                 const ticketLink = theaterUrl
                                     ? `${theaterUrl}${date}`
                                     : null;
                                 const movieLink = ticketLink
-                                    ? `<a class="movie-title" href="${escapeHtml(ticketLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(movie.title)}</a>`
-                                    : `<span class="movie-title">${escapeHtml(movie.title)}</span>`;
+                                    ? `<a class="movie-title" href="${escapeHtml(ticketLink)}" target="_blank" rel="noopener noreferrer" data-slug="${escapeHtml(movie.slug)}">${escapeHtml(movie.title)}</a>`
+                                    : `<span class="movie-title" data-slug="${escapeHtml(movie.slug)}">${escapeHtml(movie.title)}</span>`;
                                 const badge70mm = movie.is_70mm ? '<span class="badge-70mm">70MM</span>' : '';
                                 html += `<div class="movie-header">
                                     ${movieLink}${badge70mm}
@@ -679,6 +962,9 @@
             </div>`;
 
             document.getElementById('mainContent').innerHTML = html;
+
+            // 应用电影过滤效果
+            applyMovieFilters(showtimes);
         }
 
         function escapeHtml(text) {
