@@ -525,10 +525,25 @@
             color: rgba(255, 255, 255, 0.4);
         }
 
+        .filter-select-all-btn {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.625rem;
+            padding: 0.25rem 0.625rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            transition: all 0.2s;
+        }
+
+        .filter-select-all-btn:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+        }
+
         .filter-content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
             max-height: 500px;
             overflow: hidden;
             transition: max-height 0.3s ease;
@@ -539,8 +554,14 @@
             overflow: hidden;
         }
 
+        #filterList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
         @media (max-width: 640px) {
-            .filter-content {
+            #filterList {
                 grid-template-columns: 1fr;
             }
         }
@@ -634,10 +655,11 @@
     <!-- Movie Filter Section -->
     <section class="movie-filter-section" id="movieFilterSection">
         <div class="movie-filter-container">
-            <div class="filter-header" onclick="toggleFilterPanel()">
-                <button class="filter-toggle-btn" id="filterToggleBtn">▼</button>
-                <span class="filter-header-text">Filter Movies</span>
+            <div class="filter-header">
+                <button class="filter-toggle-btn" id="filterToggleBtn" onclick="toggleFilterPanel()">▼</button>
+                <span class="filter-header-text" onclick="toggleFilterPanel()">Filter Movies</span>
                 <span class="filter-hidden-count" id="filterHiddenCount"></span>
+                <button class="filter-select-all-btn" id="selectAllBtn" onclick="toggleSelectAll()">Select All</button>
             </div>
             <div class="filter-content" id="filterContent">
                 <div id="filterList"></div>
@@ -816,10 +838,13 @@
             const hidden = getHiddenMovies();
             const count = hidden.length;
             const statusEl = document.getElementById('filterHiddenCount');
+            const selectBtn = document.getElementById('selectAllBtn');
             if (count > 0) {
                 statusEl.textContent = `(${count} of ${totalMovies} hidden)`;
+                selectBtn.textContent = 'Select All';
             } else {
                 statusEl.textContent = '';
+                selectBtn.textContent = 'Deselect All';
             }
         }
 
@@ -830,18 +855,39 @@
             btn.textContent = content.classList.contains('collapsed') ? '▶' : '▼';
         }
 
+        function toggleSelectAll() {
+            const checkboxes = document.querySelectorAll('.filter-checkbox');
+            const hidden = getHiddenMovies();
+            // 如果有任何隐藏的电影，则全选；否则全不选
+            const shouldSelectAll = hidden.length > 0;
+
+            if (shouldSelectAll) {
+                // 全选：清空隐藏列表
+                saveHiddenMovies([]);
+                checkboxes.forEach(cb => cb.checked = true);
+                document.getElementById('selectAllBtn').textContent = 'Deselect All';
+            } else {
+                // 全不选：把所有电影加入隐藏列表
+                const allSlugs = [];
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    allSlugs.push(cb.dataset.slug);
+                });
+                saveHiddenMovies(allSlugs);
+                document.getElementById('selectAllBtn').textContent = 'Select All';
+            }
+            applyMovieFilters(window.currentShowtimes);
+            updateFilterStatus(checkboxes.length);
+        }
+
         function applyMovieFilters(showtimes) {
             const hidden = getHiddenMovies();
             document.querySelectorAll('.movie-info').forEach(el => {
-                // 从元素中提取 slug（从标题附近的数据）
-                const titleEl = el.querySelector('.movie-title');
-                if (titleEl) {
-                    const slug = titleEl.dataset.slug;
-                    if (slug && hidden.includes(slug)) {
-                        el.classList.add('hidden-movie');
-                    } else {
-                        el.classList.remove('hidden-movie');
-                    }
+                const slug = el.dataset.slug;
+                if (slug && hidden.includes(slug)) {
+                    el.classList.add('hidden-movie');
+                } else {
+                    el.classList.remove('hidden-movie');
                 }
             });
         }

@@ -315,32 +315,27 @@ def fetch_showtimes(theater, date_str, session=None):
 
 def extract_movie_ratings(html, movie_slug):
     """
-    尝试从 HTML 中提取电影评分（Rotten Tomatoes）
+    从 HTML 的 RSC 载荷中提取电影评分（Rotten Tomatoes）
     返回 (critics_score, audience_score) 元组，未找到则为 None
 
-    注意：评分通常通过 JavaScript 动态加载，可能无法从原始 HTML 获取
+    RSC 载荷格式:
+    "ratings":{"rottenTomatoes":{"audienceScore":96,...,"criticsScore":94,...}}
     """
     try:
-        # 移除转义符号
+        # 移除转义符号，还原 JSON
         normalized = html.replace('\\"', '"').replace('\\/', '/')
 
-        # 搜索与 slug 相关的评分数据
-        # 格式示例: "94%\nCritics Score" 或 96%\nAudience
-        # 先尝试找到 slug 附近的百分比数据
-
-        # 简单方法：搜索常见的 Rotten Tomatoes 分数格式
-        # 如果找到 "95%" 或类似的数据，尝试识别它是 critics 还是 audience
-        import re
-
-        # 寻找格式: "XX%\nCritics" 或类似的模式
-        critics_match = re.search(r'"(\d{1,3})%"[^}]*Critics', normalized, re.IGNORECASE)
-        audience_match = re.search(r'"(\d{1,3})%"[^}]*Audience', normalized, re.IGNORECASE)
+        # 匹配 RSC 载荷中的评分格式
+        # "criticsScore":94
+        critics_match = re.search(r'"criticsScore"\s*:\s*(\d{1,3})', normalized)
+        # "audienceScore":96
+        audience_match = re.search(r'"audienceScore"\s*:\s*(\d{1,3})', normalized)
 
         critics_score = int(critics_match.group(1)) if critics_match else None
         audience_score = int(audience_match.group(1)) if audience_match else None
 
         if critics_score or audience_score:
-            logger.debug(f"找到 {movie_slug} 评分: Critics={critics_score}%, Audience={audience_score}%")
+            logger.info(f"  [评分] {movie_slug}: Critics={critics_score}%, Audience={audience_score}%")
 
         return critics_score, audience_score
 
