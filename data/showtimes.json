@@ -15,6 +15,7 @@
               "7:00pm",
               "10:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -31,6 +32,7 @@
               "7:00pm",
               "10:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -49,6 +51,7 @@
               "8:45pm",
               "11:30pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -66,6 +69,7 @@
               "6:15pm",
               "9:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -83,6 +87,7 @@
               "6:15pm",
               "9:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -100,6 +105,7 @@
               "6:15pm",
               "9:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -115,6 +121,7 @@
               "1:30pm",
               "4:15pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -128,6 +135,7 @@
             "showtimes": [
               "4:15pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           },
           {
@@ -136,6 +144,7 @@
             "showtimes": [
               "11:45am"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -153,6 +162,7 @@
               "7:45pm",
               "11:00pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -170,6 +180,7 @@
               "7:45pm",
               "11:00pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -216,6 +227,7 @@
               "6:00pm",
               "9:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -232,6 +244,7 @@
               "6:00pm",
               "9:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -249,6 +262,7 @@
               "7:00pm",
               "9:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -266,6 +280,7 @@
               "7:15pm",
               "10:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -283,6 +298,7 @@
               "7:15pm",
               "10:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -299,6 +315,7 @@
               "7:15pm",
               "10:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -315,6 +332,7 @@
               "3:30pm",
               "6:15pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -331,6 +349,7 @@
               "3:30pm",
               "6:15pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -348,6 +367,7 @@
               "7:00pm",
               "10:15pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -365,6 +385,7 @@
               "7:00pm",
               "10:15pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -382,6 +403,7 @@
               "7:30pm",
               "10:30pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -399,6 +421,7 @@
               "7:30pm",
               "10:30pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -438,6 +461,7 @@
               "7:45pm",
               "11:30pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": true
           }
         ]
@@ -454,6 +478,7 @@
               "7:00pm",
               "10:45pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": true
           }
         ]
@@ -471,6 +496,7 @@
               "7:15pm",
               "10:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -488,6 +514,7 @@
               "7:15pm",
               "10:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -505,6 +532,7 @@
               "8:15pm",
               "11:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -521,6 +549,7 @@
               "8:15pm",
               "11:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -536,6 +565,7 @@
               "2:15pm",
               "7:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           },
           {
@@ -544,6 +574,7 @@
             "showtimes": [
               "5:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -554,7 +585,11 @@
           {
             "title": "The Super Mario Galaxy Movie",
             "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [],
+            "showtimes": [
+              "2:15pm",
+              "7:00pm"
+            ],
+            "is_coming_soon": false,
             "is_70mm": false
           },
           {
@@ -563,6 +598,7 @@
             "showtimes": [
               "11:45am"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           },
           {
@@ -571,6 +607,7 @@
             "showtimes": [
               "5:00pm"
             ],
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -588,6 +625,7 @@
               "7:45pm",
               "11:00pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -605,6 +643,7 @@
               "7:45pm",
               "11:00pm"
             ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
