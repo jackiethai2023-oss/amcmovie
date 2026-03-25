@@ -16,7 +16,9 @@
               "10:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
@@ -33,7 +35,9 @@
               "10:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
@@ -248,7 +252,9 @@
               "9:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
@@ -265,7 +271,9 @@
               "9:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
@@ -501,7 +509,9 @@
               "11:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": true
+            "is_70mm": true,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
@@ -518,7 +528,9 @@
               "10:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": true
+            "is_70mm": true,
+            "critics_score": 94,
+            "audience_score": 96
           }
         ]
       },
