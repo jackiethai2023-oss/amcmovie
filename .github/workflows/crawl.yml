@@ -2,7 +2,11 @@ name: Crawl AMC Showtimes
 
 on:
   schedule:
-    - cron: '0 16 * * *'
+    # 每小时整点运行，覆盖洛杉矶时间 6am-11pm
+    # UTC 13:00-23:00 = LA 6am-4pm (PDT) / 5am-3pm (PST)
+    # UTC 00:00-06:00 = LA 5pm-11pm (PDT) / 4pm-10pm (PST)
+    - cron: '0 13-23 * * *'
+    - cron: '0 0-6 * * *'
   workflow_dispatch:
 
 jobs:
