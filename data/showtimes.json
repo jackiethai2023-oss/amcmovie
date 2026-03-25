@@ -14,7 +14,8 @@
               "3:15pm",
               "7:00pm",
               "10:45pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -29,7 +30,8 @@
               "3:15pm",
               "7:00pm",
               "10:45pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -46,7 +48,8 @@
               "6:00pm",
               "8:45pm",
               "11:30pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -62,7 +65,8 @@
               "3:30pm",
               "6:15pm",
               "9:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -78,7 +82,8 @@
               "3:30pm",
               "6:15pm",
               "9:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -94,7 +99,8 @@
               "3:30pm",
               "6:15pm",
               "9:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -108,7 +114,8 @@
               "10:45am",
               "1:30pm",
               "4:15pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -120,14 +127,16 @@
             "slug": "the-super-mario-galaxy-movie-71465",
             "showtimes": [
               "4:15pm"
-            ]
+            ],
+            "is_70mm": false
           },
           {
             "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
             "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
             "showtimes": [
               "11:45am"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -143,7 +152,8 @@
               "4:30pm",
               "7:45pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -159,7 +169,8 @@
               "4:30pm",
               "7:45pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -204,7 +215,8 @@
               "2:15pm",
               "6:00pm",
               "9:45pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -219,7 +231,8 @@
               "2:15pm",
               "6:00pm",
               "9:45pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -235,7 +248,8 @@
               "4:15pm",
               "7:00pm",
               "9:45pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -251,7 +265,8 @@
               "4:30pm",
               "7:15pm",
               "10:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -267,7 +282,8 @@
               "4:30pm",
               "7:15pm",
               "10:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -282,7 +298,8 @@
               "1:15pm",
               "7:15pm",
               "10:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -297,7 +314,8 @@
               "12:45pm",
               "3:30pm",
               "6:15pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -312,7 +330,8 @@
               "12:45pm",
               "3:30pm",
               "6:15pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -328,7 +347,8 @@
               "3:45pm",
               "7:00pm",
               "10:15pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -344,7 +364,8 @@
               "3:45pm",
               "7:00pm",
               "10:15pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -360,7 +381,8 @@
               "4:30pm",
               "7:30pm",
               "10:30pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -376,7 +398,8 @@
               "4:30pm",
               "7:30pm",
               "10:30pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -404,11 +427,36 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary",
+            "slug": "project-hail-mary-76779",
+            "showtimes": [
+              "8:30am",
+              "12:15pm",
+              "4:00pm",
+              "7:45pm",
+              "11:30pm"
+            ],
+            "is_70mm": true
+          }
+        ]
       },
       "2026-03-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Project Hail Mary",
+            "slug": "project-hail-mary-76779",
+            "showtimes": [
+              "11:30am",
+              "3:15pm",
+              "7:00pm",
+              "10:45pm"
+            ],
+            "is_70mm": true
+          }
+        ]
       },
       "2026-04-04": {
         "day": "Saturday",
@@ -422,7 +470,8 @@
               "4:30pm",
               "7:15pm",
               "10:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -438,7 +487,8 @@
               "4:30pm",
               "7:15pm",
               "10:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -454,7 +504,8 @@
               "5:30pm",
               "8:15pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -469,7 +520,8 @@
               "5:30pm",
               "8:15pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -483,14 +535,16 @@
               "11:30am",
               "2:15pm",
               "7:00pm"
-            ]
+            ],
+            "is_70mm": false
           },
           {
             "title": "2DIE4",
             "slug": "2die4-82811",
             "showtimes": [
               "5:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -500,21 +554,24 @@
           {
             "title": "The Super Mario Galaxy Movie",
             "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": []
+            "showtimes": [],
+            "is_70mm": false
           },
           {
             "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
             "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
             "showtimes": [
               "11:45am"
-            ]
+            ],
+            "is_70mm": false
           },
           {
             "title": "2DIE4",
             "slug": "2die4-82811",
             "showtimes": [
               "5:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -530,7 +587,8 @@
               "4:30pm",
               "7:45pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
@@ -546,7 +604,8 @@
               "4:30pm",
               "7:45pm",
               "11:00pm"
-            ]
+            ],
+            "is_70mm": false
           }
         ]
       },
