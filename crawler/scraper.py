@@ -11,6 +11,7 @@ import os
 import re
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+from dateutil.easter import easter
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 
@@ -70,15 +71,117 @@ def create_session():
     return session
 
 
+def get_nth_weekday(year, month, n, weekday):
+    """
+    获取指定月份的第n个特定工作日
+    weekday: 0=Monday, 6=Sunday
+    """
+    from datetime import date
+    d = date(year, month, 1)
+    # 找到第一个该工作日
+    while d.weekday() != weekday:
+        d += timedelta(days=1)
+    # 加上 (n-1)*7 天得到第n个
+    d += timedelta(weeks=n-1)
+    return d
+
+
+def get_last_weekday(year, month, weekday):
+    """获取指定月份的最后一个特定工作日"""
+    from datetime import date
+    # 从月末开始往回找
+    if month == 12:
+        next_month_first = date(year + 1, 1, 1)
+    else:
+        next_month_first = date(year, month + 1, 1)
+    d = next_month_first - timedelta(days=1)
+    while d.weekday() != weekday:
+        d -= timedelta(days=1)
+    return d
+
+
+def get_holiday_name(date_obj):
+    """
+    检查给定日期是否是节假日，返回节假日名称或None
+    所有动态节假日都基于洛杉矶时区计算
+    """
+    year = date_obj.year
+    month = date_obj.month
+    day = date_obj.day
+
+    # 固定日期节假日
+    holidays = {
+        (1, 1): 'New Year\'s Day',
+        (6, 19): 'Juneteenth',
+        (7, 4): 'Independence Day',
+        (12, 24): 'Christmas Eve',
+        (12, 25): 'Christmas Day'
+    }
+
+    if (month, day) in holidays:
+        return holidays[(month, day)]
+
+    # 动态节假日
+    # President's Day: 2月第3个星期一
+    pres_day = get_nth_weekday(year, 2, 3, 0)  # 0=Monday
+    if date_obj.date() == pres_day:
+        return 'President\'s Day'
+
+    # Good Friday: 复活节前2天
+    good_friday = easter(year) - timedelta(days=2)
+    if date_obj.date() == good_friday:
+        return 'Good Friday'
+
+    # Memorial Day: 5月最后一个星期一
+    mem_day = get_last_weekday(year, 5, 0)  # 0=Monday
+    if date_obj.date() == mem_day:
+        return 'Memorial Day'
+
+    # Labor Day: 9月第1个星期一
+    labor_day = get_nth_weekday(year, 9, 1, 0)  # 0=Monday
+    if date_obj.date() == labor_day:
+        return 'Labor Day'
+
+    # Thanksgiving: 11月第4个星期四
+    thanks_day = get_nth_weekday(year, 11, 4, 3)  # 3=Thursday
+    if date_obj.date() == thanks_day:
+        return 'Thanksgiving Day'
+
+    # Day After Thanksgiving
+    if date_obj.date() == thanks_day + timedelta(days=1):
+        return 'Day After Thanksgiving'
+
+    return None
+
+
 def get_weekend_dates():
-    """获取未来8周的周末日期（周六和周日）— 使用洛杉矶时区，自动处理夏令时"""
+    """
+    获取未来8周内需要爬取的所有日期：周末日期 + 节假日
+    使用洛杉矶时区，自动处理夏令时和动态节假日（如复活节、感恩节等）
+    """
     today = datetime.now(LA_TZ).replace(hour=0, minute=0, second=0, microsecond=0)
-    weekend_dates = []
+    showtimes_dates = []
+    seen_dates = set()
+
     for i in range(56):
         check_date = today + timedelta(days=i)
-        if check_date.weekday() in [5, 6]:  # 周六=5, 周日=6
-            weekend_dates.append(check_date)
-    return weekend_dates
+        date_key = check_date.date()
+
+        # 检查是周末
+        is_weekend = check_date.weekday() in [5, 6]
+
+        # 检查是节假日
+        holiday_name = get_holiday_name(check_date)
+        is_holiday = holiday_name is not None
+
+        # 如果是周末或节假日，且未添加过，就加入
+        if (is_weekend or is_holiday) and date_key not in seen_dates:
+            showtimes_dates.append(check_date)
+            seen_dates.add(date_key)
+            if is_holiday:
+                logger.info(f"  [节假日] {check_date.strftime('%Y-%m-%d')} - {holiday_name}")
+
+    return showtimes_dates
 
 
 def slug_to_title(slug):
@@ -425,13 +528,19 @@ def main():
         for date_obj in weekend_dates:
             date_str = date_obj.strftime('%Y-%m-%d')
             day_name = date_obj.strftime('%A')
+            holiday_name = get_holiday_name(date_obj)
 
             movies = fetch_showtimes(theater, date_str, session)
 
-            theater_data['dates'][date_str] = {
+            date_data = {
                 'day': day_name,
                 'movies': movies
             }
+            # 如果是节假日，添加节假日标记
+            if holiday_name:
+                date_data['holiday'] = holiday_name
+
+            theater_data['dates'][date_str] = date_data
 
         all_showtimes[theater['name']] = theater_data
 

@@ -246,6 +246,33 @@
             }
         }
 
+        /* Holiday styles */
+        .holiday-label {
+            font-size: 0.5rem;
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            display: inline-block;
+            margin-top: 0.25rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .date-cell-holiday .date-value {
+            color: #fca5a5;
+        }
+
+        @media (min-width: 640px) {
+            .date-cell-holiday {
+                background-color: rgba(239, 68, 68, 0.05);
+                padding: 0.5rem;
+                border-radius: 0.375rem;
+                border: 1px solid rgba(239, 68, 68, 0.2);
+            }
+        }
+
         /* Theater Cell */
         .theater-cell {
             display: flex;
@@ -560,18 +587,27 @@
 
             for (const date of sortedDates) {
                 const [y, m, d] = date.split('-').map(Number);
-                // 从任何一个剧院数据中获取 day 名称（所有剧院的同一日期都有相同的 day 值）
+                // 从任何一个剧院数据中获取 day 名称和节假日（所有剧院的同一日期都有相同的值）
                 let dayStr = '';
+                let holidayName = '';
                 for (const theaterKey in showtimes) {
-                    if (showtimes[theaterKey].dates[date]?.day) {
-                        dayStr = showtimes[theaterKey].dates[date].day.substring(0, 3).toUpperCase();
+                    if (showtimes[theaterKey].dates[date]) {
+                        const dateData = showtimes[theaterKey].dates[date];
+                        if (dateData.day) {
+                            dayStr = dateData.day.substring(0, 3).toUpperCase();
+                        }
+                        if (dateData.holiday) {
+                            holidayName = dateData.holiday;
+                        }
                         break;
                     }
                 }
                 const dateStr = `${m}/${d}`;
+                const holidayClass = holidayName ? ' date-cell-holiday' : '';
+                const holidayLabel = holidayName ? `<span class="holiday-label">${escapeHtml(holidayName)}</span>` : '';
 
                 html += '<div class="table-row">';
-                html += `<div class="date-cell"><span class="date-value">${dateStr}</span><span class="day-label">${dayStr}</span></div>`;
+                html += `<div class="date-cell${holidayClass}"><span class="date-value">${dateStr}</span><span class="day-label">${dayStr}</span>${holidayLabel}</div>`;
 
                 for (const theaterName of theaterOrder) {
                     let theaterKey = null;
