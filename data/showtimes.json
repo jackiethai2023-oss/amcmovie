@@ -10,7 +10,6 @@
             "title": "Project Hail Mary",
             "slug": "project-hail-mary-76779",
             "showtimes": [
-              "7:00pm",
               "10:45pm"
             ],
             "is_coming_soon": false,
@@ -208,20 +207,7 @@
     "dates": {
       "2026-03-28": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Project Hail Mary",
-            "slug": "project-hail-mary-76779",
-            "showtimes": [
-              "6:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 95,
-            "audience_score": 96
-          }
-        ]
+        "movies": []
       },
       "2026-03-29": {
         "day": "Sunday",
@@ -441,8 +427,6 @@
             "title": "Project Hail Mary",
             "slug": "project-hail-mary-76779",
             "showtimes": [
-              "4:00pm",
-              "7:45pm",
               "11:30pm"
             ],
             "is_coming_soon": false,
