@@ -299,6 +299,15 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "The Christophers Early Access",
+            "slug": "the-christophers-early-access-83108",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
           }
         ]
       },
