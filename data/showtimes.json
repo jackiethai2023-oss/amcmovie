@@ -200,6 +200,11 @@
       "2026-05-24": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-05-25": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Memorial Day"
       }
     }
   },
@@ -422,6 +427,11 @@
       "2026-05-24": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-05-25": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Memorial Day"
       }
     }
   },
@@ -614,6 +624,11 @@
       "2026-05-24": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-05-25": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Memorial Day"
       }
     }
   }
