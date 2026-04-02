@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 AMC电影院周末排片爬虫
-通过 requests 抓取 HTML，用正则从 React Server Components (RSC) Payload 中提取排片数据
+通过 Playwright 抓取 HTML，用正则从 React Server Components (RSC) Payload 中提取排片数据
+使用 Playwright 绕过 AMC 的 JS Cookie Challenge 反爬机制
 """
 
-import requests
 import json
 import logging
 import os
@@ -12,8 +12,7 @@ import re
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from dateutil.easter import easter
-from urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
+from playwright.sync_api import sync_playwright
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -37,38 +36,78 @@ THEATERS = [
     }
 ]
 
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Cache-Control': 'max-age=0',
-    'Referer': 'https://www.amctheatres.com/',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-}
+# Playwright 全局状态（单次运行复用同一浏览器实例）
+_pw = None
+_browser = None
+_context = None
 
-def create_session():
-    """创建带有重试机制的requests session"""
-    session = requests.Session()
 
-    # 禁用代理（解决ProxyError问题）
-    session.trust_env = False
-
-    # 添加重试策略（3次重试）
-    retry_strategy = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504],
-        allowed_methods=['GET']
+def init_playwright():
+    """初始化 Playwright 浏览器，访问 AMC 首页建立 Cookie"""
+    global _pw, _browser, _context
+    _pw = sync_playwright().start()
+    _browser = _pw.chromium.launch(
+        headless=True,
+        args=[
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-blink-features=AutomationControlled',
+        ]
     )
+    _context = _browser.new_context(
+        user_agent=(
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/130.0.0.0 Safari/537.36'
+        ),
+        viewport={'width': 1280, 'height': 720},
+        locale='en-US',
+        extra_http_headers={
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Cache-Control': 'max-age=0',
+        }
+    )
+    # 预热：访问 AMC 首页让浏览器通过 JS Cookie Challenge，建立合法 session
+    page = _context.new_page()
+    try:
+        logger.info("Playwright 预热：访问 AMC 首页...")
+        page.goto('https://www.amctheatres.com/', wait_until='domcontentloaded', timeout=30000)
+        logger.info("Playwright 预热完成")
+    except Exception as e:
+        logger.warning(f"Playwright 预热失败（忽略）: {e}")
+    finally:
+        page.close()
+    logger.info("Playwright 浏览器初始化完成")
 
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    session.mount('http://', adapter)
-    session.mount('https://', adapter)
 
-    return session
+def close_playwright():
+    """关闭 Playwright 浏览器，释放资源"""
+    global _pw, _browser
+    try:
+        if _browser:
+            _browser.close()
+        if _pw:
+            _pw.stop()
+    except Exception as e:
+        logger.warning(f"关闭 Playwright 时出错（忽略）: {e}")
+    logger.info("Playwright 浏览器已关闭")
+
+
+def fetch_html_with_playwright(url):
+    """用 Playwright 获取页面完整 HTML（包括执行 JS Challenge 后的内容）"""
+    global _context
+    page = _context.new_page()
+    try:
+        page.goto(url, wait_until='networkidle', timeout=30000)
+        html = page.content()
+        return html
+    except Exception as e:
+        logger.error(f"Playwright 抓取失败 ({url}): {e}")
+        return ''
+    finally:
+        page.close()
 
 
 def get_nth_weekday(year, month, n, weekday):
@@ -239,29 +278,20 @@ def validate_format_in_html(html, format_name):
     return True
 
 
-def fetch_showtimes(theater, date_str, session=None):
+def fetch_showtimes(theater, date_str):
     """
     抓取指定影厅和日期的排片信息
     从 RSC Payload 中用正则提取电影和场次数据
     """
-    if session is None:
-        session = create_session()
-
     url = f"{theater['url']}{date_str}"
     logger.info(f"抓取 {theater['name']} {date_str} -> {url}")
 
     try:
-        # 使用session发送请求，禁用代理，增加超时
-        resp = session.get(
-            url,
-            headers=HEADERS,
-            timeout=15,
-            proxies={},  # 显式禁用代理
-            allow_redirects=True,
-            verify=True
-        )
-        resp.raise_for_status()
-        html = resp.text
+        # 使用 Playwright 抓取，自动处理 JS Cookie Challenge
+        html = fetch_html_with_playwright(url)
+        if not html:
+            logger.error(f"Playwright 返回空内容 ({theater['name']} {date_str})")
+            return []
         logger.info(f"获取到 HTML，长度: {len(html)}")
 
         # 诊断1: 搜索 Next.js RSC payload 格式 (__next_f)
@@ -305,11 +335,8 @@ def fetch_showtimes(theater, date_str, session=None):
             logger.info(f"  - {m['title']}: {m['showtimes']}")
         return movies
 
-    except requests.RequestException as e:
-        logger.error(f"请求失败 ({theater['name']} {date_str}): {e}")
-        return []
     except Exception as e:
-        logger.error(f"解析失败 ({theater['name']} {date_str}): {e}")
+        logger.error(f"抓取或解析失败 ({theater['name']} {date_str}): {e}")
         return []
 
 
@@ -548,8 +575,8 @@ def main():
     """主函数"""
     logger.info("开始AMC排片爬虫任务...")
 
-    # 创建会话，复用连接
-    session = create_session()
+    # 初始化 Playwright 浏览器（复用同一实例以节省资源）
+    init_playwright()
 
     weekend_dates = get_weekend_dates()
     logger.info(f"计划抓取日期: {[d.strftime('%Y-%m-%d (%A)') for d in weekend_dates]}")
@@ -572,7 +599,7 @@ def main():
             day_name = date_obj.strftime('%A')
             holiday_name = get_holiday_name(date_obj)
 
-            movies = fetch_showtimes(theater, date_str, session)
+            movies = fetch_showtimes(theater, date_str)
 
             date_data = {
                 'day': day_name,
@@ -604,8 +631,8 @@ def main():
         }, f, ensure_ascii=False, indent=2)
     logger.info(f"更新时间已保存到 {update_file}")
 
-    # 关闭session
-    session.close()
+    # 关闭 Playwright 浏览器
+    close_playwright()
     logger.info("爬虫任务完成！")
 
 
