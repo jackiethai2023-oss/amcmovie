@@ -306,7 +306,7 @@
             "showtimes": [
               "4:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
