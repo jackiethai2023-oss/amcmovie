@@ -5,7 +5,20 @@
     "dates": {
       "2026-04-03": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Good Friday"
       },
       "2026-04-04": {
@@ -29,21 +42,7 @@
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "10:00am",
-              "12:45pm",
-              "3:30pm",
-              "6:15pm",
-              "9:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-11": {
         "day": "Saturday",
@@ -204,7 +203,6 @@
             "title": "The Super Mario Galaxy Movie",
             "slug": "the-super-mario-galaxy-movie-71465",
             "showtimes": [
-              "1:30pm",
               "4:15pm",
               "7:00pm",
               "9:45pm"
@@ -439,7 +437,6 @@
             "title": "The Super Mario Galaxy Movie",
             "slug": "the-super-mario-galaxy-movie-71465",
             "showtimes": [
-              "1:45pm",
               "4:30pm",
               "7:15pm",
               "10:00pm"
@@ -523,17 +520,7 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "2DIE4",
-            "slug": "2die4-82811",
-            "showtimes": [
-              "5:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
