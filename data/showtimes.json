@@ -5,22 +5,7 @@
     "dates": {
       "2026-04-03": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Good Friday"
       },
       "2026-04-04": {
