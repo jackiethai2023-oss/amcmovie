@@ -5,40 +5,169 @@
     "dates": {
       "2026-04-03": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Good Friday"
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:00am",
+              "12:45pm",
+              "3:30pm",
+              "6:15pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:00am",
+              "12:45pm",
+              "3:30pm",
+              "6:15pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:00am",
+              "12:45pm",
+              "3:30pm",
+              "6:15pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Lee Cronin's The Mummy",
+            "slug": "lee-cronin-s-the-mummy-77326",
+            "showtimes": [
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-19": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
+            "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
+            "showtimes": [
+              "11:45am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Lee Cronin's The Mummy",
+            "slug": "lee-cronin-s-the-mummy-77326",
+            "showtimes": [
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "10:00am",
+              "1:15pm",
+              "4:30pm",
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "10:00am",
+              "1:15pm",
+              "4:30pm",
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-02": {
         "day": "Saturday",
@@ -85,48 +214,204 @@
     "dates": {
       "2026-04-03": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:45am",
+              "1:30pm",
+              "4:15pm",
+              "7:00pm",
+              "9:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Good Friday"
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:45am",
+              "1:30pm",
+              "4:15pm",
+              "7:00pm",
+              "9:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "10:30am",
+              "1:15pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Christophers Early Access",
+            "slug": "the-christophers-early-access-83108",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Lee Cronin's The Mummy",
+            "slug": "lee-cronin-s-the-mummy-77326",
+            "showtimes": [
+              "7:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-19": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Lee Cronin's The Mummy",
+            "slug": "lee-cronin-s-the-mummy-77326",
+            "showtimes": [
+              "7:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "9:15am",
+              "12:30pm",
+              "3:45pm",
+              "7:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "9:15am",
+              "12:30pm",
+              "3:45pm",
+              "7:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
+            "showtimes": [
+              "10:30am",
+              "1:30pm",
+              "4:30pm",
+              "7:30pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
+            "showtimes": [
+              "10:30am",
+              "1:30pm",
+              "4:30pm",
+              "7:30pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-09": {
         "day": "Saturday",
@@ -165,16 +450,58 @@
     "dates": {
       "2026-04-03": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Good Friday"
       },
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:00am",
+              "1:45pm",
+              "4:30pm",
+              "7:15pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-11": {
         "day": "Saturday",
