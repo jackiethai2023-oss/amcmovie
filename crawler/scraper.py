@@ -9,6 +9,8 @@ import json
 import logging
 import os
 import re
+import time
+import random
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from dateutil.easter import easter
@@ -95,19 +97,45 @@ def close_playwright():
     logger.info("Playwright 浏览器已关闭")
 
 
-def fetch_html_with_playwright(url):
-    """用 Playwright 获取页面完整 HTML（包括执行 JS Challenge 后的内容）"""
+def _is_queueit_page(html):
+    """检查是否被 QueueIt 虚拟排队页面拦截（特征：页面很小 + 包含 queueViewModel）"""
+    return len(html) < 60000 and 'queueViewModel' in html
+
+
+def fetch_html_with_playwright(url, retry=True):
+    """
+    用 Playwright 获取页面完整 HTML（包括执行 JS Challenge 后的内容）。
+    如果收到 QueueIt 虚拟排队页面，等待后自动重试一次。
+    """
     global _context
     page = _context.new_page()
     try:
         page.goto(url, wait_until='networkidle', timeout=30000)
         html = page.content()
+
+        if _is_queueit_page(html):
+            logger.warning(f"  [QueueIt] 收到排队页面（{len(html)}字节），等待后重试: {url}")
+            page.close()
+            # 随机等待 8~15 秒让 QueueIt 放行
+            wait_sec = random.uniform(8, 15)
+            logger.info(f"  [QueueIt] 等待 {wait_sec:.1f} 秒后重试...")
+            time.sleep(wait_sec)
+
+            if retry:
+                return fetch_html_with_playwright(url, retry=False)
+            else:
+                logger.error(f"  [QueueIt] 重试后仍为排队页面，放弃: {url}")
+                return html
+
         return html
     except Exception as e:
         logger.error(f"Playwright 抓取失败 ({url}): {e}")
         return ''
     finally:
-        page.close()
+        try:
+            page.close()
+        except Exception:
+            pass
 
 
 def get_nth_weekday(year, month, n, weekday):
@@ -286,8 +314,13 @@ def fetch_showtimes(theater, date_str):
     url = f"{theater['url']}{date_str}"
     logger.info(f"抓取 {theater['name']} {date_str} -> {url}")
 
+    # 请求前随机等待 2~5 秒，模拟人类浏览节奏，避免触发 QueueIt
+    sleep_sec = random.uniform(2, 5)
+    logger.info(f"  [delay] 等待 {sleep_sec:.1f} 秒...")
+    time.sleep(sleep_sec)
+
     try:
-        # 使用 Playwright 抓取，自动处理 JS Cookie Challenge
+        # 使用 Playwright 抓取，自动处理 JS Cookie Challenge 和 QueueIt
         html = fetch_html_with_playwright(url)
         if not html:
             logger.error(f"Playwright 返回空内容 ({theater['name']} {date_str})")
