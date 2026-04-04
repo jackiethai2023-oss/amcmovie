@@ -274,7 +274,18 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Lee Cronin's The Mummy",
+            "slug": "lee-cronin-s-the-mummy-77326",
+            "showtimes": [
+              "7:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-19": {
         "day": "Sunday",
