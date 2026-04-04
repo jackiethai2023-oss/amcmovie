@@ -3,21 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-03": {
-        "day": "Friday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
-        "holiday": "Good Friday"
-      },
       "2026-04-04": {
         "day": "Saturday",
         "movies": [
@@ -207,11 +192,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-04-03": {
-        "day": "Friday",
-        "movies": [],
-        "holiday": "Good Friday"
-      },
       "2026-04-04": {
         "day": "Saturday",
         "movies": [
@@ -294,18 +274,7 @@
       },
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Lee Cronin's The Mummy",
-            "slug": "lee-cronin-s-the-mummy-77326",
-            "showtimes": [
-              "7:00pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
@@ -429,21 +398,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-03": {
-        "day": "Friday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
-        "holiday": "Good Friday"
-      },
       "2026-04-04": {
         "day": "Saturday",
         "movies": [
