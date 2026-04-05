@@ -5,7 +5,17 @@
     "dates": {
       "2026-04-04": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Super Mario Galaxy Movie",
+            "slug": "the-super-mario-galaxy-movie-71465",
+            "showtimes": [
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-05": {
         "day": "Sunday",
@@ -179,19 +189,7 @@
     "dates": {
       "2026-04-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-05": {
         "day": "Sunday",
@@ -394,19 +392,7 @@
     "dates": {
       "2026-04-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "4:30pm",
-              "7:15pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-05": {
         "day": "Sunday",
