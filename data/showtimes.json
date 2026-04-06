@@ -3,27 +3,9 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-05": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-04-11": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Super Mario Galaxy Movie",
-            "slug": "the-super-mario-galaxy-movie-71465",
-            "showtimes": [
-              "10:00am",
-              "12:45pm",
-              "3:30pm",
-              "6:15pm",
-              "9:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-12": {
         "day": "Sunday",
@@ -156,6 +138,10 @@
       "2026-05-30": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-05-31": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -163,10 +149,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-04-05": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-04-11": {
         "day": "Saturday",
         "movies": [
@@ -345,6 +327,10 @@
       "2026-05-30": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-05-31": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -352,10 +338,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-05": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-04-11": {
         "day": "Saturday",
         "movies": [
@@ -494,6 +476,10 @@
       },
       "2026-05-30": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-31": {
+        "day": "Sunday",
         "movies": []
       }
     }
