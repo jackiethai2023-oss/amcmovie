@@ -569,7 +569,21 @@
       },
       "2026-05-10": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "11:00am",
+              "2:00pm",
+              "5:00pm",
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-16": {
         "day": "Saturday",
