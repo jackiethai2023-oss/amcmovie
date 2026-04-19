@@ -5,30 +5,7 @@
     "dates": {
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Lee Cronin's The Mummy",
-            "slug": "lee-cronin-s-the-mummy-77326",
-            "showtimes": [
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 96
-          },
-          {
-            "title": "Project Hail Mary",
-            "slug": "project-hail-mary-76779",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 96
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
@@ -111,7 +88,17 @@
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1® on Apple TV Live in IMAX: Miami Race",
+            "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-09": {
         "day": "Saturday",
@@ -264,18 +251,7 @@
     "dates": {
       "2026-04-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Lee Cronin's The Mummy",
-            "slug": "lee-cronin-s-the-mummy-77326",
-            "showtimes": [
-              "7:00pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-04-19": {
         "day": "Sunday",
@@ -541,7 +517,6 @@
             "title": "Project Hail Mary",
             "slug": "project-hail-mary-76779",
             "showtimes": [
-              "7:45pm",
               "11:30pm"
             ],
             "is_coming_soon": false,
