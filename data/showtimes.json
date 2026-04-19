@@ -28,17 +28,6 @@
             "is_70mm": false,
             "critics_score": 94,
             "audience_score": 96
-          },
-          {
-            "title": "Cave of Forgotten Dreams 3D IMAX Remastered",
-            "slug": "cave-of-forgotten-dreams-3d-imax-remastered-83238",
-            "showtimes": [
-              "11:45am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 96
           }
         ]
       },
@@ -272,7 +261,6 @@
             "title": "The Super Mario Galaxy Movie",
             "slug": "the-super-mario-galaxy-movie-71465",
             "showtimes": [
-              "10:45am",
               "1:30pm",
               "4:15pm"
             ],
@@ -533,7 +521,6 @@
             "title": "Project Hail Mary",
             "slug": "project-hail-mary-76779",
             "showtimes": [
-              "11:45am",
               "3:30pm",
               "7:15pm",
               "11:00pm"
