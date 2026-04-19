@@ -3,10 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-18": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-04-19": {
         "day": "Sunday",
         "movies": [
@@ -138,11 +134,31 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun 40th Anniversary",
+            "slug": "top-gun-40th-anniversary-82312",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-17": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun: Maverick",
+            "slug": "top-gun-maverick-83421",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-23": {
         "day": "Saturday",
@@ -242,6 +258,10 @@
       "2026-06-07": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-13": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -249,10 +269,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-04-18": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-04-19": {
         "day": "Sunday",
         "movies": [
@@ -399,7 +415,17 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun: Maverick",
+            "slug": "top-gun-maverick-83421",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -503,6 +529,10 @@
       "2026-06-07": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-13": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -510,22 +540,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-18": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Project Hail Mary",
-            "slug": "project-hail-mary-76779",
-            "showtimes": [
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true,
-            "critics_score": 94,
-            "audience_score": 96
-          }
-        ]
-      },
       "2026-04-19": {
         "day": "Sunday",
         "movies": [
@@ -638,11 +652,31 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun: Maverick",
+            "slug": "top-gun-maverick-83421",
+            "showtimes": [
+              "1:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-17": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun 40th Anniversary",
+            "slug": "top-gun-40th-anniversary-82312",
+            "showtimes": [
+              "1:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-23": {
         "day": "Saturday",
@@ -741,6 +775,10 @@
       },
       "2026-06-07": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-06-13": {
+        "day": "Saturday",
         "movies": []
       }
     }
