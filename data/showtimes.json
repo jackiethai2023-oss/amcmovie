@@ -3,33 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-19": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Lee Cronin's The Mummy",
-            "slug": "lee-cronin-s-the-mummy-77326",
-            "showtimes": [
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 96
-          },
-          {
-            "title": "Project Hail Mary",
-            "slug": "project-hail-mary-76779",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 96
-          }
-        ]
-      },
       "2026-04-25": {
         "day": "Saturday",
         "movies": [
@@ -250,6 +223,10 @@
       "2026-06-13": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-06-14": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -257,21 +234,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-04-19": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Lee Cronin's The Mummy",
-            "slug": "lee-cronin-s-the-mummy-77326",
-            "showtimes": [
-              "7:00pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-04-25": {
         "day": "Saturday",
         "movies": [
@@ -510,6 +472,10 @@
       "2026-06-13": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-06-14": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -517,23 +483,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-19": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Project Hail Mary",
-            "slug": "project-hail-mary-76779",
-            "showtimes": [
-              "7:15pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true,
-            "critics_score": 94,
-            "audience_score": 96
-          }
-        ]
-      },
       "2026-04-25": {
         "day": "Saturday",
         "movies": [
@@ -753,6 +702,10 @@
       },
       "2026-06-13": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-06-14": {
+        "day": "Sunday",
         "movies": []
       }
     }
