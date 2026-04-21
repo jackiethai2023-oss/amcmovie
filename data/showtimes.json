@@ -5,7 +5,21 @@
     "dates": {
       "2026-04-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "10:00am",
+              "1:15pm",
+              "4:30pm",
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-04-26": {
         "day": "Sunday",
