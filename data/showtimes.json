@@ -102,7 +102,7 @@
             "showtimes": [
               "1:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -116,7 +116,7 @@
             "showtimes": [
               "12:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -361,7 +361,7 @@
             "showtimes": [
               "4:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -582,7 +582,7 @@
             "showtimes": [
               "1:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -596,7 +596,7 @@
             "showtimes": [
               "1:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
