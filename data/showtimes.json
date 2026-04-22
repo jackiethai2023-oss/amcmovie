@@ -45,7 +45,17 @@
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1® on Apple TV Live in IMAX: Miami Race",
+            "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-09": {
         "day": "Saturday",
@@ -262,21 +272,7 @@
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Devil Wears Prada 2",
-            "slug": "the-devil-wears-prada-2-80466",
-            "showtimes": [
-              "10:30am",
-              "1:30pm",
-              "4:30pm",
-              "7:30pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-03": {
         "day": "Sunday",
@@ -362,21 +358,7 @@
       },
       "2026-05-23": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "9:45am",
-              "1:00pm",
-              "4:15pm",
-              "7:30pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-24": {
         "day": "Sunday",
