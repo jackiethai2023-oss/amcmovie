@@ -272,7 +272,21 @@
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
+            "showtimes": [
+              "10:30am",
+              "1:30pm",
+              "4:30pm",
+              "7:30pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-03": {
         "day": "Sunday",
@@ -358,7 +372,21 @@
       },
       "2026-05-23": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "9:45am",
+              "1:00pm",
+              "4:15pm",
+              "7:30pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-24": {
         "day": "Sunday",
