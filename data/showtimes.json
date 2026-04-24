@@ -27,7 +27,21 @@
       },
       "2026-05-02": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "10:15am",
+              "1:25pm",
+              "4:35pm",
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-03": {
         "day": "Sunday",
