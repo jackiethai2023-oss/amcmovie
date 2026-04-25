@@ -89,7 +89,21 @@
       },
       "2026-05-10": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "10:15am",
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-16": {
         "day": "Saturday",
@@ -244,7 +258,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "12:30pm",
               "3:45pm",
               "7:00pm",
               "10:15pm"
@@ -497,7 +510,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "1:15pm",
               "4:30pm",
               "7:45pm",
               "11:00pm"
