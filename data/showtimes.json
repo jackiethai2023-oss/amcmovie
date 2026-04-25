@@ -135,17 +135,7 @@
       },
       "2026-05-17": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Top Gun: Maverick",
-            "slug": "top-gun-maverick-83421",
-            "showtimes": [
-              "12:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-23": {
         "day": "Saturday",
