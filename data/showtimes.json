@@ -270,7 +270,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "3:45pm",
               "7:00pm",
               "10:15pm"
             ],
@@ -281,21 +280,7 @@
       },
       "2026-04-26": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Michael",
-            "slug": "michael-75846",
-            "showtimes": [
-              "9:15am",
-              "12:30pm",
-              "3:45pm",
-              "7:00pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-02": {
         "day": "Saturday",
