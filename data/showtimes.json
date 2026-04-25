@@ -253,6 +253,11 @@
       "2026-06-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-19": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Juneteenth"
       }
     }
   },
@@ -502,6 +507,11 @@
       "2026-06-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-19": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Juneteenth"
       }
     }
   },
@@ -733,6 +743,11 @@
       "2026-06-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-19": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Juneteenth"
       }
     }
   }
