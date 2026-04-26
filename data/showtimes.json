@@ -167,7 +167,21 @@
       },
       "2026-05-25": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:30pm",
+              "9:00am",
+              "12:15pm",
+              "6:45pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Memorial Day"
       },
       "2026-05-30": {
