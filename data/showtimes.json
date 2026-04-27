@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-26": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Michael",
-            "slug": "michael-75846",
-            "showtimes": [
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-05-02": {
         "day": "Saturday",
         "movies": [
@@ -240,6 +226,10 @@
       "2026-06-20": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-06-21": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -247,10 +237,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-04-26": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-05-02": {
         "day": "Saturday",
         "movies": [
@@ -466,6 +452,10 @@
       "2026-06-20": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-06-21": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -473,20 +463,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-04-26": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Michael",
-            "slug": "michael-75846",
-            "showtimes": [
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-05-02": {
         "day": "Saturday",
         "movies": []
@@ -683,6 +659,10 @@
       },
       "2026-06-20": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-06-21": {
+        "day": "Sunday",
         "movies": []
       }
     }
