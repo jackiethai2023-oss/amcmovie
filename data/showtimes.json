@@ -323,6 +323,15 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Obsession",
+            "slug": "obsession-82063",
+            "showtimes": [
+              "9:50pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          },
+          {
             "title": "Top Gun: Maverick",
             "slug": "top-gun-maverick-83421",
             "showtimes": [
