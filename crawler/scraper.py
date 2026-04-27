@@ -38,6 +38,17 @@ THEATERS = [
     }
 ]
 
+# AMC RSC payload status 值，表示"场次已列出但不可购票"。
+# 这两种都按 "SOON"（暗淡、不可点击）渲染。
+#   - ComingSoon: AMC 网站的 "AVAILABLE SOON"，未开售。
+#   - Soldout:    AMC 用作未开售的占位状态（影院实际上不会真的售罄），
+#                 因此这里同样视为"未开售占位"，而非真实售罄信号。
+#                 注意大小写：AMC 实际使用的是 "Soldout"（仅首字母大写），不是 "SoldOut"。
+NON_PURCHASABLE_STATUSES = {'ComingSoon', 'Soldout'}
+
+# 已知的 status 取值。出现集合外的值时记录一次告警，便于发现 AMC 新增枚举。
+KNOWN_STATUSES = {'Available', 'AlmostFull', 'ComingSoon', 'Soldout'}
+
 # Playwright 全局状态（单次运行复用同一浏览器实例）
 _pw = None
 _browser = None
@@ -437,9 +448,11 @@ def parse_rsc_payload(html):
     # RSC payload 中的 JSON 数据使用 \" 作为引号
     normalized = rsc_text.replace('\\"', '"')
 
-    # 第三步：提取所有场次时间，同时捕获 status 字段以过滤 "ComingSoon"
+    # 第三步：提取所有场次时间，同时捕获 status 字段以过滤不可购票状态
     # RSC 数据格式: "status":"AlmostFull","display":{"time":"HH:MM","amPm":"am/pm"}
-    # "ComingSoon" 对应 AMC 网站的 "AVAILABLE SOON"（不可购票），需排除
+    # 不可购票状态（统一显示为 "SOON"）：
+    #   - "ComingSoon" → AMC 网站的 "AVAILABLE SOON"，未开售
+    #   - "SoldOut"    → AMC 用作"未开售"占位（影院实际不会真的售罄）
     time_pattern = re.compile(
         r'"status"\s*:\s*"(\w+)"[^{]{0,200}?"display"\s*:\s*\{\s*"time"\s*:\s*"(\d{1,2}:\d{2})"\s*,\s*"amPm"\s*:\s*"(am|pm)"\s*\}'
     )
@@ -485,18 +498,23 @@ def parse_rsc_payload(html):
             continue
         slugs_found.append((slug, pos))
 
-    # 找到所有时间出现的位置，同时记录是否 ComingSoon
-    # ComingSoon = AMC 网站的 "AVAILABLE SOON"，不可购票但仍需显示（灰色）
-    times_found = []       # (time_str, pos, is_coming_soon)
+    # 找到所有时间出现的位置，同时记录是否不可购票
+    # 不可购票（ComingSoon / SoldOut）= AMC 网站对应"AVAILABLE SOON"或占位"SOLD OUT"，
+    # 不可购票但仍需显示（灰色）。is_cs 含义为"is non-purchasable"。
+    times_found = []       # (time_str, pos, is_non_purchasable)
+    unknown_statuses_seen = set()
     for match in time_pattern.finditer(normalized):
         status   = match.group(1)
         time_val = match.group(2)
         ampm     = match.group(3)
         pos      = match.start()
-        is_cs    = (status == 'ComingSoon')
+        if status not in KNOWN_STATUSES and status not in unknown_statuses_seen:
+            unknown_statuses_seen.add(status)
+            logger.warning(f"未知的 AMC status 值: {status!r}（已按可购票处理）")
+        is_cs    = (status in NON_PURCHASABLE_STATUSES)
         times_found.append((f"{time_val}{ampm}", pos, is_cs))
         if is_cs:
-            logger.info(f"  [ComingSoon] {time_val}{ampm}")
+            logger.info(f"  [{status}] {time_val}{ampm}")
 
     purchasable = [t for t in times_found if not t[2]]
     coming_soon = [t for t in times_found if t[2]]
