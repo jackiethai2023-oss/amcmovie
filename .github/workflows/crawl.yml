@@ -2,11 +2,13 @@ name: Crawl AMC Showtimes
 
 on:
   schedule:
-    # 每小时整点运行，覆盖洛杉矶时间 6am-11pm
-    # UTC 13:00-23:00 = LA 6am-4pm (PDT) / 5am-3pm (PST)
-    # UTC 00:00-06:00 = LA 5pm-11pm (PDT) / 4pm-10pm (PST)
-    - cron: '0 13-23 * * *'
-    - cron: '0 0-6 * * *'
+    # 每小时运行一次，覆盖洛杉矶时间 6am-11pm
+    # 注意：使用 :17 分钟错开 UTC 整点，避开 GitHub Actions cron 高峰拥堵
+    # （整点是全平台 cron 任务最集中的时刻，最容易被延迟或跳过）
+    # UTC 13:17-23:17 = LA 06:17-16:17 (PDT) / 05:17-15:17 (PST)
+    # UTC 00:17-06:17 = LA 17:17-23:17 (PDT) / 16:17-22:17 (PST)
+    - cron: '17 13-23 * * *'
+    - cron: '17 0-6 * * *'
   workflow_dispatch:
 
 jobs:
