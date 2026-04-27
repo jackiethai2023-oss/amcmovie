@@ -5,7 +5,7 @@
 ## 功能特性
 
 🎬 实时自动爬取AMC电影院排片信息
-📅 显示未来2周的周末排片（周六+周日）
+📅 显示未来12周的周末排片（周六+周日）
 🎯 支持3个影厅：Century City IMAX、Century City Dolby Cinema、Universal CityWalk IMAX
 ⏰ 每天洛杉矶上午9点自动更新数据
 🚀 纯静态前端，无需后端服务
@@ -101,7 +101,7 @@ JavaScript 通过 fetch 读取 data/showtimes.json
 
 爬虫脚本（`crawler/scraper.py`）功能：
 
-- **自动计算周末日期**：从今天起，获取未来14天内所有周六和周日
+- **自动计算周末日期**：从今天起，获取未来84天内所有周六和周日（含节假日）
 - **并行抓取**：为3个影厅分别拉取排片数据
 - **智能解析**：使用BeautifulSoup解析HTML，提取电影标题和场次时间
 - **备选方案**：如果HTML结构变化，自动降级到文本解析
