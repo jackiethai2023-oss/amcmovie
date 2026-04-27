@@ -230,6 +230,39 @@
       "2026-06-21": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-27": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-06-28": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-04": {
+        "day": "Saturday",
+        "movies": [],
+        "holiday": "Independence Day"
+      },
+      "2026-07-05": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-11": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-12": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-18": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-19": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -465,6 +498,39 @@
       "2026-06-21": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-27": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-06-28": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-04": {
+        "day": "Saturday",
+        "movies": [],
+        "holiday": "Independence Day"
+      },
+      "2026-07-05": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-11": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-12": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-18": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-19": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -673,6 +739,59 @@
       "2026-06-21": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-06-27": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-06-28": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-04": {
+        "day": "Saturday",
+        "movies": [],
+        "holiday": "Independence Day"
+      },
+      "2026-07-05": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-11": {
+        "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-12": {
+        "day": "Sunday",
+        "movies": []
+      },
+      "2026-07-18": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
+      },
+      "2026-07-19": {
+        "day": "Sunday",
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       }
     }
   }
