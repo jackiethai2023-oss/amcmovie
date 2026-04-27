@@ -223,14 +223,14 @@ def get_holiday_name(date_obj):
 
 def get_weekend_dates():
     """
-    获取未来8周内需要爬取的所有日期：周末日期 + 节假日
+    获取未来12周内需要爬取的所有日期：周末日期 + 节假日
     使用洛杉矶时区，自动处理夏令时和动态节假日（如复活节、感恩节等）
     """
     today = datetime.now(LA_TZ).replace(hour=0, minute=0, second=0, microsecond=0)
     showtimes_dates = []
     seen_dates = set()
 
-    for i in range(56):
+    for i in range(84):
         check_date = today + timedelta(days=i)
         date_key = check_date.date()
 
