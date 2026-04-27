@@ -41,12 +41,13 @@ THEATERS = [
 # AMC RSC payload status 值，表示"场次已列出但不可购票"。
 # 这两种都按 "SOON"（暗淡、不可点击）渲染。
 #   - ComingSoon: AMC 网站的 "AVAILABLE SOON"，未开售。
-#   - SoldOut:    AMC 用作未开售的占位状态（影院实际上不会真的售罄），
+#   - Soldout:    AMC 用作未开售的占位状态（影院实际上不会真的售罄），
 #                 因此这里同样视为"未开售占位"，而非真实售罄信号。
-NON_PURCHASABLE_STATUSES = {'ComingSoon', 'SoldOut'}
+#                 注意大小写：AMC 实际使用的是 "Soldout"（仅首字母大写），不是 "SoldOut"。
+NON_PURCHASABLE_STATUSES = {'ComingSoon', 'Soldout'}
 
 # 已知的 status 取值。出现集合外的值时记录一次告警，便于发现 AMC 新增枚举。
-KNOWN_STATUSES = {'Available', 'AlmostFull', 'ComingSoon', 'SoldOut'}
+KNOWN_STATUSES = {'Available', 'AlmostFull', 'ComingSoon', 'Soldout'}
 
 # Playwright 全局状态（单次运行复用同一浏览器实例）
 _pw = None
