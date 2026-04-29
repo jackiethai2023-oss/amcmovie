@@ -285,7 +285,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 76,
+            "critics_score": 75,
             "audience_score": 0
           }
         ]
@@ -305,7 +305,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 76,
+            "critics_score": 75,
             "audience_score": 0
           }
         ]
@@ -321,7 +321,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 76,
+            "critics_score": 75,
             "audience_score": 0
           },
           {
@@ -332,7 +332,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 76,
+            "critics_score": 75,
             "audience_score": 0
           }
         ]
@@ -575,7 +575,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
@@ -677,21 +676,7 @@
       },
       "2026-05-24": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "4:30pm",
-              "10:00am",
-              "1:15pm",
-              "7:45pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-25": {
         "day": "Monday",
@@ -714,10 +699,6 @@
       },
       "2026-05-30": {
         "day": "Saturday",
-        "movies": []
-      },
-      "2026-05-31": {
-        "day": "Sunday",
         "movies": [
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -733,6 +714,10 @@
             "is_70mm": false
           }
         ]
+      },
+      "2026-05-31": {
+        "day": "Sunday",
+        "movies": []
       },
       "2026-06-06": {
         "day": "Saturday",
@@ -811,7 +796,7 @@
             "showtimes": [
               "7:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": true
           }
         ]
