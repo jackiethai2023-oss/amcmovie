@@ -285,7 +285,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           }
         ]
@@ -305,7 +305,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           }
         ]
@@ -321,7 +321,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           },
           {
@@ -332,7 +332,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           }
         ]
@@ -348,7 +348,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           },
           {
@@ -359,7 +359,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 79,
             "audience_score": 0
           }
         ]
@@ -630,17 +630,7 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Top Gun: Maverick",
-            "slug": "top-gun-maverick-83421",
-            "showtimes": [
-              "1:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
