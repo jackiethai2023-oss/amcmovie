@@ -23,29 +23,7 @@
       },
       "2026-05-03": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Michael",
-            "slug": "michael-75846",
-            "showtimes": [
-              "9:35am",
-              "4:30pm",
-              "7:45pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "F1® on Apple TV Live in IMAX: Miami Race",
-            "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
-            "showtimes": [
-              "12:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-09": {
         "day": "Saturday",
@@ -85,17 +63,7 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Top Gun 40th Anniversary",
-            "slug": "top-gun-40th-anniversary-82312",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -295,7 +263,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -315,7 +283,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -331,7 +299,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           },
           {
@@ -342,7 +310,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -358,7 +326,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           },
           {
@@ -369,7 +337,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
