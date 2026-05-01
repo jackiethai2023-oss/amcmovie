@@ -285,7 +285,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -305,7 +305,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -321,7 +321,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           },
           {
@@ -332,7 +332,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -348,7 +348,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           },
           {
@@ -359,7 +359,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 79,
+            "critics_score": 78,
             "audience_score": 0
           }
         ]
@@ -577,6 +577,15 @@
             "showtimes": [
               "7:45pm",
               "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "F1® on Apple TV Live in IMAX: Miami Race",
+            "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
+            "showtimes": [
+              "12:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
