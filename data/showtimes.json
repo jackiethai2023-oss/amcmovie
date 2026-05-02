@@ -35,7 +35,21 @@
       },
       "2026-05-09": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "10:15am",
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -249,7 +263,6 @@
             "title": "The Devil Wears Prada 2",
             "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "10:30am",
               "1:30pm",
               "4:30pm",
               "7:30pm",
@@ -311,7 +324,30 @@
       },
       "2026-05-10": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
+            "showtimes": [
+              "3:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 77,
+            "audience_score": 88
+          },
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 77,
+            "audience_score": 88
+          }
+        ]
       },
       "2026-05-16": {
         "day": "Saturday",
