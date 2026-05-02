@@ -5,20 +5,7 @@
     "dates": {
       "2026-05-02": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Michael",
-            "slug": "michael-75846",
-            "showtimes": [
-              "1:25pm",
-              "4:35pm",
-              "7:45pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-03": {
         "day": "Sunday",
@@ -207,7 +194,17 @@
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
+            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
+            "showtimes": [
+              "6:01am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-13": {
         "day": "Saturday",
@@ -276,7 +273,6 @@
             "title": "The Devil Wears Prada 2",
             "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "1:30pm",
               "4:30pm",
               "7:30pm",
               "10:30pm"
@@ -749,7 +745,17 @@
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
+            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
+            "showtimes": [
+              "6:01am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-13": {
         "day": "Saturday",
