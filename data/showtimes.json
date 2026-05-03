@@ -5,7 +5,18 @@
     "dates": {
       "2026-05-02": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Michael",
+            "slug": "michael-75846",
+            "showtimes": [
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-03": {
         "day": "Sunday",
@@ -14,7 +25,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "9:35am",
               "4:30pm",
               "7:45pm",
               "11:00pm"
@@ -35,21 +45,7 @@
       },
       "2026-05-09": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "10:15am",
-              "1:15pm",
-              "4:15pm",
-              "7:15pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -273,7 +269,6 @@
             "title": "The Devil Wears Prada 2",
             "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "4:30pm",
               "7:30pm",
               "10:30pm"
             ],
