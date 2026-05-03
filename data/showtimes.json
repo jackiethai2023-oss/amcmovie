@@ -10,7 +10,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "7:45pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
@@ -36,7 +35,7 @@
             "title": "F1® on Apple TV Live in IMAX: Miami Race",
             "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
             "showtimes": [
-              "12:45pm"
+              "9:45am"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -45,7 +44,21 @@
       },
       "2026-05-09": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "10:15am",
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -269,7 +282,6 @@
             "title": "The Devil Wears Prada 2",
             "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "7:30pm",
               "10:30pm"
             ],
             "is_coming_soon": false,
@@ -546,7 +558,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "7:15pm",
               "10:30pm"
             ],
             "is_coming_soon": false,
@@ -561,6 +572,7 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
+              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
@@ -571,7 +583,7 @@
             "title": "F1® on Apple TV Live in IMAX: Miami Race",
             "slug": "f1r-on-apple-tv-live-in-imax-miami-race-83481",
             "showtimes": [
-              "12:45pm"
+              "9:45am"
             ],
             "is_coming_soon": false,
             "is_70mm": false
