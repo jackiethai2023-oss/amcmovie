@@ -270,7 +270,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 77,
+            "critics_score": 78,
             "audience_score": 87
           }
         ]
@@ -756,7 +756,17 @@
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-07-19": {
         "day": "Sunday",
