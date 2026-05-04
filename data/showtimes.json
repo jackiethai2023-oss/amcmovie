@@ -10,7 +10,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
@@ -263,13 +262,12 @@
             "title": "The Devil Wears Prada 2",
             "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "4:30pm",
               "7:30pm",
               "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 77,
             "audience_score": 87
           }
         ]
@@ -285,7 +283,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 77,
             "audience_score": 87
           },
           {
@@ -296,7 +294,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 77,
             "audience_score": 87
           }
         ]
@@ -312,7 +310,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 77,
             "audience_score": 87
           },
           {
@@ -323,7 +321,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 78,
+            "critics_score": 77,
             "audience_score": 87
           }
         ]
@@ -525,7 +523,6 @@
             "title": "Michael",
             "slug": "michael-75846",
             "showtimes": [
-              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
