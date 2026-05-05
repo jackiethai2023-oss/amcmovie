@@ -323,7 +323,17 @@
       },
       "2026-05-17": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "TUNER - Early Access Event in Dolby Cinema with Special Q&A",
+            "slug": "tuner-early-access-event-in-dolby-cinema-with-special-q-a-83837",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-23": {
         "day": "Saturday",
