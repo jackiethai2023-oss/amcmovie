@@ -330,7 +330,7 @@
             "showtimes": [
               "4:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -428,11 +428,35 @@
       },
       "2026-06-06": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "10:30am",
+              "1:45pm",
+              "8:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "10:30am",
+              "1:45pm",
+              "8:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-13": {
         "day": "Saturday",
