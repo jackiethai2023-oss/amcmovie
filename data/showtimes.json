@@ -5,21 +5,7 @@
     "dates": {
       "2026-05-09": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "10:15am",
-              "1:15pm",
-              "4:15pm",
-              "7:15pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -41,17 +27,7 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Top Gun 40th Anniversary",
-            "slug": "top-gun-40th-anniversary-82312",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -248,11 +224,10 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "The Devil Wears Prada 2",
-            "slug": "the-devil-wears-prada-2-80466",
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "9:30am",
-              "3:30pm"
+              "9:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -260,10 +235,11 @@
             "audience_score": 86
           },
           {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "9:30pm"
+              "9:30am",
+              "3:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -276,11 +252,10 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "The Devil Wears Prada 2",
-            "slug": "the-devil-wears-prada-2-80466",
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "9:30am",
-              "3:30pm"
+              "9:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -288,10 +263,11 @@
             "audience_score": 86
           },
           {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
+            "title": "The Devil Wears Prada 2",
+            "slug": "the-devil-wears-prada-2-80466",
             "showtimes": [
-              "9:30pm"
+              "9:30am",
+              "3:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
