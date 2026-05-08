@@ -27,21 +27,21 @@
       },
       "2026-05-16": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-05-17": {
+        "day": "Sunday",
         "movies": [
           {
-            "title": "Top Gun 40th Anniversary",
-            "slug": "top-gun-40th-anniversary-82312",
+            "title": "Top Gun: Maverick",
+            "slug": "top-gun-maverick-83421",
             "showtimes": [
-              "1:00pm"
+              "12:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
           }
         ]
-      },
-      "2026-05-17": {
-        "day": "Sunday",
-        "movies": []
       },
       "2026-05-23": {
         "day": "Saturday",
