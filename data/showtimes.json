@@ -21,7 +21,21 @@
       },
       "2026-05-10": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "10:15am",
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-16": {
         "day": "Saturday",
@@ -39,7 +53,17 @@
       },
       "2026-05-17": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Top Gun: Maverick",
+            "slug": "top-gun-maverick-83421",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-23": {
         "day": "Saturday",
