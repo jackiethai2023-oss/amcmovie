@@ -5,7 +5,20 @@
     "dates": {
       "2026-05-10": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mortal Kombat II",
+            "slug": "mortal-kombat-ii-71233",
+            "showtimes": [
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-16": {
         "day": "Saturday",
@@ -55,7 +68,21 @@
       },
       "2026-05-24": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:30pm",
+              "9:00am",
+              "12:15pm",
+              "6:45pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-25": {
         "day": "Monday",
@@ -297,7 +324,21 @@
       },
       "2026-05-23": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "9:45am",
+              "1:00pm",
+              "4:15pm",
+              "7:30pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-05-24": {
         "day": "Sunday",
@@ -483,7 +524,6 @@
             "title": "Mortal Kombat II",
             "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "11:00am",
               "2:00pm",
               "5:00pm",
               "8:00pm",
