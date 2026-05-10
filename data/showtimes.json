@@ -5,18 +5,7 @@
     "dates": {
       "2026-05-09": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "7:15pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -243,19 +232,7 @@
     "dates": {
       "2026-05-09": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 78,
-            "audience_score": 86
-          }
-        ]
+        "movies": []
       },
       "2026-05-10": {
         "day": "Sunday",
@@ -549,7 +526,6 @@
             "title": "Mortal Kombat II",
             "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "8:00pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
@@ -774,17 +750,7 @@
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-80679",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-25": {
         "day": "Saturday",
