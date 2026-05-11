@@ -5,22 +5,21 @@
     "dates": {
       "2026-05-10": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-05-16": {
+        "day": "Saturday",
         "movies": [
           {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
+            "title": "Top Gun 40th Anniversary",
+            "slug": "top-gun-40th-anniversary-82312",
             "showtimes": [
-              "7:15pm",
-              "10:15pm"
+              "1:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
           }
         ]
-      },
-      "2026-05-16": {
-        "day": "Saturday",
-        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -56,21 +55,7 @@
       },
       "2026-05-24": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:30pm",
-              "9:00am",
-              "12:15pm",
-              "6:45pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-25": {
         "day": "Monday",
@@ -219,19 +204,7 @@
     "dates": {
       "2026-05-10": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 78,
-            "audience_score": 86
-          }
-        ]
+        "movies": []
       },
       "2026-05-16": {
         "day": "Saturday",
@@ -496,18 +469,7 @@
     "dates": {
       "2026-05-10": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-16": {
         "day": "Saturday",
