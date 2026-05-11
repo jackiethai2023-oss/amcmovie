@@ -10,7 +10,6 @@
             "title": "Mortal Kombat II",
             "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "4:15pm",
               "7:15pm",
               "10:15pm"
             ],
@@ -236,17 +235,6 @@
             "slug": "mortal-kombat-ii-71233",
             "showtimes": [
               "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 78,
-            "audience_score": 86
-          },
-          {
-            "title": "The Devil Wears Prada 2",
-            "slug": "the-devil-wears-prada-2-80466",
-            "showtimes": [
-              "3:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
