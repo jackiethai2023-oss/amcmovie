@@ -20,17 +20,7 @@
       },
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Top Gun 40th Anniversary",
-            "slug": "top-gun-40th-anniversary-82312",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -511,7 +501,6 @@
             "title": "Mortal Kombat II",
             "slug": "mortal-kombat-ii-71233",
             "showtimes": [
-              "5:00pm",
               "8:00pm",
               "11:00pm"
             ],
