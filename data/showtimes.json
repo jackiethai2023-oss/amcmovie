@@ -275,15 +275,6 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
-          },
-          {
-            "title": "Shrek: 25th Anniversary",
-            "slug": "shrek-25th-anniversary-83268",
-            "showtimes": [
-              "1:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
           }
         ]
       },
@@ -558,15 +549,6 @@
             "slug": "michael-75846",
             "showtimes": [
               "4:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Top Gun: Maverick",
-            "slug": "top-gun-maverick-83421",
-            "showtimes": [
-              "1:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
