@@ -444,6 +444,16 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Scary Movie",
+            "slug": "scary-movie-79322",
+            "showtimes": [
+              "5:15pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
           }
         ]
       },
@@ -459,6 +469,16 @@
               "8:00pm"
             ],
             "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Scary Movie",
+            "slug": "scary-movie-79322",
+            "showtimes": [
+              "5:15pm",
+              "11:10pm"
+            ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
