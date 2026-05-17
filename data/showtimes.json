@@ -87,7 +87,21 @@
       },
       "2026-05-25": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:30pm",
+              "9:00am",
+              "12:15pm",
+              "6:45pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Memorial Day"
       },
       "2026-05-30": {
@@ -222,18 +236,7 @@
     "dates": {
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Obsession",
-            "slug": "obsession-82063",
-            "showtimes": [
-              "7:10pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
@@ -490,18 +493,7 @@
     "dates": {
       "2026-05-16": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Mortal Kombat II",
-            "slug": "mortal-kombat-ii-71233",
-            "showtimes": [
-              "7:50pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-17": {
         "day": "Sunday",
