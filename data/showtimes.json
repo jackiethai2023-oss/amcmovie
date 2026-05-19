@@ -580,11 +580,31 @@
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-07-25": {
         "day": "Saturday",
