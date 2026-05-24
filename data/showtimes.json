@@ -11,7 +11,6 @@
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
               "3:30pm",
-              "12:15pm",
               "6:45pm",
               "10:00pm"
             ],
@@ -232,7 +231,6 @@
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
-              "1:00pm",
               "4:15pm",
               "7:30pm",
               "10:45pm"
@@ -315,7 +313,29 @@
       },
       "2026-06-06": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "10:30am",
+              "1:45pm",
+              "8:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Scary Movie",
+            "slug": "scary-movie-79322",
+            "showtimes": [
+              "5:15pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-07": {
         "day": "Sunday",
@@ -481,7 +501,6 @@
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
               "4:30pm",
-              "1:15pm",
               "7:45pm",
               "11:00pm"
             ],
