@@ -82,17 +82,7 @@
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
-            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
-            "showtimes": [
-              "6:01am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-13": {
         "day": "Saturday",
