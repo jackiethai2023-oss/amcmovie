@@ -3,10 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-05-23": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-05-24": {
         "day": "Sunday",
         "movies": [
@@ -219,6 +215,10 @@
       "2026-08-09": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-08-15": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -226,10 +226,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-05-23": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-05-24": {
         "day": "Sunday",
         "movies": [
@@ -490,6 +486,10 @@
       "2026-08-09": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-08-15": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -497,10 +497,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-05-23": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-05-24": {
         "day": "Sunday",
         "movies": [
@@ -733,6 +729,10 @@
       },
       "2026-08-09": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-08-15": {
+        "day": "Saturday",
         "movies": []
       }
     }
