@@ -3,11 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-05-25": {
-        "day": "Monday",
-        "movies": [],
-        "holiday": "Memorial Day"
-      },
       "2026-05-30": {
         "day": "Saturday",
         "movies": [
@@ -28,21 +23,7 @@
       },
       "2026-05-31": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:30pm",
-              "9:00am",
-              "12:15pm",
-              "6:45pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-06": {
         "day": "Saturday",
@@ -64,11 +45,37 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-19": {
         "day": "Friday",
@@ -84,7 +91,7 @@
               "8:45pm",
               "11:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -104,7 +111,7 @@
               "8:45pm",
               "11:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -122,7 +129,7 @@
               "6:00pm",
               "8:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -198,11 +205,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-05-25": {
-        "day": "Monday",
-        "movies": [],
-        "holiday": "Memorial Day"
-      },
       "2026-05-30": {
         "day": "Saturday",
         "movies": [
@@ -309,11 +311,37 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:45pm",
+              "4:15pm",
+              "7:45pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:45pm",
+              "4:15pm",
+              "7:45pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-19": {
         "day": "Friday",
@@ -328,7 +356,7 @@
               "7:00pm",
               "9:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -347,28 +375,14 @@
               "7:00pm",
               "9:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
@@ -441,11 +455,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-05-25": {
-        "day": "Monday",
-        "movies": [],
-        "holiday": "Memorial Day"
-      },
       "2026-05-30": {
         "day": "Saturday",
         "movies": [
@@ -502,11 +511,39 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "9:30am",
+              "1:00pm",
+              "4:30pm",
+              "8:00pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-19": {
         "day": "Friday",
@@ -522,7 +559,7 @@
               "8:40pm",
               "11:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -542,14 +579,29 @@
               "8:45pm",
               "11:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:15am",
+              "12:00pm",
+              "2:50pm",
+              "5:40pm",
+              "8:30pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-27": {
         "day": "Saturday",
