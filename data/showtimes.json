@@ -23,7 +23,21 @@
       },
       "2026-05-31": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:30pm",
+              "9:00am",
+              "12:15pm",
+              "6:45pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-06": {
         "day": "Saturday",
@@ -382,7 +396,21 @@
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "10:45am",
+              "1:30pm",
+              "4:15pm",
+              "7:00pm",
+              "9:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-27": {
         "day": "Saturday",
