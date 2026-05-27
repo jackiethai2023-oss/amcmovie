@@ -45,7 +45,17 @@
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
+            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
+            "showtimes": [
+              "6:01am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-13": {
         "day": "Saturday",
@@ -239,7 +249,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Star Wars The Mandalorian And Grogu",
+            "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
               "9:45am",
@@ -315,20 +325,7 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:45pm",
-              "4:15pm",
-              "7:45pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
