@@ -5,21 +5,7 @@
     "dates": {
       "2026-05-30": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:30pm",
-              "9:00am",
-              "12:15pm",
-              "6:45pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-31": {
         "day": "Sunday",
@@ -59,7 +45,20 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -217,7 +216,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 87,
+            "critics_score": 88,
             "audience_score": 0
           },
           {
@@ -231,7 +230,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 87,
+            "critics_score": 88,
             "audience_score": 0
           }
         ]
@@ -247,7 +246,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 87,
+            "critics_score": 88,
             "audience_score": 0
           },
           {
@@ -261,7 +260,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 87,
+            "critics_score": 88,
             "audience_score": 0
           }
         ]
