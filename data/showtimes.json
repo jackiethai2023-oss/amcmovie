@@ -5,21 +5,7 @@
     "dates": {
       "2026-05-30": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:30pm",
-              "9:00am",
-              "12:15pm",
-              "6:45pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-31": {
         "day": "Sunday",
@@ -158,12 +144,37 @@
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "8:45am",
+              "11:15am",
+              "1:45pm",
+              "4:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "11:15am",
+              "1:45pm",
+              "4:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -231,7 +242,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 88,
-            "audience_score": 74
+            "audience_score": 73
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -245,7 +256,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 88,
-            "audience_score": 74
+            "audience_score": 73
           }
         ]
       },
@@ -261,7 +272,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 88,
-            "audience_score": 74
+            "audience_score": 73
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -275,7 +286,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 88,
-            "audience_score": 74
+            "audience_score": 73
           }
         ]
       },
@@ -454,12 +465,42 @@
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "10:30am",
+              "1:00pm",
+              "3:30pm",
+              "6:00pm",
+              "8:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "10:30am",
+              "1:00pm",
+              "3:30pm",
+              "6:00pm",
+              "8:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -673,12 +714,39 @@
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "9:00am",
+              "11:30am",
+              "2:00pm",
+              "4:30pm",
+              "7:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "11:30am",
+              "2:00pm",
+              "4:30pm",
+              "7:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-11": {
         "day": "Saturday",
