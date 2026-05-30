@@ -11,7 +11,6 @@
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
               "3:30pm",
-              "9:00am",
               "12:15pm",
               "6:45pm",
               "10:00pm"
@@ -255,21 +254,20 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 89,
+            "critics_score": 90,
             "audience_score": 74
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
-              "9:45am",
               "1:00pm",
               "4:15pm",
               "7:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 89,
+            "critics_score": 90,
             "audience_score": 74
           }
         ]
@@ -285,7 +283,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 89,
+            "critics_score": 90,
             "audience_score": 74
           },
           {
@@ -299,7 +297,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 89,
+            "critics_score": 90,
             "audience_score": 74
           }
         ]
@@ -578,7 +576,6 @@
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
               "4:30pm",
-              "10:00am",
               "1:15pm",
               "7:45pm",
               "11:00pm"
