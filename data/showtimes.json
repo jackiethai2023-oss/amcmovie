@@ -5,17 +5,7 @@
     "dates": {
       "2026-05-30": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-31": {
         "day": "Sunday",
@@ -242,30 +232,7 @@
     "dates": {
       "2026-05-30": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Backrooms",
-            "slug": "backrooms-83009",
-            "showtimes": [
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 90,
-            "audience_score": 74
-          },
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 90,
-            "audience_score": 74
-          }
-        ]
+        "movies": []
       },
       "2026-05-31": {
         "day": "Sunday",
@@ -278,7 +245,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 90,
+            "critics_score": 89,
             "audience_score": 74
           },
           {
@@ -292,7 +259,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 90,
+            "critics_score": 89,
             "audience_score": 74
           }
         ]
@@ -565,18 +532,7 @@
     "dates": {
       "2026-05-30": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "7:45pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-05-31": {
         "day": "Sunday",
