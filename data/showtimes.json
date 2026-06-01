@@ -174,7 +174,7 @@
               "1:45pm",
               "4:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -191,7 +191,7 @@
               "1:45pm",
               "4:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -445,7 +445,7 @@
               "8:30pm",
               "11:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -465,7 +465,7 @@
               "8:30pm",
               "11:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -665,7 +665,7 @@
               "4:30pm",
               "7:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ],
@@ -683,7 +683,7 @@
               "4:30pm",
               "7:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
