@@ -5,7 +5,18 @@
     "dates": {
       "2026-05-31": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "6:45pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-06": {
         "day": "Saturday",
@@ -276,7 +287,6 @@
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
-              "4:15pm",
               "7:30pm"
             ],
             "is_coming_soon": false,
@@ -563,7 +573,6 @@
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
-              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
