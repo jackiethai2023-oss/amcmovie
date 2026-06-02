@@ -5,7 +5,33 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "12:55pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
+          },
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "9:30am",
+              "4:10pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
+          }
+        ]
       },
       "2026-06-07": {
         "day": "Sunday",
@@ -18,7 +44,9 @@
               "7:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "F1 on Apple TV Live in IMAX: Monaco Race",
@@ -27,7 +55,9 @@
               "6:01am"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "Masters of the Universe",
@@ -37,7 +67,9 @@
               "10:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           }
         ]
       },
@@ -266,29 +298,7 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "10:30am",
-              "1:50pm",
-              "8:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Scary Movie",
-            "slug": "scary-movie-79322",
-            "showtimes": [
-              "5:15pm",
-              "11:20pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-07": {
         "day": "Sunday",
@@ -302,7 +312,9 @@
               "8:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "Scary Movie",
@@ -312,7 +324,9 @@
               "11:20pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           }
         ]
       },
@@ -569,7 +583,9 @@
               "10:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "Masters of the Universe",
@@ -579,7 +595,9 @@
               "6:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           }
         ]
       },
@@ -594,7 +612,9 @@
               "10:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "F1 on Apple TV Live in IMAX: Monaco Race",
@@ -603,7 +623,9 @@
               "6:01am"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           },
           {
             "title": "Masters of the Universe",
@@ -613,7 +635,9 @@
               "6:40pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 75,
+            "audience_score": 0
           }
         ]
       },
@@ -800,7 +824,7 @@
             "showtimes": [
               "7:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": true
           }
         ]
@@ -814,7 +838,7 @@
             "showtimes": [
               "7:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": true
           }
         ]
