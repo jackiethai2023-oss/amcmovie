@@ -5,29 +5,7 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "12:55pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "9:30am",
-              "4:10pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-07": {
         "day": "Sunday",
@@ -582,16 +560,57 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:20pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "11:45am",
+              "6:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-07": {
         "day": "Sunday",
         "movies": [
           {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "3:20pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "F1 on Apple TV Live in IMAX: Monaco Race",
             "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
             "showtimes": [
               "6:01am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "11:45am",
+              "6:40pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -675,7 +694,22 @@
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:15am",
+              "12:00pm",
+              "2:50pm",
+              "5:40pm",
+              "8:30pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-27": {
         "day": "Saturday",
@@ -766,7 +800,7 @@
             "showtimes": [
               "7:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": true
           }
         ]
@@ -780,7 +814,7 @@
             "showtimes": [
               "7:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": true
           }
         ]
