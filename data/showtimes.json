@@ -156,11 +156,39 @@
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-04": {
         "day": "Saturday",
@@ -412,6 +440,16 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
           }
         ]
       },
@@ -427,6 +465,16 @@
               "5:15pm"
             ],
             "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -627,30 +675,43 @@
       },
       "2026-06-21": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-06-27": {
+        "day": "Saturday",
         "movies": [
           {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
             "showtimes": [
-              "9:15am",
-              "12:00pm",
-              "2:50pm",
-              "5:40pm",
-              "8:30pm",
-              "11:15pm"
+              "9:20am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
       },
-      "2026-06-27": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-04": {
         "day": "Saturday",
