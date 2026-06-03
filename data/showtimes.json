@@ -15,7 +15,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -28,14 +28,50 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           }
         ]
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "slug": "star-wars-the-mandalorian-and-grogu-60322",
+            "showtimes": [
+              "12:55pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 76,
+            "audience_score": 0
+          },
+          {
+            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
+            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
+            "showtimes": [
+              "6:01am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 76,
+            "audience_score": 0
+          },
+          {
+            "title": "Masters of the Universe",
+            "slug": "masters-of-the-universe-76888",
+            "showtimes": [
+              "4:10pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 76,
+            "audience_score": 0
+          }
+        ]
       },
       "2026-06-13": {
         "day": "Saturday",
@@ -141,7 +177,7 @@
               "7:00pm",
               "10:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -159,7 +195,7 @@
               "7:00pm",
               "10:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -273,7 +309,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -285,7 +321,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           }
         ]
@@ -303,7 +339,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -315,7 +351,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           }
         ]
@@ -430,7 +466,7 @@
               "8:00pm",
               "11:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -456,7 +492,7 @@
               "8:00pm",
               "11:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -574,7 +610,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -586,7 +622,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           }
         ]
@@ -603,7 +639,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -614,7 +650,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           },
           {
@@ -626,7 +662,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 75,
+            "critics_score": 76,
             "audience_score": 0
           }
         ]
@@ -738,7 +774,7 @@
               "7:00pm",
               "10:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -756,7 +792,7 @@
               "7:00pm",
               "10:00pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
