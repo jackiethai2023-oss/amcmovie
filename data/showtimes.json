@@ -5,234 +5,49 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "12:55pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "9:30am",
-              "4:10pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "12:55pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "4:10pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
-            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
-            "showtimes": [
-              "6:01am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:00pm",
-              "3:30pm",
-              "7:00pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:00pm",
-              "3:30pm",
-              "7:00pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "8:45am",
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -298,243 +113,49 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Scary Movie",
-            "slug": "scary-movie-79322",
-            "showtimes": [
-              "5:15pm",
-              "11:20pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "10:30am",
-              "1:50pm",
-              "8:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Scary Movie",
-            "slug": "scary-movie-79322",
-            "showtimes": [
-              "5:15pm",
-              "11:20pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "10:30am",
-              "1:50pm",
-              "8:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:45pm",
-              "4:15pm",
-              "7:45pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:45pm",
-              "4:15pm",
-              "7:45pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "10:30am",
-              "1:00pm",
-              "3:30pm",
-              "6:00pm",
-              "8:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "10:30am",
-              "1:00pm",
-              "3:30pm",
-              "6:00pm",
-              "8:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -600,238 +221,49 @@
     "dates": {
       "2026-06-06": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:20pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "11:45am",
-              "6:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-07": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Star Wars: The Mandalorian and Grogu",
-            "slug": "star-wars-the-mandalorian-and-grogu-60322",
-            "showtimes": [
-              "3:20pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "11:45am",
-              "6:40pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: Monaco Race",
-            "slug": "f1-on-apple-tv-live-in-imax-monaco-race-83809",
-            "showtimes": [
-              "6:01am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 75,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "9:30am",
-              "1:00pm",
-              "4:30pm",
-              "8:00pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:00am",
-              "12:00pm",
-              "3:00pm",
-              "5:50pm",
-              "8:40pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:15am",
-              "12:10pm",
-              "3:00pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:15am",
-              "12:00pm",
-              "2:50pm",
-              "5:40pm",
-              "8:30pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "9:20am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "9:00am",
-              "11:30am",
-              "2:00pm",
-              "4:30pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "11:30am",
-              "2:00pm",
-              "4:30pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -843,31 +275,11 @@
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey – IMAX 70mm Event",
-            "slug": "the-odyssey-80679",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey – IMAX 70mm Event",
-            "slug": "the-odyssey-80679",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-25": {
         "day": "Saturday",
