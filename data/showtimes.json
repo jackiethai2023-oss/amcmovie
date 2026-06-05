@@ -618,7 +618,8 @@
             "showtimes": [
               "11:00am",
               "3:00pm",
-              "7:00pm"
+              "7:00pm",
+              "11:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -634,7 +635,8 @@
             "showtimes": [
               "11:00am",
               "3:00pm",
-              "7:00pm"
+              "7:00pm",
+              "11:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -650,7 +652,8 @@
             "showtimes": [
               "11:00am",
               "3:00pm",
-              "7:00pm"
+              "7:00pm",
+              "11:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
