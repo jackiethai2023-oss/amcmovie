@@ -20,7 +20,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -32,7 +32,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "F1 on Apple TV Live in IMAX: Monaco Race",
@@ -43,13 +43,26 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           }
         ]
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -348,7 +361,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "Masters of the Universe",
@@ -361,7 +374,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           }
         ]
       },
@@ -378,7 +391,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "Masters of the Universe",
@@ -391,7 +404,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           }
         ]
       },
@@ -590,6 +603,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
@@ -702,7 +716,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -714,7 +728,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           }
         ]
       },
@@ -731,7 +745,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
@@ -743,7 +757,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           },
           {
             "title": "F1 on Apple TV Live in IMAX: Monaco Race",
@@ -754,7 +768,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 67,
-            "audience_score": 88
+            "audience_score": 87
           }
         ]
       },
