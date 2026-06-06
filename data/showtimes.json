@@ -221,6 +221,15 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "F1 on Apple TV Live in IMAX: British Race",
+            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
+            "showtimes": [
+              "6:30am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
           }
         ]
       },
@@ -931,6 +940,15 @@
               "2:00pm",
               "4:30pm",
               "7:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "F1 on Apple TV Live in IMAX: British Race",
+            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
+            "showtimes": [
+              "6:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false
