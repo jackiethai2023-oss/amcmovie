@@ -377,7 +377,6 @@
             "title": "Scary Movie",
             "slug": "scary-movie-79322",
             "showtimes": [
-              "5:15pm",
               "11:20pm"
             ],
             "is_coming_soon": false,
@@ -719,15 +718,6 @@
       "2026-06-06": {
         "day": "Saturday",
         "movies": [
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "6:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
