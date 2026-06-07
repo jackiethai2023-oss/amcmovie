@@ -10,7 +10,6 @@
             "title": "Masters of the Universe",
             "slug": "masters-of-the-universe-76888",
             "showtimes": [
-              "4:10pm",
               "10:45pm"
             ],
             "is_coming_soon": false,
@@ -733,7 +732,6 @@
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
             "showtimes": [
-              "3:20pm",
               "10:15pm"
             ],
             "is_coming_soon": false,
@@ -995,7 +993,17 @@
       },
       "2026-07-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-07-26": {
         "day": "Sunday",
