@@ -28,20 +28,7 @@
       },
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "12:00pm",
-              "3:30pm",
-              "7:00pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -347,7 +334,6 @@
             "title": "Scary Movie",
             "slug": "scary-movie-79322",
             "showtimes": [
-              "5:15pm",
               "11:20pm"
             ],
             "is_coming_soon": false,
@@ -667,15 +653,6 @@
       "2026-06-07": {
         "day": "Sunday",
         "movies": [
-          {
-            "title": "Masters of the Universe",
-            "slug": "masters-of-the-universe-76888",
-            "showtimes": [
-              "6:40pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
           {
             "title": "Star Wars: The Mandalorian and Grogu",
             "slug": "star-wars-the-mandalorian-and-grogu-60322",
