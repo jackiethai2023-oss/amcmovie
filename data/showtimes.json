@@ -39,12 +39,42 @@
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-21": {
         "day": "Sunday",
@@ -820,6 +850,9 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
@@ -829,7 +862,20 @@
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-01": {
         "day": "Saturday",
