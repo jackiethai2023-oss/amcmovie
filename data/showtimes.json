@@ -5,7 +5,23 @@
     "dates": {
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "8:30am",
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -21,13 +37,30 @@
               "10:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
@@ -159,7 +192,7 @@
               "6:30pm",
               "9:30pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -177,7 +210,7 @@
               "6:30pm",
               "9:30pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -336,7 +369,9 @@
               "11:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -354,7 +389,9 @@
               "11:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -516,7 +553,7 @@
               "4:30pm",
               "7:30pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -668,7 +705,9 @@
               "11:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -686,7 +725,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -841,7 +882,7 @@
               "6:00pm",
               "9:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
