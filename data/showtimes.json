@@ -5,21 +5,7 @@
     "dates": {
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "8:30am",
-              "12:00pm",
-              "3:30pm",
-              "7:00pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -41,22 +27,7 @@
       },
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
@@ -177,11 +148,39 @@
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "9:30am",
+              "12:30pm",
+              "3:30pm",
+              "6:30pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "9:30am",
+              "12:30pm",
+              "3:30pm",
+              "6:30pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-18": {
         "day": "Saturday",
@@ -507,11 +506,37 @@
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "10:30am",
+              "1:30pm",
+              "4:30pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "10:30am",
+              "1:30pm",
+              "4:30pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-18": {
         "day": "Saturday",
@@ -806,11 +831,37 @@
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "12:00pm",
+              "3:00pm",
+              "6:00pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "12:00pm",
+              "3:00pm",
+              "6:00pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-18": {
         "day": "Saturday",
