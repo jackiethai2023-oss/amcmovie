@@ -5,23 +5,7 @@
     "dates": {
       "2026-06-13": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "8:30am",
-              "12:00pm",
-              "3:30pm",
-              "7:00pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 83,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-06-14": {
         "day": "Sunday",
