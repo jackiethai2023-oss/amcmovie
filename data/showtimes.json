@@ -5,7 +5,23 @@
     "dates": {
       "2026-06-13": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disclosure Day",
+            "slug": "disclosure-day-77140",
+            "showtimes": [
+              "8:30am",
+              "12:00pm",
+              "3:30pm",
+              "7:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 81,
+            "audience_score": 75
+          }
+        ]
       },
       "2026-06-14": {
         "day": "Sunday",
@@ -23,7 +39,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 81,
-            "audience_score": 74
+            "audience_score": 75
           }
         ]
       },
@@ -354,8 +370,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 82,
-            "audience_score": 74
+            "critics_score": 81,
+            "audience_score": 75
           }
         ]
       },
@@ -374,8 +390,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 82,
-            "audience_score": 74
+            "critics_score": 81,
+            "audience_score": 75
           }
         ]
       },
@@ -691,7 +707,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 81,
-            "audience_score": 74
+            "audience_score": 75
           }
         ]
       },
@@ -711,7 +727,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 81,
-            "audience_score": 74
+            "audience_score": 75
           }
         ]
       },
@@ -919,6 +935,15 @@
             ],
             "is_coming_soon": false,
             "is_70mm": true
+          },
+          {
+            "title": "The Odyssey – IMAX 70mm Event",
+            "slug": "the-odyssey-80679",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
           }
         ]
       },
@@ -929,6 +954,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
@@ -946,6 +972,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
