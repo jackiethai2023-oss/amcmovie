@@ -19,7 +19,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -39,7 +39,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -371,7 +371,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -391,7 +391,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -707,7 +707,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -727,7 +727,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 82,
-            "audience_score": 0
+            "audience_score": 74
           }
         ]
       },
@@ -877,7 +877,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "12:00pm",
               "3:00pm",
               "6:00pm",
               "9:00pm"
