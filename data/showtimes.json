@@ -3,22 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-13": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 74
-          }
-        ]
-      },
       "2026-06-14": {
         "day": "Sunday",
         "movies": [
@@ -35,7 +19,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 80,
-            "audience_score": 74
+            "audience_score": 73
           }
         ]
       },
@@ -344,6 +328,10 @@
       "2026-08-30": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-05": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -351,23 +339,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-06-13": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "7:45pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 74
-          }
-        ]
-      },
       "2026-06-14": {
         "day": "Sunday",
         "movies": [
@@ -384,7 +355,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 80,
-            "audience_score": 74
+            "audience_score": 73
           }
         ]
       },
@@ -677,6 +648,10 @@
       "2026-08-30": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-05": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -684,23 +659,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-13": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "8:00pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 74
-          }
-        ]
-      },
       "2026-06-14": {
         "day": "Sunday",
         "movies": [
@@ -717,7 +675,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 80,
-            "audience_score": 74
+            "audience_score": 73
           }
         ]
       },
@@ -1038,6 +996,10 @@
       },
       "2026-08-30": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-09-05": {
+        "day": "Saturday",
         "movies": []
       }
     }
