@@ -3,22 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-14": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 73
-          }
-        ]
-      },
       "2026-06-19": {
         "day": "Friday",
         "movies": [
@@ -328,6 +312,10 @@
       "2026-09-05": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-06": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -335,23 +323,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-06-14": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "7:45pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 73
-          }
-        ]
-      },
       "2026-06-19": {
         "day": "Friday",
         "movies": [
@@ -645,6 +616,10 @@
       "2026-09-05": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-06": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -652,22 +627,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-14": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Disclosure Day",
-            "slug": "disclosure-day-77140",
-            "showtimes": [
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 80,
-            "audience_score": 73
-          }
-        ]
-      },
       "2026-06-19": {
         "day": "Friday",
         "movies": [
@@ -989,6 +948,10 @@
       },
       "2026-09-05": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-09-06": {
+        "day": "Sunday",
         "movies": []
       }
     }
