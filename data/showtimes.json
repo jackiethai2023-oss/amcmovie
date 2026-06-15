@@ -44,21 +44,7 @@
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
@@ -362,21 +348,7 @@
       },
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
@@ -575,21 +547,7 @@
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
