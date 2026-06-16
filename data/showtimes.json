@@ -5,7 +5,22 @@
     "dates": {
       "2026-06-19": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
