@@ -316,6 +316,11 @@
       "2026-09-06": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-07": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Labor Day"
       }
     }
   },
@@ -676,6 +681,11 @@
       "2026-09-06": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-07": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Labor Day"
       }
     }
   },
@@ -1009,6 +1019,11 @@
       "2026-09-06": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-07": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "Labor Day"
       }
     }
   }
