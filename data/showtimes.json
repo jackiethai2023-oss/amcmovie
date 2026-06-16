@@ -5,24 +5,7 @@
     "dates": {
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 92,
-            "audience_score": 0
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
@@ -41,7 +24,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -61,7 +44,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -336,23 +319,7 @@
     "dates": {
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 92,
-            "audience_score": 0
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
@@ -370,7 +337,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -390,7 +357,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -408,7 +375,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           },
           {
@@ -420,7 +387,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -438,7 +405,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           },
           {
@@ -450,7 +417,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -729,7 +696,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ],
@@ -751,7 +718,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -772,7 +739,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 92,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -869,7 +836,7 @@
               "6:00pm",
               "9:00pm"
             ],
-            "is_coming_soon": false,
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
@@ -881,8 +848,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "9:00am",
-              "12:00pm",
               "3:00pm",
               "6:00pm",
               "9:00pm"
@@ -979,6 +944,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "6:05am",
               "10:00am",
               "2:00pm",
               "6:00pm",
@@ -996,6 +962,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "6:05am",
               "10:00am",
               "2:00pm",
               "6:00pm",
