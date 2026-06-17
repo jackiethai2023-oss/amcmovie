@@ -19,7 +19,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ],
@@ -27,7 +27,24 @@
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 0
+          }
+        ]
       },
       "2026-06-21": {
         "day": "Sunday",
@@ -44,14 +61,28 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-28": {
         "day": "Sunday",
@@ -318,7 +349,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ],
@@ -339,7 +370,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
@@ -359,7 +390,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
@@ -377,7 +408,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           },
           {
@@ -389,7 +420,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
@@ -407,7 +438,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           },
           {
@@ -419,7 +450,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
@@ -698,7 +729,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ],
@@ -720,7 +751,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
@@ -741,7 +772,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 0
           }
         ]
