@@ -68,21 +68,7 @@
       },
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
@@ -860,7 +846,18 @@
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "6:00pm",
+              "9:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-12": {
         "day": "Sunday",
