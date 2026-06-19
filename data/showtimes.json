@@ -10,24 +10,7 @@
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 93
-          }
-        ]
+        "movies": []
       },
       "2026-06-21": {
         "day": "Sunday",
@@ -45,7 +28,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
@@ -332,7 +315,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ],
         "holiday": "Juneteenth"
@@ -353,7 +336,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
@@ -373,7 +356,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
@@ -391,7 +374,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           },
           {
             "title": "Supergirl",
@@ -403,7 +386,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
@@ -421,7 +404,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           },
           {
             "title": "Supergirl",
@@ -433,7 +416,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
@@ -722,7 +705,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "12:00pm",
               "3:00pm",
               "5:50pm",
               "8:40pm",
@@ -731,7 +713,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ],
         "holiday": "Juneteenth"
@@ -774,7 +756,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 94,
-            "audience_score": 93
+            "audience_score": 94
           }
         ]
       },
