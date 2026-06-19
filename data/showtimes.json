@@ -19,7 +19,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ],
@@ -41,7 +41,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -61,7 +61,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -268,7 +268,20 @@
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
@@ -336,7 +349,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ],
@@ -357,8 +370,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 0
+            "critics_score": 93,
+            "audience_score": 93
           }
         ]
       },
@@ -377,7 +390,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -395,7 +408,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           },
           {
@@ -407,7 +420,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -425,8 +438,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 0
+            "critics_score": 93,
+            "audience_score": 93
           },
           {
             "title": "Supergirl",
@@ -437,8 +450,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 0
+            "critics_score": 93,
+            "audience_score": 93
           }
         ]
       },
@@ -736,7 +749,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ],
@@ -758,7 +771,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
@@ -779,7 +792,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 94,
+            "critics_score": 93,
             "audience_score": 0
           }
         ]
