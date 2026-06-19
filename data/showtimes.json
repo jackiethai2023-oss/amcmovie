@@ -10,7 +10,24 @@
       },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
+            "showtimes": [
+              "9:45am",
+              "12:30pm",
+              "3:15pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 94,
+            "audience_score": 94
+          }
+        ]
       },
       "2026-06-21": {
         "day": "Sunday",
@@ -307,7 +324,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "1:30pm",
               "4:15pm",
               "7:00pm",
               "9:45pm"
