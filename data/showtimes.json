@@ -5,24 +5,7 @@
     "dates": {
       "2026-06-19": {
         "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 93
-          }
-        ],
+        "movies": [],
         "holiday": "Juneteenth"
       },
       "2026-06-20": {
@@ -41,7 +24,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -61,7 +44,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -341,7 +324,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "10:45am",
               "1:30pm",
               "4:15pm",
               "7:00pm",
@@ -349,7 +331,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ],
@@ -370,7 +352,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -390,7 +372,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -408,7 +390,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           },
           {
@@ -420,7 +402,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -438,7 +420,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           },
           {
@@ -450,7 +432,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
@@ -740,7 +722,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "9:00am",
               "12:00pm",
               "3:00pm",
               "5:50pm",
@@ -749,7 +730,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ],
@@ -771,8 +752,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 93
+            "critics_score": 94,
+            "audience_score": 94
           }
         ]
       },
@@ -792,7 +773,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 93
           }
         ]
