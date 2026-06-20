@@ -3,43 +3,9 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-19": {
-        "day": "Friday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          }
-        ],
-        "holiday": "Juneteenth"
-      },
       "2026-06-20": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45am",
-              "12:30pm",
-              "3:15pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          }
-        ]
+        "movies": []
       },
       "2026-06-21": {
         "day": "Sunday",
@@ -56,7 +22,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -329,11 +295,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-06-19": {
-        "day": "Friday",
-        "movies": [],
-        "holiday": "Juneteenth"
-      },
       "2026-06-20": {
         "day": "Saturday",
         "movies": [
@@ -349,7 +310,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -369,7 +330,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -387,7 +348,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           },
           {
@@ -399,7 +360,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -417,7 +378,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           },
           {
@@ -429,7 +390,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -712,11 +673,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-19": {
-        "day": "Friday",
-        "movies": [],
-        "holiday": "Juneteenth"
-      },
       "2026-06-20": {
         "day": "Saturday",
         "movies": [
@@ -733,7 +689,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
@@ -754,7 +710,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 93,
+            "critics_score": 94,
             "audience_score": 95
           }
         ]
