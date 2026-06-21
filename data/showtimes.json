@@ -79,28 +79,7 @@
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: British Race",
-            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
-            "showtimes": [
-              "6:30am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -297,23 +276,7 @@
     "dates": {
       "2026-06-21": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "10:45am",
-              "1:30pm",
-              "4:15pm",
-              "7:00pm",
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          }
-        ]
+        "movies": []
       },
       "2026-06-27": {
         "day": "Saturday",
