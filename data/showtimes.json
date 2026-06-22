@@ -10,7 +10,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "6:00pm",
               "8:45pm"
             ],
             "is_coming_soon": false,
@@ -299,8 +298,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "4:15pm",
-              "7:00pm",
               "9:45pm"
             ],
             "is_coming_soon": false,
@@ -659,7 +656,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "5:35pm",
               "8:20pm",
               "11:00pm"
             ],
