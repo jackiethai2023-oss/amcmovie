@@ -3,22 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-21": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "8:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 95
-          }
-        ]
-      },
       "2026-06-27": {
         "day": "Saturday",
         "movies": [
@@ -284,6 +268,10 @@
       "2026-09-12": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-13": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -291,22 +279,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-06-21": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 95
-          }
-        ]
-      },
       "2026-06-27": {
         "day": "Saturday",
         "movies": [
@@ -642,6 +614,10 @@
       "2026-09-12": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-13": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -649,23 +625,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-06-21": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "8:20pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 94,
-            "audience_score": 95
-          }
-        ]
-      },
       "2026-06-27": {
         "day": "Saturday",
         "movies": [
@@ -941,6 +900,10 @@
       },
       "2026-09-12": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-09-13": {
+        "day": "Sunday",
         "movies": []
       }
     }
