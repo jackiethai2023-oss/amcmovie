@@ -394,6 +394,15 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Evil Dead Burn",
+            "slug": "evil-dead-burn-80306",
+            "showtimes": [
+              "10:45pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
           }
         ]
       },
@@ -410,6 +419,15 @@
               "7:30pm"
             ],
             "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Evil Dead Burn",
+            "slug": "evil-dead-burn-80306",
+            "showtimes": [
+              "10:45pm"
+            ],
+            "is_coming_soon": true,
             "is_70mm": false
           }
         ]
