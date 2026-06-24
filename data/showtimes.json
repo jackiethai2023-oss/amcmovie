@@ -5,221 +5,52 @@
     "dates": {
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "8:45am",
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: British Race",
-            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
-            "showtimes": [
-              "6:30am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "9:30am",
-              "12:30pm",
-              "3:30pm",
-              "6:30pm",
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "9:30am",
-              "12:30pm",
-              "3:30pm",
-              "6:30pm",
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-25": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-08": {
         "day": "Saturday",
@@ -282,298 +113,60 @@
     "dates": {
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:00am",
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "9:00am",
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "10:30am",
-              "1:00pm",
-              "3:30pm",
-              "6:00pm",
-              "8:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "10:30am",
-              "1:00pm",
-              "3:30pm",
-              "6:00pm",
-              "8:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "10:30am",
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Evil Dead Burn",
-            "slug": "evil-dead-burn-80306",
-            "showtimes": [
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "10:30am",
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Evil Dead Burn",
-            "slug": "evil-dead-burn-80306",
-            "showtimes": [
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-25": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-09": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-15": {
         "day": "Saturday",
@@ -585,31 +178,11 @@
       },
       "2026-08-22": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Fast and the Furious 25th Anniversary",
-            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Fast and the Furious 25th Anniversary",
-            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
@@ -648,267 +221,60 @@
     "dates": {
       "2026-06-27": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "9:20am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-06-28": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00am",
-              "1:00pm",
-              "4:00pm",
-              "7:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "9:00am",
-              "11:30am",
-              "2:00pm",
-              "4:30pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "11:30am",
-              "2:00pm",
-              "4:30pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: British Race",
-            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
-            "showtimes": [
-              "6:30am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-11": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "6:00pm",
-              "9:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "3:00pm",
-              "6:00pm",
-              "9:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "11:00pm",
-              "3:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-19": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          },
-          {
-            "title": "The Odyssey – IMAX 70mm Event",
-            "slug": "the-odyssey-80679",
-            "showtimes": [
-              "7:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-25": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "6:05am",
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "6:05am",
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-09": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-15": {
         "day": "Saturday",
