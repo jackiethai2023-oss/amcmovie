@@ -5,7 +5,21 @@
     "dates": {
       "2026-06-27": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-06-28": {
         "day": "Sunday",
@@ -270,13 +284,11 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
             "showtimes": [
-              "9:00am",
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
+              "8:00pm",
+              "11:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -284,11 +296,13 @@
             "audience_score": 95
           },
           {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
             "showtimes": [
-              "8:00pm",
-              "11:00pm"
+              "9:00am",
+              "11:45am",
+              "2:30pm",
+              "5:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -301,13 +315,11 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
             "showtimes": [
-              "9:00am",
-              "11:45am",
-              "2:30pm",
-              "5:15pm"
+              "8:00pm",
+              "11:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -315,11 +327,13 @@
             "audience_score": 95
           },
           {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
+            "title": "Toy Story 5",
+            "slug": "toy-story-5-72482",
             "showtimes": [
-              "8:00pm",
-              "11:00pm"
+              "9:00am",
+              "11:45am",
+              "2:30pm",
+              "5:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
