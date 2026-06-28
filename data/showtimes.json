@@ -10,7 +10,6 @@
             "title": "Supergirl",
             "slug": "supergirl-77031",
             "showtimes": [
-              "7:00pm",
               "10:00pm"
             ],
             "is_coming_soon": false,
@@ -286,17 +285,6 @@
             "showtimes": [
               "8:00pm",
               "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 93,
-            "audience_score": 95
-          },
-          {
-            "title": "Toy Story 5",
-            "slug": "toy-story-5-72482",
-            "showtimes": [
-              "5:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -647,7 +635,6 @@
             "title": "Supergirl",
             "slug": "supergirl-77031",
             "showtimes": [
-              "7:00pm",
               "10:00pm"
             ],
             "is_coming_soon": false,
