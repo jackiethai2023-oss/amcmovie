@@ -10,7 +10,6 @@
             "title": "Supergirl",
             "slug": "supergirl-77031",
             "showtimes": [
-              "1:00pm",
               "4:00pm",
               "7:00pm",
               "10:00pm"
@@ -284,7 +283,6 @@
             "title": "Toy Story 5",
             "slug": "toy-story-5-72482",
             "showtimes": [
-              "2:30pm",
               "5:15pm"
             ],
             "is_coming_soon": false,
@@ -609,7 +607,6 @@
             "title": "Supergirl",
             "slug": "supergirl-77031",
             "showtimes": [
-              "1:00pm",
               "4:00pm",
               "7:00pm",
               "10:00pm"
