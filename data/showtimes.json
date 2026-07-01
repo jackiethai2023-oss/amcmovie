@@ -472,7 +472,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -528,7 +528,17 @@
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Fast and the Furious 25th Anniversary",
+            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-29": {
         "day": "Saturday",
