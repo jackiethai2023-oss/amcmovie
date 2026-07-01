@@ -5,7 +5,30 @@
     "dates": {
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "8:45am",
+              "11:15am",
+              "1:45pm",
+              "4:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
