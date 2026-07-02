@@ -16,7 +16,9 @@
               "4:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "Supergirl",
@@ -26,7 +28,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ],
         "holiday": "Independence Day"
@@ -43,7 +47,9 @@
               "4:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "Supergirl",
@@ -53,7 +59,9 @@
               "10:50pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "F1 on Apple TV Live in IMAX: British Race",
@@ -62,7 +70,9 @@
               "6:30am"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -287,7 +297,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ],
         "holiday": "Independence Day"
@@ -306,7 +318,9 @@
               "8:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
@@ -472,7 +486,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider Man Brand New Day",
+            "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -597,7 +611,9 @@
               "7:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "Supergirl",
@@ -606,7 +622,9 @@
               "10:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ],
         "holiday": "Independence Day"
@@ -624,7 +642,9 @@
               "7:15pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "Supergirl",
@@ -633,7 +653,9 @@
               "10:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           },
           {
             "title": "F1 on Apple TV Live in IMAX: British Race",
@@ -642,7 +664,9 @@
               "6:30am"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 0
           }
         ]
       },
