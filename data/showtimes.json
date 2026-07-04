@@ -5,34 +5,7 @@
     "dates": {
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "8:45am",
-              "11:15am",
-              "1:45pm",
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
@@ -609,34 +582,7 @@
     "dates": {
       "2026-07-04": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "9:00am",
-              "11:30am",
-              "2:00pm",
-              "4:30pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          }
-        ],
+        "movies": [],
         "holiday": "Independence Day"
       },
       "2026-07-05": {
