@@ -3,11 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-07-04": {
-        "day": "Saturday",
-        "movies": [],
-        "holiday": "Independence Day"
-      },
       "2026-07-05": {
         "day": "Sunday",
         "movies": [
@@ -30,17 +25,6 @@
             "showtimes": [
               "8:00pm",
               "10:50pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: British Race",
-            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
-            "showtimes": [
-              "6:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -258,6 +242,10 @@
       "2026-09-20": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-26": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -265,11 +253,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-07-04": {
-        "day": "Saturday",
-        "movies": [],
-        "holiday": "Independence Day"
-      },
       "2026-07-05": {
         "day": "Sunday",
         "movies": [
@@ -556,6 +539,10 @@
       "2026-09-20": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-09-26": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -563,11 +550,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-07-04": {
-        "day": "Saturday",
-        "movies": [],
-        "holiday": "Independence Day"
-      },
       "2026-07-05": {
         "day": "Sunday",
         "movies": [
@@ -590,17 +572,6 @@
             "slug": "supergirl-77031",
             "showtimes": [
               "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: British Race",
-            "slug": "f1-on-apple-tv-live-in-imax-british-race-84063",
-            "showtimes": [
-              "6:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -844,6 +815,10 @@
       },
       "2026-09-20": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-09-26": {
+        "day": "Saturday",
         "movies": []
       }
     }
