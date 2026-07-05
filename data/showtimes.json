@@ -7,17 +7,6 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Minions Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "4:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
             "title": "Supergirl",
             "slug": "supergirl-77031",
             "showtimes": [
@@ -252,7 +241,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "F1 On Apple Tv Live In Imax Italy Race",
+            "title": "F1 on Apple TV Live in IMAX: Italy Race",
             "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
             "showtimes": [
               "6:00am"
@@ -293,10 +282,9 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Minions Monsters",
+            "title": "Minions & Monsters",
             "slug": "minions-monsters-77563",
             "showtimes": [
-              "3:30pm",
               "6:00pm",
               "8:30pm",
               "11:00pm"
@@ -473,7 +461,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Spider Man Brand New Day",
+            "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -509,7 +497,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Spider Man Brand New Day",
+            "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -609,7 +597,6 @@
             "title": "Minions & Monsters",
             "slug": "minions-monsters-77563",
             "showtimes": [
-              "4:30pm",
               "7:15pm"
             ],
             "is_coming_soon": false,
@@ -737,7 +724,7 @@
             "is_70mm": true
           },
           {
-            "title": "The Odyssey",
+            "title": "The Odyssey – IMAX 70mm Event",
             "slug": "the-odyssey-80679",
             "showtimes": [
               "7:00pm"
