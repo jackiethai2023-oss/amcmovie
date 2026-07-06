@@ -5,7 +5,20 @@
     "dates": {
       "2026-07-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Supergirl",
+            "slug": "supergirl-77031",
+            "showtimes": [
+              "8:00pm",
+              "10:50pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 91,
+            "audience_score": 76
+          }
+        ]
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -229,7 +242,19 @@
     "dates": {
       "2026-07-05": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Minions & Monsters",
+            "slug": "minions-monsters-77563",
+            "showtimes": [
+              "8:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 91,
+            "audience_score": 76
+          }
+        ]
       },
       "2026-07-11": {
         "day": "Saturday",
@@ -520,7 +545,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 91,
-            "audience_score": 75
+            "audience_score": 76
           },
           {
             "title": "Supergirl",
@@ -531,7 +556,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 91,
-            "audience_score": 75
+            "audience_score": 76
           }
         ]
       },
