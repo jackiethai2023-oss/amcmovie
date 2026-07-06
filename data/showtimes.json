@@ -3,23 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-07-05": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "8:00pm",
-              "10:50pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          }
-        ]
-      },
       "2026-07-11": {
         "day": "Saturday",
         "movies": [
@@ -233,6 +216,10 @@
       "2026-09-26": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-27": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -240,22 +227,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-07-05": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "8:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          }
-        ]
-      },
       "2026-07-11": {
         "day": "Saturday",
         "movies": [
@@ -526,6 +497,10 @@
       "2026-09-26": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-09-27": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -533,33 +508,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-07-05": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Minions & Monsters",
-            "slug": "minions-monsters-77563",
-            "showtimes": [
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          },
-          {
-            "title": "Supergirl",
-            "slug": "supergirl-77031",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 91,
-            "audience_score": 76
-          }
-        ]
-      },
       "2026-07-11": {
         "day": "Saturday",
         "movies": [
@@ -799,6 +747,10 @@
       },
       "2026-09-26": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-09-27": {
+        "day": "Sunday",
         "movies": []
       }
     }
