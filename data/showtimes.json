@@ -5,11 +5,39 @@
     "dates": {
       "2026-07-11": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "9:30am",
+              "12:30pm",
+              "3:30pm",
+              "6:30pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "9:30am",
+              "12:30pm",
+              "3:30pm",
+              "6:30pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-18": {
         "day": "Saturday",
