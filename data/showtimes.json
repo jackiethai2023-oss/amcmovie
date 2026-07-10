@@ -5,6 +5,10 @@
     "dates": {
       "2026-07-11": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-07-12": {
+        "day": "Sunday",
         "movies": [
           {
             "title": "Moana",
@@ -20,10 +24,6 @@
             "is_70mm": false
           }
         ]
-      },
-      "2026-07-12": {
-        "day": "Sunday",
-        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
@@ -227,7 +227,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 77,
+            "critics_score": 75,
             "audience_score": 0
           },
           {
@@ -238,7 +238,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 77,
+            "critics_score": 75,
             "audience_score": 0
           }
         ]
@@ -257,7 +257,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 77,
+            "critics_score": 75,
             "audience_score": 0
           },
           {
@@ -268,7 +268,7 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 77,
+            "critics_score": 75,
             "audience_score": 0
           }
         ]
