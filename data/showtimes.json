@@ -39,7 +39,21 @@
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm",
+              "2:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-19": {
         "day": "Sunday",
@@ -397,7 +411,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
