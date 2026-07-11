@@ -10,7 +10,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "9:30am",
               "12:30pm",
               "3:30pm",
               "6:30pm",
@@ -648,7 +647,21 @@
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "6:05am",
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
