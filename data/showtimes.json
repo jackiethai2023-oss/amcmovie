@@ -233,7 +233,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "10:30am",
               "1:30pm",
               "4:30pm",
               "7:30pm"
@@ -270,8 +269,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 72,
-            "audience_score": 82
+            "critics_score": 71,
+            "audience_score": 80
           },
           {
             "title": "Evil Dead Burn",
@@ -281,8 +280,8 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 72,
-            "audience_score": 82
+            "critics_score": 71,
+            "audience_score": 80
           }
         ]
       },
