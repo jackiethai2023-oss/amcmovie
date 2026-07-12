@@ -5,7 +5,19 @@
     "dates": {
       "2026-07-12": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Moana",
+            "slug": "moana-72474",
+            "showtimes": [
+              "3:30pm",
+              "6:30pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-18": {
         "day": "Saturday",
@@ -467,7 +479,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "3:00pm",
               "6:00pm",
               "9:00pm"
             ],
