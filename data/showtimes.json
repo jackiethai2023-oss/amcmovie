@@ -5,18 +5,7 @@
     "dates": {
       "2026-07-11": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "6:30pm",
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-12": {
         "day": "Sunday",
@@ -236,7 +225,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 71,
-            "audience_score": 80
+            "audience_score": 81
           },
           {
             "title": "Evil Dead Burn",
@@ -247,7 +236,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 71,
-            "audience_score": 80
+            "audience_score": 81
           }
         ]
       },
@@ -266,7 +255,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 71,
-            "audience_score": 80
+            "audience_score": 81
           },
           {
             "title": "Evil Dead Burn",
@@ -277,7 +266,7 @@
             "is_coming_soon": false,
             "is_70mm": false,
             "critics_score": 71,
-            "audience_score": 80
+            "audience_score": 81
           }
         ]
       },
@@ -517,7 +506,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "6:00pm",
               "9:00pm"
             ],
             "is_coming_soon": false,
