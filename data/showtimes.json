@@ -5,7 +5,21 @@
     "dates": {
       "2026-07-18": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm",
+              "2:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-19": {
         "day": "Sunday",
@@ -339,7 +353,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "The Fast and the Furious 25th Anniversary",
+            "title": "The Fast And The Furious 25Th Anniversary",
             "slug": "the-fast-and-the-furious-25th-anniversary-84081",
             "showtimes": [
               "1:00pm"
