@@ -10,7 +10,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "3:30pm",
               "6:30pm",
               "9:30pm"
             ],
@@ -218,7 +217,6 @@
             "title": "Moana",
             "slug": "moana-72474",
             "showtimes": [
-              "4:30pm",
               "7:30pm"
             ],
             "is_coming_soon": false,
