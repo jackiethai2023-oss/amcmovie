@@ -5,35 +5,11 @@
     "dates": {
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-19": {
         "day": "Sunday",
@@ -211,30 +187,7 @@
     "dates": {
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 71,
-            "audience_score": 81
-          },
-          {
-            "title": "Evil Dead Burn",
-            "slug": "evil-dead-burn-80306",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 71,
-            "audience_score": 81
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
@@ -471,17 +424,7 @@
     "dates": {
       "2026-07-12": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Moana",
-            "slug": "moana-72474",
-            "showtimes": [
-              "9:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-18": {
         "day": "Saturday",
