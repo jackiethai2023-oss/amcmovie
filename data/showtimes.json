@@ -307,21 +307,7 @@
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-09": {
         "day": "Sunday",
