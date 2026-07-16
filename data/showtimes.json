@@ -364,8 +364,7 @@
             "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
-              "9:30am",
-              "10:30pm"
+              "9:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -375,7 +374,8 @@
             "slug": "la-la-land-10th-anniversary-84447",
             "showtimes": [
               "1:00pm",
-              "4:10pm"
+              "4:10pm",
+              "7:20pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
