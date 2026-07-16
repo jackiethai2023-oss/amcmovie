@@ -91,7 +91,20 @@
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
@@ -352,7 +365,6 @@
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:30am",
-              "4:15pm",
               "10:30pm"
             ],
             "is_coming_soon": false,
@@ -362,7 +374,8 @@
             "title": "La La Land 10th Anniversary",
             "slug": "la-la-land-10th-anniversary-84447",
             "showtimes": [
-              "1:00pm"
+              "1:00pm",
+              "4:10pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
