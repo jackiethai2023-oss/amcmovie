@@ -144,17 +144,7 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
@@ -206,7 +196,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
@@ -273,7 +262,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -291,7 +280,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -309,7 +298,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "9:00am",
@@ -345,7 +334,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
+            "title": "Spider Man Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
               "10:00am",
@@ -379,7 +368,7 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "The Fast and the Furious 25th Anniversary",
+            "title": "The Fast And The Furious 25Th Anniversary",
             "slug": "the-fast-and-the-furious-25th-anniversary-84081",
             "showtimes": [
               "1:00pm"
@@ -393,7 +382,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "The Fast and the Furious 25th Anniversary",
+            "title": "The Fast And The Furious 25Th Anniversary",
             "slug": "the-fast-and-the-furious-25th-anniversary-84081",
             "showtimes": [
               "1:00pm"
@@ -469,7 +458,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "7:00am",
               "11:00am",
               "3:00pm",
               "11:00pm",
@@ -479,7 +467,7 @@
             "is_70mm": true
           },
           {
-            "title": "The Odyssey – IMAX 70mm Event",
+            "title": "The Odyssey",
             "slug": "the-odyssey-80679",
             "showtimes": [
               "7:00pm"
@@ -505,7 +493,7 @@
             "is_70mm": true
           },
           {
-            "title": "The Odyssey – IMAX 70mm Event",
+            "title": "The Odyssey",
             "slug": "the-odyssey-80679",
             "showtimes": [
               "7:00pm"
@@ -656,7 +644,7 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
+            "title": "F1 On Apple Tv Live In Imax Italy Race",
             "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
             "showtimes": [
               "6:00am"
