@@ -190,7 +190,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "3:00pm",
               "7:00pm",
               "11:00pm"
             ],
@@ -437,7 +436,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "3:00pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
