@@ -10,7 +10,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "6:00pm",
               "10:00pm"
             ],
             "is_coming_soon": false,
@@ -190,7 +189,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "7:00pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
@@ -437,15 +435,6 @@
             "slug": "the-odyssey-76238",
             "showtimes": [
               "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          },
-          {
-            "title": "The Odyssey – IMAX 70mm Event",
-            "slug": "the-odyssey-80679",
-            "showtimes": [
-              "7:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
