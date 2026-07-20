@@ -5,19 +5,71 @@
     "dates": {
       "2026-07-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
@@ -57,7 +109,17 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Italy Race",
+            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
+            "showtimes": [
+              "6:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-07": {
         "day": "Monday",
@@ -112,43 +174,171 @@
     "dates": {
       "2026-07-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-09": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-15": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "10:00am",
+              "4:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "La La Land 10th Anniversary",
+            "slug": "la-la-land-10th-anniversary-84447",
+            "showtimes": [
+              "9:50am",
+              "1:00pm",
+              "4:10pm",
+              "7:20pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-22": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Fast and the Furious 25th Anniversary",
+            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Fast and the Furious 25th Anniversary",
+            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-29": {
         "day": "Saturday",
@@ -219,27 +409,112 @@
     "dates": {
       "2026-07-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-07-26": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "6:05am",
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm",
+              "2:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-02": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "6:05am",
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-09": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-15": {
         "day": "Saturday",
@@ -271,7 +546,17 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Italy Race",
+            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
+            "showtimes": [
+              "6:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-07": {
         "day": "Monday",
