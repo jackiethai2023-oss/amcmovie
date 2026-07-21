@@ -13,7 +13,8 @@
               "10:00am",
               "2:00pm",
               "6:00pm",
-              "10:00pm"
+              "10:00pm",
+              "2:00am"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -179,6 +180,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
@@ -196,6 +198,7 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
+              "7:00am",
               "11:00am",
               "3:00pm",
               "7:00pm",
