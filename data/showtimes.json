@@ -26,20 +26,7 @@
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
@@ -161,7 +148,21 @@
     "dates": {
       "2026-07-25": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-07-26": {
         "day": "Sunday",
@@ -430,22 +431,7 @@
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "6:05am",
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
@@ -453,7 +439,21 @@
       },
       "2026-08-08": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-09": {
         "day": "Sunday",
@@ -531,7 +531,17 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1 on Apple TV Live in IMAX: Italy Race",
+            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
+            "showtimes": [
+              "6:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-07": {
         "day": "Monday",
