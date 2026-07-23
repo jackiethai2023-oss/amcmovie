@@ -96,17 +96,7 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
@@ -197,7 +187,21 @@
       },
       "2026-08-01": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-02": {
         "day": "Sunday",
