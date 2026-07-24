@@ -535,7 +535,21 @@
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-22": {
         "day": "Saturday",
