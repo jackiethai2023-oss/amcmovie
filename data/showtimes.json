@@ -161,21 +161,7 @@
     "dates": {
       "2026-07-25": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-07-26": {
         "day": "Sunday",
@@ -295,21 +281,7 @@
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "9:50am",
-              "1:00pm",
-              "4:10pm",
-              "7:20pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-22": {
         "day": "Saturday",
