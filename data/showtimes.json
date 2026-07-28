@@ -135,21 +135,7 @@
     "dates": {
       "2026-08-01": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:00am",
-              "12:30pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-02": {
         "day": "Sunday",
@@ -165,7 +151,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 92,
+            "audience_score": 0
           }
         ]
       },
@@ -183,7 +171,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 92,
+            "audience_score": 0
           }
         ]
       },
@@ -201,7 +191,9 @@
               "11:00pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 92,
+            "audience_score": 0
           }
         ]
       },
@@ -217,7 +209,9 @@
               "10:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 92,
+            "audience_score": 0
           },
           {
             "title": "The End of Oak Street",
@@ -227,7 +221,9 @@
               "7:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 92,
+            "audience_score": 0
           }
         ]
       },
