@@ -245,21 +245,7 @@
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "9:50am",
-              "1:00pm",
-              "4:10pm",
-              "7:20pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-22": {
         "day": "Saturday",
@@ -286,17 +272,7 @@
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Fast and the Furious 25th Anniversary",
-            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
