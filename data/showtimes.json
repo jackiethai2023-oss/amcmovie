@@ -208,14 +208,40 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false,
-            "critics_score": 90,
+            "critics_score": 91,
             "audience_score": 0
           }
         ]
       },
       "2026-08-15": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "10:00am",
+              "4:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 91,
+            "audience_score": 0
+          },
+          {
+            "title": "The End of Oak Street",
+            "slug": "the-end-of-oak-street-71226",
+            "showtimes": [
+              "1:30pm",
+              "7:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 91,
+            "audience_score": 0
+          }
+        ]
       },
       "2026-08-16": {
         "day": "Sunday",
@@ -422,11 +448,39 @@
       },
       "2026-08-15": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "7:00am",
+              "11:00am",
+              "3:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-22": {
         "day": "Saturday",
