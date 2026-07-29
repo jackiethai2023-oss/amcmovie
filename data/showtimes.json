@@ -215,37 +215,25 @@
       },
       "2026-08-15": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "10:00am",
-              "4:15pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 90,
-            "audience_score": 0
-          },
-          {
-            "title": "The End of Oak Street",
-            "slug": "the-end-of-oak-street-71226",
-            "showtimes": [
-              "1:30pm",
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 90,
-            "audience_score": 0
-          }
-        ]
+        "movies": []
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "La La Land 10th Anniversary",
+            "slug": "la-la-land-10th-anniversary-84447",
+            "showtimes": [
+              "9:50am",
+              "1:00pm",
+              "4:10pm",
+              "7:20pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-22": {
         "day": "Saturday",
@@ -272,7 +260,17 @@
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Fast and the Furious 25th Anniversary",
+            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-29": {
         "day": "Saturday",
@@ -424,39 +422,11 @@
       },
       "2026-08-15": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "7:00am",
-              "11:00am",
-              "3:00pm",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-22": {
         "day": "Saturday",
