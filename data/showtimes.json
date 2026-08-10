@@ -5,7 +5,19 @@
     "dates": {
       "2026-08-09": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          }
+        ]
       },
       "2026-08-15": {
         "day": "Saturday",
