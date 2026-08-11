@@ -302,11 +302,35 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Practical Magic 2",
+            "slug": "practical-magic-2-77331",
+            "showtimes": [
+              "1:00pm",
+              "4:15pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Practical Magic 2",
+            "slug": "practical-magic-2-77331",
+            "showtimes": [
+              "1:00pm",
+              "4:15pm",
+              "7:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
