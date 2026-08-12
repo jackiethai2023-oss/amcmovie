@@ -37,7 +37,17 @@
       },
       "2026-08-29": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Dog Stars",
+            "slug": "the-dog-stars-72464",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-30": {
         "day": "Sunday",
@@ -492,7 +502,20 @@
       },
       "2026-09-05": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-06": {
         "day": "Sunday",
@@ -540,7 +563,20 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
