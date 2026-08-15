@@ -275,17 +275,7 @@
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-05": {
         "day": "Saturday",
