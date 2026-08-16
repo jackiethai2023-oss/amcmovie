@@ -9,23 +9,7 @@
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "8:15am",
-              "11:40am",
-              "3:05pm",
-              "6:30pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 90,
-            "audience_score": 98
-          }
-        ]
+        "movies": []
       },
       "2026-08-22": {
         "day": "Saturday",
@@ -174,21 +158,7 @@
       },
       "2026-08-16": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "9:50am",
-              "1:00pm",
-              "4:10pm",
-              "7:20pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-22": {
         "day": "Saturday",
