@@ -147,7 +147,6 @@
             "title": "La La Land 10th Anniversary",
             "slug": "la-la-land-10th-anniversary-84447",
             "showtimes": [
-              "4:10pm",
               "7:20pm",
               "10:30pm"
             ],
@@ -159,15 +158,6 @@
       "2026-08-22": {
         "day": "Saturday",
         "movies": [
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
           {
             "title": "The Fast and the Furious 25th Anniversary",
             "slug": "the-fast-and-the-furious-25th-anniversary-84081",
@@ -182,6 +172,15 @@
             "slug": "insidious-out-of-the-further-77101",
             "showtimes": [
               "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "La La Land 10th Anniversary",
+            "slug": "la-la-land-10th-anniversary-84447",
+            "showtimes": [
+              "4:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
