@@ -246,7 +246,7 @@
             "showtimes": [
               "7:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -260,7 +260,7 @@
             "showtimes": [
               "7:45pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
