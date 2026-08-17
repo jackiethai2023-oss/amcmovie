@@ -3,10 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-16": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-08-22": {
         "day": "Saturday",
         "movies": []
@@ -68,11 +64,33 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Oasis: Don't Look Back in Anger",
+            "slug": "oasis-don-t-look-back-in-anger-83884",
+            "showtimes": [
+              "4:00pm",
+              "7:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Oasis: Don't Look Back in Anger",
+            "slug": "oasis-don-t-look-back-in-anger-83884",
+            "showtimes": [
+              "4:00pm",
+              "7:00pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
@@ -133,6 +151,10 @@
       "2026-11-07": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-11-08": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -140,10 +162,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-08-16": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-08-22": {
         "day": "Saturday",
         "movies": [
@@ -351,6 +369,10 @@
       "2026-11-07": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-11-08": {
+        "day": "Sunday",
+        "movies": []
       }
     }
   },
@@ -358,10 +380,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-16": {
-        "day": "Sunday",
-        "movies": []
-      },
       "2026-08-22": {
         "day": "Saturday",
         "movies": [
@@ -585,6 +603,10 @@
       },
       "2026-11-07": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-11-08": {
+        "day": "Sunday",
         "movies": []
       }
     }
