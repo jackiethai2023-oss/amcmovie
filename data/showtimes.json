@@ -13,31 +13,11 @@
       },
       "2026-08-29": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-05": {
         "day": "Saturday",
@@ -64,33 +44,11 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
@@ -164,72 +122,15 @@
     "dates": {
       "2026-08-22": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "The Fast and the Furious 25th Anniversary",
-            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Insidious: Out of the Further",
-            "slug": "insidious-out-of-the-further-77101",
-            "showtimes": [
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Fast and the Furious 25th Anniversary",
-            "slug": "the-fast-and-the-furious-25th-anniversary-84081",
-            "showtimes": [
-              "1:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Insidious: Out of the Further",
-            "slug": "insidious-out-of-the-further-77101",
-            "showtimes": [
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-30": {
         "day": "Sunday",
@@ -261,17 +162,7 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "By Any Means",
-            "slug": "by-any-means-82711",
-            "showtimes": [
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
@@ -280,35 +171,11 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
@@ -382,56 +249,15 @@
     "dates": {
       "2026-08-22": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-30": {
         "day": "Sunday",
@@ -452,63 +278,15 @@
       },
       "2026-09-05": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:30am",
-              "2:30pm",
-              "6:30pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
@@ -530,20 +308,7 @@
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
