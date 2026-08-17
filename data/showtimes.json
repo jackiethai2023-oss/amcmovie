@@ -158,6 +158,15 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "La La Land 10th Anniversary",
+            "slug": "la-la-land-10th-anniversary-84447",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "The Fast and the Furious 25th Anniversary",
             "slug": "the-fast-and-the-furious-25th-anniversary-84081",
             "showtimes": [
@@ -171,15 +180,6 @@
             "slug": "insidious-out-of-the-further-77101",
             "showtimes": [
               "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "La La Land 10th Anniversary",
-            "slug": "la-la-land-10th-anniversary-84447",
-            "showtimes": [
-              "4:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
