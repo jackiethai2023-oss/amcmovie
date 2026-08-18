@@ -85,7 +85,7 @@
               "4:00pm",
               "7:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -100,7 +100,7 @@
               "4:00pm",
               "7:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
