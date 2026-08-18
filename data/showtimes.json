@@ -261,7 +261,17 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "By Any Means",
+            "slug": "by-any-means-82711",
+            "showtimes": [
+              "7:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-07": {
         "day": "Monday",
