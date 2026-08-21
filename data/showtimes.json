@@ -93,18 +93,7 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:00pm",
-              "9:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
@@ -124,18 +113,7 @@
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
@@ -348,19 +326,7 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
@@ -450,38 +416,11 @@
     "dates": {
       "2026-08-22": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
@@ -563,20 +502,7 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
