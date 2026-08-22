@@ -26,17 +26,7 @@
       },
       "2026-08-29": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-30": {
         "day": "Sunday",
@@ -319,31 +309,11 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "By Any Means",
-            "slug": "by-any-means-82711",
-            "showtimes": [
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "HOPE Premium Early Access",
-            "slug": "hope-premium-early-access-84769",
-            "showtimes": [
-              "6:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
