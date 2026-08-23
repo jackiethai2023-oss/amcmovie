@@ -209,17 +209,7 @@
     "dates": {
       "2026-08-22": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Insidious: Out of the Further",
-            "slug": "insidious-out-of-the-further-77101",
-            "showtimes": [
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-23": {
         "day": "Sunday",
@@ -435,7 +425,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "10:00pm",
               "2:00am"
             ],
             "is_coming_soon": false,
