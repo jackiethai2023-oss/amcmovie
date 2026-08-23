@@ -3,26 +3,9 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-22": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:45am",
-              "2:45pm",
-              "6:45pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
@@ -40,17 +23,7 @@
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-05": {
         "day": "Saturday",
@@ -200,6 +173,10 @@
       "2026-11-08": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-14": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -207,10 +184,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-08-22": {
-        "day": "Saturday",
-        "movies": []
-      },
       "2026-08-23": {
         "day": "Sunday",
         "movies": [
@@ -411,6 +384,10 @@
       "2026-11-08": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-14": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -418,20 +395,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-22": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
-      },
       "2026-08-23": {
         "day": "Sunday",
         "movies": [
@@ -641,6 +604,10 @@
       },
       "2026-11-08": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-11-14": {
+        "day": "Saturday",
         "movies": []
       }
     }
