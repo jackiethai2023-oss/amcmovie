@@ -271,17 +271,7 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "By Any Means",
-            "slug": "by-any-means-82711",
-            "showtimes": [
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
@@ -300,19 +290,7 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
@@ -411,7 +389,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "10:00am",
               "2:00pm",
               "6:00pm",
               "10:00pm"
