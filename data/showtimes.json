@@ -52,27 +52,7 @@
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:45pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
@@ -92,18 +72,7 @@
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
@@ -387,17 +356,7 @@
     "dates": {
       "2026-08-23": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-08-29": {
         "day": "Saturday",
