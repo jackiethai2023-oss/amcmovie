@@ -256,7 +256,42 @@
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "2:30pm",
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          },
+          {
+            "title": "Coyote vs. Acme",
+            "slug": "coyote-vs-acme-65798",
+            "showtimes": [
+              "11:30am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          },
+          {
+            "title": "The Dog Stars",
+            "slug": "the-dog-stars-72464",
+            "showtimes": [
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          }
+        ]
       },
       "2026-09-05": {
         "day": "Saturday",
@@ -288,7 +323,17 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "HOPE Premium Early Access",
+            "slug": "hope-premium-early-access-84769",
+            "showtimes": [
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
@@ -309,7 +354,19 @@
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Practical Magic 2",
+            "slug": "practical-magic-2-77331",
+            "showtimes": [
+              "1:20pm",
+              "4:35pm",
+              "7:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
@@ -391,15 +448,55 @@
     "dates": {
       "2026-08-29": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm",
+              "2:00am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-05": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-06": {
         "day": "Sunday",
@@ -429,7 +526,20 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
@@ -451,7 +561,20 @@
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
