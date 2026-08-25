@@ -130,17 +130,7 @@
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Avengers Endgame: Encore",
-            "slug": "avengers-endgame-encore-82342",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": true,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-10-03": {
         "day": "Saturday",
