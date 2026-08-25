@@ -208,13 +208,38 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "2:30pm",
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          },
+          {
+            "title": "Coyote vs. Acme",
+            "slug": "coyote-vs-acme-65798",
+            "showtimes": [
+              "11:30am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
+          },
+          {
             "title": "The Dog Stars",
             "slug": "the-dog-stars-72464",
             "showtimes": [
               "9:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 90,
+            "audience_score": 98
           }
         ]
       },
@@ -282,9 +307,9 @@
             "title": "Practical Magic 2",
             "slug": "practical-magic-2-77331",
             "showtimes": [
-              "1:30pm",
+              "1:15pm",
               "4:30pm",
-              "7:30pm"
+              "7:40pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -298,9 +323,9 @@
             "title": "Practical Magic 2",
             "slug": "practical-magic-2-77331",
             "showtimes": [
-              "1:30pm",
-              "4:30pm",
-              "7:30pm"
+              "1:20pm",
+              "4:35pm",
+              "7:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
