@@ -9,28 +9,7 @@
       },
       "2026-08-30": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "11:45am",
-              "7:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-05": {
         "day": "Saturday",
@@ -73,7 +52,18 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Akira",
+            "slug": "akira-84498",
+            "showtimes": [
+              "6:00pm",
+              "9:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
