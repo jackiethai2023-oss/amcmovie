@@ -73,18 +73,7 @@
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:00pm",
-              "9:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
@@ -127,7 +116,17 @@
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers Endgame: Encore",
+            "slug": "avengers-endgame-encore-82342",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-27": {
         "day": "Sunday",
