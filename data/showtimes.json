@@ -5,11 +5,41 @@
     "dates": {
       "2026-08-29": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Dog Stars",
+            "slug": "the-dog-stars-72464",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "12:00pm",
+              "7:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-08-30": {
         "day": "Sunday",
         "movies": [
+          {
+            "title": "The Dog Stars",
+            "slug": "the-dog-stars-72464",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
@@ -20,21 +50,22 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
-          },
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
           }
         ]
       },
       "2026-09-05": {
         "day": "Saturday",
         "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "Akira",
             "slug": "akira-84498",
@@ -51,10 +82,20 @@
         "day": "Sunday",
         "movies": [
           {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:45am",
+              "2:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "F1 on Apple TV Live in IMAX: Italy Race",
             "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
             "showtimes": [
-              "6:00am"
+              "6:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -63,7 +104,7 @@
             "title": "Akira",
             "slug": "akira-84498",
             "showtimes": [
-              "6:45pm",
+              "6:00am",
               "10:00pm"
             ],
             "is_coming_soon": false,
@@ -74,6 +115,16 @@
       "2026-09-07": {
         "day": "Monday",
         "movies": [
+          {
+            "title": "The Odyssey",
+            "slug": "the-odyssey-76238",
+            "showtimes": [
+              "10:00am",
+              "2:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "Akira",
             "slug": "akira-84498",
@@ -219,11 +270,10 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
+            "title": "Coyote vs. Acme",
+            "slug": "coyote-vs-acme-65798",
             "showtimes": [
-              "2:30pm",
-              "6:00pm"
+              "11:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -234,7 +284,7 @@
             "title": "The Dog Stars",
             "slug": "the-dog-stars-72464",
             "showtimes": [
-              "9:30pm"
+              "2:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -242,10 +292,11 @@
             "audience_score": 98
           },
           {
-            "title": "Coyote vs. Acme",
-            "slug": "coyote-vs-acme-65798",
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
-              "11:30am"
+              "9:30pm",
+              "6:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -258,11 +309,10 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
+            "title": "Coyote vs. Acme",
+            "slug": "coyote-vs-acme-65798",
             "showtimes": [
-              "2:30pm",
-              "6:00pm"
+              "11:30am"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -273,7 +323,7 @@
             "title": "The Dog Stars",
             "slug": "the-dog-stars-72464",
             "showtimes": [
-              "9:30pm"
+              "2:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -281,10 +331,11 @@
             "audience_score": 98
           },
           {
-            "title": "Coyote vs. Acme",
-            "slug": "coyote-vs-acme-65798",
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
-              "11:30am"
+              "9:30pm",
+              "6:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -297,13 +348,28 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "12:45pm",
+              "4:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
+          },
+          {
             "title": "By Any Means",
             "slug": "by-any-means-82711",
             "showtimes": [
               "7:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
           }
         ]
       },
@@ -311,13 +377,28 @@
         "day": "Sunday",
         "movies": [
           {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "12:45pm",
+              "4:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
+          },
+          {
             "title": "By Any Means",
             "slug": "by-any-means-82711",
             "showtimes": [
               "7:45pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
           }
         ]
       },
@@ -325,13 +406,28 @@
         "day": "Monday",
         "movies": [
           {
+            "title": "Spider-Man: Brand New Day",
+            "slug": "spider-man-brand-new-day-78598",
+            "showtimes": [
+              "11:30am",
+              "3:00pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
+          },
+          {
             "title": "HOPE Premium Early Access",
             "slug": "hope-premium-early-access-84769",
             "showtimes": [
               "6:30pm"
             ],
             "is_coming_soon": false,
-            "is_70mm": false
+            "is_70mm": false,
+            "critics_score": 89,
+            "audience_score": 98
           }
         ],
         "holiday": "Labor Day"
