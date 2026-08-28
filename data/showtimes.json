@@ -474,11 +474,31 @@
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Heart of the Beast",
+            "slug": "heart-of-the-beast-82707",
+            "showtimes": [
+              "4:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Heart of the Beast",
+            "slug": "heart-of-the-beast-82707",
+            "showtimes": [
+              "4:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-03": {
         "day": "Saturday",
