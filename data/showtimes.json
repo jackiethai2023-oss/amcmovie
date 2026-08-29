@@ -272,7 +272,7 @@
             "title": "The Dog Stars",
             "slug": "the-dog-stars-72464",
             "showtimes": [
-              "2:30pm"
+              "6:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -283,8 +283,7 @@
             "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
             "showtimes": [
-              "9:30pm",
-              "6:00pm"
+              "9:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false,
@@ -575,7 +574,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "2:00pm",
               "6:00pm",
               "10:00pm",
               "2:00am"
