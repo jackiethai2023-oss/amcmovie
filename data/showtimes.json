@@ -7,19 +7,9 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "7:00pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
@@ -268,17 +258,6 @@
       "2026-08-29": {
         "day": "Saturday",
         "movies": [
-          {
-            "title": "The Dog Stars",
-            "slug": "the-dog-stars-72464",
-            "showtimes": [
-              "6:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 98
-          },
           {
             "title": "Spider-Man: Brand New Day",
             "slug": "spider-man-brand-new-day-78598",
@@ -574,7 +553,6 @@
             "title": "The Odyssey",
             "slug": "the-odyssey-76238",
             "showtimes": [
-              "6:00pm",
               "10:00pm",
               "2:00am"
             ],
