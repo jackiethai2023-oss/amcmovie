@@ -145,11 +145,39 @@
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil",
+            "slug": "resident-evil-79697",
+            "showtimes": [
+              "11:30am",
+              "2:15pm",
+              "5:00pm",
+              "7:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil",
+            "slug": "resident-evil-79697",
+            "showtimes": [
+              "11:30am",
+              "2:15pm",
+              "5:00pm",
+              "7:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-26": {
         "day": "Saturday",
@@ -406,11 +434,41 @@
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil",
+            "slug": "resident-evil-79697",
+            "showtimes": [
+              "10:00am",
+              "12:40pm",
+              "3:20pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil",
+            "slug": "resident-evil-79697",
+            "showtimes": [
+              "10:00am",
+              "12:40pm",
+              "3:20pm",
+              "6:00pm",
+              "8:40pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": true,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-26": {
         "day": "Saturday",
