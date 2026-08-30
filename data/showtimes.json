@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-29": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-08-30": {
         "day": "Sunday",
         "movies": [
@@ -248,6 +234,10 @@
       "2026-11-15": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-21": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -255,22 +245,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-08-29": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 98
-          }
-        ]
-      },
       "2026-08-30": {
         "day": "Sunday",
         "movies": [
@@ -539,6 +513,10 @@
       "2026-11-15": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-21": {
+        "day": "Saturday",
+        "movies": []
       }
     }
   },
@@ -546,21 +524,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-08-29": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00pm",
-              "2:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
-      },
       "2026-08-30": {
         "day": "Sunday",
         "movies": [
@@ -743,6 +706,10 @@
       },
       "2026-11-15": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-11-21": {
+        "day": "Saturday",
         "movies": []
       }
     }
