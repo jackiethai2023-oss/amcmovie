@@ -131,7 +131,7 @@
               "7:45pm",
               "10:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -149,7 +149,7 @@
               "7:45pm",
               "10:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -386,7 +386,7 @@
               "8:45pm",
               "11:30pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
@@ -405,7 +405,7 @@
               "8:40pm",
               "11:15pm"
             ],
-            "is_coming_soon": true,
+            "is_coming_soon": false,
             "is_70mm": false
           }
         ]
