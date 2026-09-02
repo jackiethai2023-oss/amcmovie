@@ -5,182 +5,40 @@
     "dates": {
       "2026-09-05": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:00pm",
-              "9:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:45am",
-              "2:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:00am",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Akira",
-            "slug": "akira-84498",
-            "showtimes": [
-              "6:00pm",
-              "9:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger",
-            "slug": "oasis-don-t-look-back-in-anger-83884",
-            "showtimes": [
-              "4:00pm",
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Resident Evil",
-            "slug": "resident-evil-79697",
-            "showtimes": [
-              "11:30am",
-              "2:15pm",
-              "5:00pm",
-              "7:45pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Resident Evil",
-            "slug": "resident-evil-79697",
-            "showtimes": [
-              "11:30am",
-              "2:15pm",
-              "5:00pm",
-              "7:45pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Avengers Endgame: Encore",
-            "slug": "avengers-endgame-encore-82342",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Avengers Endgame: Encore",
-            "slug": "avengers-endgame-encore-82342",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-10-03": {
         "day": "Saturday",
@@ -254,207 +112,40 @@
     "dates": {
       "2026-09-05": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "12:45pm",
-              "4:15pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          },
-          {
-            "title": "By Any Means",
-            "slug": "by-any-means-82711",
-            "showtimes": [
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          }
-        ]
+        "movies": []
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "12:45pm",
-              "4:15pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          },
-          {
-            "title": "By Any Means",
-            "slug": "by-any-means-82711",
-            "showtimes": [
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "Spider-Man: Brand New Day",
-            "slug": "spider-man-brand-new-day-78598",
-            "showtimes": [
-              "11:30am",
-              "3:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          },
-          {
-            "title": "HOPE Premium Early Access",
-            "slug": "hope-premium-early-access-84769",
-            "showtimes": [
-              "6:30pm",
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false,
-            "critics_score": 89,
-            "audience_score": 97
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:15pm",
-              "4:30pm",
-              "7:40pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Practical Magic 2",
-            "slug": "practical-magic-2-77331",
-            "showtimes": [
-              "1:20pm",
-              "4:35pm",
-              "7:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Resident Evil",
-            "slug": "resident-evil-79697",
-            "showtimes": [
-              "10:00am",
-              "12:40pm",
-              "3:20pm",
-              "6:00pm",
-              "8:45pm",
-              "11:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Resident Evil",
-            "slug": "resident-evil-79697",
-            "showtimes": [
-              "10:00am",
-              "12:40pm",
-              "3:20pm",
-              "6:00pm",
-              "8:40pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "Avengers Endgame: Encore",
-            "slug": "avengers-endgame-encore-82342",
-            "showtimes": [
-              "6:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Heart of the Beast",
-            "slug": "heart-of-the-beast-82707",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "Avengers Endgame: Encore",
-            "slug": "avengers-endgame-encore-82342",
-            "showtimes": [
-              "6:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Heart of the Beast",
-            "slug": "heart-of-the-beast-82707",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-10-03": {
         "day": "Saturday",
@@ -528,98 +219,24 @@
     "dates": {
       "2026-09-05": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-09-06": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:30am",
-              "2:30pm",
-              "6:30pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          },
-          {
-            "title": "F1 on Apple TV Live in IMAX: Italy Race",
-            "slug": "f1-on-apple-tv-live-in-imax-italy-race-84375",
-            "showtimes": [
-              "6:00am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-09-07": {
         "day": "Monday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ],
+        "movies": [],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey",
-            "slug": "the-odyssey-76238",
-            "showtimes": [
-              "10:00am",
-              "2:00pm",
-              "6:00pm",
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
+        "movies": []
       },
       "2026-09-19": {
         "day": "Saturday",
