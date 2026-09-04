@@ -103,6 +103,11 @@
       "2026-11-22": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-26": {
+        "day": "Thursday",
+        "movies": [],
+        "holiday": "Thanksgiving Day"
       }
     }
   },
@@ -210,6 +215,11 @@
       "2026-11-22": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-26": {
+        "day": "Thursday",
+        "movies": [],
+        "holiday": "Thanksgiving Day"
       }
     }
   },
@@ -317,6 +327,11 @@
       "2026-11-22": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-11-26": {
+        "day": "Thursday",
+        "movies": [],
+        "holiday": "Thanksgiving Day"
       }
     }
   }
