@@ -108,6 +108,11 @@
         "day": "Thursday",
         "movies": [],
         "holiday": "Thanksgiving Day"
+      },
+      "2026-11-27": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Day After Thanksgiving"
       }
     }
   },
@@ -220,6 +225,11 @@
         "day": "Thursday",
         "movies": [],
         "holiday": "Thanksgiving Day"
+      },
+      "2026-11-27": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Day After Thanksgiving"
       }
     }
   },
@@ -332,6 +342,11 @@
         "day": "Thursday",
         "movies": [],
         "holiday": "Thanksgiving Day"
+      },
+      "2026-11-27": {
+        "day": "Friday",
+        "movies": [],
+        "holiday": "Day After Thanksgiving"
       }
     }
   }
