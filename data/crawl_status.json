@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "attempted_at": "2026-09-07T15:23:20.998634-07:00",
+  "last_successful_at": "2026-09-07T15:24:04.753685-07:00",
+  "message": "Showtimes updated successfully.",
+  "failed_requests": 0,
+  "successful_requests": 81,
+  "stale": false,
+  "source": "Fandango"
+}

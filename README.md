@@ -1,281 +1,74 @@
-# AMC电影院周末排片展示
+# AMC 周末排片
 
-一个使用GitHub Pages + GitHub Actions自动化部署的AMC电影院排片查询网站，零成本运行。
+网站：<https://jackiethai2023-oss.github.io/amcmovie/>
 
-## 功能特性
+查询未来 12 周的周末及美国节假日排片，按三个厅型展示：
 
-🎬 实时自动爬取AMC电影院排片信息
-📅 显示未来12周的周末排片（周六+周日）
-🎯 支持3个影厅：Century City IMAX、Century City Dolby Cinema、Universal CityWalk IMAX
-⏰ 每天洛杉矶上午9点自动更新数据
-🚀 纯静态前端，无需后端服务
-🎨 深色主题UI，AMC品牌色设计
-📱 完全响应式布局，支持移动设备
+- Century City IMAX
+- Century City Dolby Cinema
+- Universal CityWalk IMAX
 
-## 项目结构
+## 数据与更新
 
+默认通过普通 Playwright 浏览器访问 Fandango 的公开影院页面，读取页面自身加载的结构化排片。影院、请求日期、返回日期及每个场次的厅型都会校验。Century City 的 IMAX 和 Dolby 复用同一次影院/日期请求，避免重复抓取。
+
+- [AMC Century City 15 — Fandango](https://www.fandango.com/amc-century-city-15-aaaoz/theater-page)
+- [Universal Cinema, an AMC Theatre — Fandango](https://www.fandango.com/universal-cinema-an-amc-theatre-aaawx/theater-page)
+
+页面保留 AMC 官方购票链接，并标明排片来源。只列出来源中可以购票且未过期的场次；售罄或不可购买的场次不会被误标为“即将开售”。没有来源评分时不显示猜测的评分。远期日期可能尚未列出场次。影院将午夜后的场次归入前一营业日时，网站用 `(+1 day)` 标明实际时间在次日。
+
+GitHub Actions 按 UTC `00:00–06:00`、`13:00–23:00` 每小时计划运行。实际启动时间可能被 GitHub 延迟；网站显示最后一次成功抓取时间。`RELOAD` 按钮重新读取已发布数据，不会启动爬虫。
+
+## 失败保护
+
+抓取失败与成功但没有场次是两个不同状态。HTTP 错误、访问拦截、超时、日期/影院不匹配、未知响应结构均作为失败处理，不会直接转换为“尚未公布”。访问拦截会立即终止当前运行，不进行绕过或反复重试。
+
+只有所有目标查询均通过校验时，才发布新的排片快照和成功时间。失败时：
+
+1. 保留上一次成功的 `showtimes.json` 和 `last_updated.json`。
+2. 单独更新 `crawl_status.json`，记录失败和上次成功时间。
+3. Actions 显示失败；网页提示正在展示旧数据或当前无法获取数据。
+4. 超过 48 小时没有成功抓取时，网页也会提示数据可能过期。
+
+## 文件
+
+```text
+crawler/scraper.py        日期、发布保护与抓取入口；保留旧 AMC 解析器供诊断
+crawler/fandango.py       默认排片来源与严格字段校验
+.github/workflows/crawl.yml
+index.html
+requirements.txt
+tests/test_scraper.py
+tests/test_fandango.py
+tests/frontend_health.test.cjs
+data/showtimes.json
+data/last_updated.json
+data/crawl_status.json
 ```
-amcmovie/
-├── crawler/
-│   └── scraper.py              # Python爬虫脚本（requests + BeautifulSoup）
-├── data/
-│   ├── showtimes.json          # 排片数据（自动更新）
-│   └── last_updated.json       # 最后更新时间（自动更新）
-├── .github/
-│   └── workflows/
-│       └── crawl.yml           # GitHub Actions工作流配置
-├── index.html                  # 前端页面（纯静态HTML）
-├── requirements.txt            # Python依赖
-└── README.md                   # 项目文档
-```
 
-## 快速开始
+`showtimes.json` 保留原有 `影厅 → dates → 日期 → movies` 结构，影厅对象附有 `source` 和 `source_url`。
 
-### 1. Fork或创建新仓库
+`crawl_status.json` 的主要字段为 `status`（`ok`、`partial`、`error`）、`attempted_at`、`last_successful_at`、`stale`、`message`、`source`、`successful_requests` 和 `failed_requests`。计数按影厅/日期查询统计，已缓存查询不会重复访问来源。
+
+## 本地运行和验证
+
+使用 Python 3.11 或 3.12：
 
 ```bash
-# 创建新仓库 amcmovie（或fork此仓库）
-git clone https://github.com/YOUR_USERNAME/amcmovie.git
-cd amcmovie
-```
-
-### 2. 配置GitHub Pages
-
-在仓库设置中：
-1. 进入 **Settings** → **Pages**
-2. 选择 **Source**: Deploy from a branch
-3. 选择分支: **main** 和目录 **/ (root)**
-4. 点击 **Save**
-
-### 3. 启用GitHub Actions
-
-1. 进入 **Settings** → **Actions** → **General**
-2. 确保 **Actions permissions** 已启用
-3. 允许 **Read and write permissions** for GITHUB_TOKEN
-
-### 4. 手动触发爬虫（可选）
-
-1. 进入 **Actions** 选项卡
-2. 选择 **Crawl AMC Showtimes** workflow
-3. 点击 **Run workflow** → **Run workflow**
-
-等待爬虫运行完成，刷新主页面即可看到最新数据。
-
-## 工作原理
-
-### 自动更新流程
-
-```
-每天洛杉矶上午9点（UTC 16:00）
-    ↓
-GitHub Actions 触发 crawl.yml
-    ↓
-运行 Python 爬虫脚本
-    ↓
-抓取 AMC 网站排片数据
-    ↓
-生成 data/showtimes.json + data/last_updated.json
-    ↓
-自动 commit & push 到仓库
-    ↓
-GitHub Pages 自动更新页面
-```
-
-### 前端加载流程
-
-```
-用户访问 GitHub Pages URL
-    ↓
-加载 index.html 静态页面
-    ↓
-JavaScript 通过 fetch 读取 data/showtimes.json
-    ↓
-渲染排片信息到页面
-    ↓
-显示最后更新时间
-```
-
-## 爬虫详解
-
-### 数据抓取
-
-爬虫脚本（`crawler/scraper.py`）功能：
-
-- **自动计算周末日期**：从今天起，获取未来84天内所有周六和周日（含节假日）
-- **并行抓取**：为3个影厅分别拉取排片数据
-- **智能解析**：使用BeautifulSoup解析HTML，提取电影标题和场次时间
-- **备选方案**：如果HTML结构变化，自动降级到文本解析
-
-### 影厅映射
-
-| 影厅名称 | URL | 筛选参数 |
-|---------|-----|---------|
-| Century City IMAX | amc-century-city-15 | imax |
-| Century City Dolby Cinema | amc-century-city-15 | dolbycinemaatamcprime |
-| Universal CityWalk IMAX | universal-cinema-amc-at-citywalk-hollywood | imax |
-
-### 输出格式
-
-`data/showtimes.json` 结构：
-
-```json
-{
-  "Century City IMAX": {
-    "name": "Century City IMAX",
-    "dates": {
-      "2026-03-28": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Dune Part Two",
-            "showtimes": ["10:00 AM", "1:30 PM", "5:00 PM", "8:30 PM"]
-          }
-        ]
-      }
-    }
-  }
-}
-```
-
-## GitHub Actions 配置
-
-### Cron 时间表
-
-```yaml
-schedule:
-  - cron: '0 16 * * *'  # 每天 UTC 16:00 运行
-```
-
-**时区换算：**
-- UTC 16:00 = 洛杉矶 PDT 上午9:00（夏令时）
-- UTC 17:00 = 洛杉矶 PST 上午9:00（冬令时）
-
-当前默认为 UTC 16:00，如需调整可修改 `.github/workflows/crawl.yml`。
-
-### 手动触发
-
-支持 `workflow_dispatch`，允许在 GitHub Actions 界面手动运行爬虫。
-
-## 前端特性
-
-### UI 设计
-- 深色主题（#0a0e27 背景）
-- AMC品牌色（#E4002B 红色）
-- 现代card卡片设计
-- 平滑过渡动画
-
-### 交互
-- 支持实时刷新按钮
-- 时间转换为洛杉矶本地时间显示
-- 错误处理和加载状态
-- 完全响应式布局
-
-### 加载方式
-```javascript
-// 通过 fetch 读取 JSON 文件（相对路径）
-const response = await fetch('./data/showtimes.json');
-const data = await response.json();
-```
-
-## 常见问题
-
-### Q: 为什么我的仓库中看不到爬虫结果？
-
-**A:** GitHub Actions 需要写权限。检查仓库 Settings → Actions → Permissions，确保启用了 "Read and write permissions"。
-
-### Q: 如何修改爬虫运行时间？
-
-**A:** 编辑 `.github/workflows/crawl.yml`，修改 `cron` 表达式。例如：
-
-```yaml
-schedule:
-  - cron: '0 14 * * *'  # 改为 UTC 14:00
-```
-
-### Q: 爬虫失败了怎么办？
-
-**A:** 检查 GitHub Actions 日志：
-1. 进入 **Actions** 选项卡
-2. 点击最新的 workflow run
-3. 查看 **Run crawler** 步骤的输出
-4. 常见问题：AMC网站结构变化、网络超时
-
-### Q: 如何本地测试爬虫？
-
-**A:**
-```bash
-# 安装依赖
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-
-# 运行爬虫
+playwright install chromium
+python -m unittest discover -s tests -v
+node --test tests/frontend_health.test.cjs
 python crawler/scraper.py
-
-# 检查输出
-cat data/showtimes.json
-```
-
-### Q: 前端如何调试？
-
-**A:** 本地开启HTTP服务器：
-```bash
-# Python 3
 python -m http.server 8000
-
-# 访问 http://localhost:8000
 ```
 
-## 技术栈
+浏览器打开 `http://localhost:8000`。爬虫返回码 `0` 表示整次抓取通过；非零表示本次没有替换排片数据。
 
-- **后端爬虫**：Python 3.11 + requests + BeautifulSoup4
-- **前端**：纯HTML5 + CSS3 + Vanilla JavaScript
-- **部署**：GitHub Pages + GitHub Actions
-- **数据存储**：JSON 文件（存储在git仓库中）
+## 部署
 
-## 成本分析
+GitHub Pages 使用 `main` 分支根目录。Actions 需要 `contents: write` 和 `pages: write`（已在工作流声明）。提交数据或失败状态后，工作流会明确请求 Pages 重建，并确认网站发布的提交与本次更新一致。手动更新：进入 Actions → **Crawl AMC Showtimes** → **Run workflow**。
 
-| 项目 | 成本 |
-|------|------|
-| GitHub 账户 | 免费 |
-| Public 仓库 | 免费 |
-| GitHub Pages | 免费 |
-| GitHub Actions | 免费（公开仓库）|
-| 域名 | 可选（默认使用github.io） |
-| **总计** | **$0** |
-
-## 性能指标
-
-- **爬虫运行时间**：约 30~60 秒（取决于AMC网站响应）
-- **前端加载时间**：<1 秒（纯静态）
-- **数据新鲜度**：每天1次（可根据需要增加频率）
-- **存储空间**：<1MB（JSON数据极小）
-
-## 缺陷和限制
-
-1. **依赖网站结构**：如果AMC网站HTML结构变化，爬虫可能需要更新
-2. **不支持订票**：仅显示排片，不能直接购票
-3. **无用户账户**：不支持个人偏好保存
-4. **速率限制**：如果频率过高可能被AMC网站限制（建议每天1次）
-
-## 改进方向
-
-- [ ] 添加更多影厅支持
-- [ ] 实现电影详情页（IMDb评分等）
-- [ ] 添加通知功能（邮件/Slack）
-- [ ] 支持特定影片追踪
-- [ ] 数据库存储历史数据
-- [ ] Docker 化爬虫
-- [ ] 前端优化（SSG/静态生成）
-
-## 许可证
-
-MIT License - 自由使用和修改
-
-## 提示
-
-- 此项目仅供学习和个人使用
-- 遵守AMC网站的爬虫协议，合理控制请求频率
-- 如遇到网站反爬，建议等待几小时后重试
-
----
-
-有任何问题或建议，欢迎提交 Issue 或 Pull Request！
+发布后应同时检查 Actions 结果、线上 `crawl_status.json` 的成功时间，以及网站实际显示的电影/厅型/日期。不能仅凭页面 HTTP 200 或工作流绿灯判定数据正常。

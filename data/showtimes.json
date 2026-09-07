@@ -5,32 +5,133 @@
     "dates": {
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Akira 4K Re-Release (2026)",
+            "slug": "fandango-246840",
+            "showtimes": [
+              "6:00pm",
+              "9:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Oasis: Don't Look Back in Anger (2026)",
+            "slug": "fandango-246559",
+            "showtimes": [
+              "4:00pm",
+              "7:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "12:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Oasis: Don't Look Back in Anger (2026)",
+            "slug": "fandango-246559",
+            "showtimes": [
+              "4:00pm",
+              "7:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "12:00pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil (2026)",
+            "slug": "fandango-245893",
+            "showtimes": [
+              "11:30am",
+              "2:15pm",
+              "5:00pm",
+              "7:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil (2026)",
+            "slug": "fandango-245893",
+            "showtimes": [
+              "11:30am",
+              "2:15pm",
+              "5:00pm",
+              "7:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers Endgame: Encore (2026)",
+            "slug": "fandango-246870",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers Endgame: Encore (2026)",
+            "slug": "fandango-246870",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-03": {
         "day": "Saturday",
@@ -62,7 +163,17 @@
       },
       "2026-10-25": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1® on Apple TV Live in IMAX: US Race (2026)",
+            "slug": "fandango-247202",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-31": {
         "day": "Saturday",
@@ -114,7 +225,9 @@
         "day": "Sunday",
         "movies": []
       }
-    }
+    },
+    "source": "Fandango",
+    "source_url": "https://www.fandango.com/amc-century-city-15-aaaoz/theater-page"
   },
   "Century City Dolby Cinema": {
     "name": "Century City Dolby Cinema",
@@ -122,40 +235,167 @@
     "dates": {
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Hope (2026)",
+            "slug": "fandango-246483",
+            "showtimes": [
+              "6:30pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Practical Magic 2 (2026)",
+            "slug": "fandango-246473",
+            "showtimes": [
+              "10:00am",
+              "1:15pm",
+              "4:30pm",
+              "7:40pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Practical Magic 2 (2026)",
+            "slug": "fandango-246473",
+            "showtimes": [
+              "10:00am",
+              "1:20pm",
+              "4:35pm",
+              "7:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil (2026)",
+            "slug": "fandango-245893",
+            "showtimes": [
+              "10:00am",
+              "12:40pm",
+              "3:20pm",
+              "6:00pm",
+              "8:45pm",
+              "11:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Resident Evil (2026)",
+            "slug": "fandango-245893",
+            "showtimes": [
+              "10:00am",
+              "12:45pm",
+              "3:20pm",
+              "6:00pm",
+              "8:40pm",
+              "11:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers Endgame: Encore (2026)",
+            "slug": "fandango-246870",
+            "showtimes": [
+              "6:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Heart of the Beast (2026)",
+            "slug": "fandango-246224",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers Endgame: Encore (2026)",
+            "slug": "fandango-246870",
+            "showtimes": [
+              "6:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Heart of the Beast (2026)",
+            "slug": "fandango-246224",
+            "showtimes": [
+              "4:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-03": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Verity (2026)",
+            "slug": "fandango-240033",
+            "showtimes": [
+              "8:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-04": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Verity (2026)",
+            "slug": "fandango-240033",
+            "showtimes": [
+              "8:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-10": {
         "day": "Saturday",
@@ -231,7 +471,9 @@
         "day": "Sunday",
         "movies": []
       }
-    }
+    },
+    "source": "Fandango",
+    "source_url": "https://www.fandango.com/amc-century-city-15-aaaoz/theater-page"
   },
   "Universal CityWalk IMAX": {
     "name": "Universal CityWalk IMAX",
@@ -239,32 +481,121 @@
     "dates": {
       "2026-09-07": {
         "day": "Monday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ],
         "holiday": "Labor Day"
       },
       "2026-09-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-19": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-20": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-26": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-09-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "10:00am",
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-10-03": {
         "day": "Saturday",
@@ -296,7 +627,17 @@
       },
       "2026-10-25": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "F1® on Apple TV Live in IMAX: US Race (2026)",
+            "slug": "fandango-247202",
+            "showtimes": [
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-31": {
         "day": "Saturday",
@@ -348,6 +689,8 @@
         "day": "Sunday",
         "movies": []
       }
-    }
+    },
+    "source": "Fandango",
+    "source_url": "https://www.fandango.com/universal-cinema-an-amc-theatre-aaawx/theater-page"
   }
 }

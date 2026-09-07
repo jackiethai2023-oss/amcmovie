@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 AMC电影院周末排片爬虫
-通过 Playwright 抓取 HTML，用正则从 React Server Components (RSC) Payload 中提取排片数据
-使用 Playwright 绕过 AMC 的 JS Cookie Challenge 反爬机制
+通过普通 Playwright 浏览器读取 Fandango 公开排片页的结构化场次。
+访问受阻或页面不符合预期时停止并保留上次成功数据，不尝试绕过访问限制。
 """
 
 import json
@@ -11,10 +11,21 @@ import os
 import re
 import time
 import random
+import sys
+import tempfile
+from dataclasses import dataclass
 from datetime import datetime, timedelta
+from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 from zoneinfo import ZoneInfo
+from bs4 import BeautifulSoup
 from dateutil.easter import easter
 from playwright.sync_api import sync_playwright
+
+try:
+    from .fandango import FandangoSource, FandangoError, FandangoBlocked
+except ImportError:  # python crawler/scraper.py
+    from fandango import FandangoSource, FandangoError, FandangoBlocked
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -26,14 +37,17 @@ LA_TZ = ZoneInfo('America/Los_Angeles')
 THEATERS = [
     {
         'name': 'Century City IMAX',
+        'source_url': 'https://www.fandango.com/amc-century-city-15-aaaoz/theater-page',
         'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date='
     },
     {
         'name': 'Century City Dolby Cinema',
+        'source_url': 'https://www.fandango.com/amc-century-city-15-aaaoz/theater-page',
         'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date='
     },
     {
         'name': 'Universal CityWalk IMAX',
+        'source_url': 'https://www.fandango.com/universal-cinema-an-amc-theatre-aaawx/theater-page',
         'url': 'https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date='
     }
 ]
@@ -55,8 +69,39 @@ _browser = None
 _context = None
 
 
+class CrawlError(Exception):
+    """An unsuccessful request; never equivalent to an empty schedule."""
+
+
+class AccessBlockedError(CrawlError):
+    """Access denied, rate limited, or challenged. Abort without retrying."""
+
+
+class FetchError(CrawlError):
+    """Navigation, HTTP, or unexpected redirect failure."""
+
+
+class ParseError(CrawlError):
+    """The response cannot establish a trustworthy schedule result."""
+
+
+@dataclass(frozen=True)
+class ShowtimesResult:
+    """A validated result, distinct from a failed request.
+
+    empty_reason is 'schedule_not_released' only for an explicit empty-state
+    message inside the requested AMC showtimes page, or 'format_not_scheduled'
+    when an explicit empty-state message names the selected format or filters.
+    A missing format marker by itself is NOT evidence of an empty schedule.
+    Only movies is serialized into the existing showtimes.json schema.
+    """
+
+    movies: list
+    empty_reason: str | None = None
+
+
 def init_playwright():
-    """初始化 Playwright 浏览器，访问 AMC 首页建立 Cookie"""
+    """Initialize a normal browser; do not impersonate another browser or bypass challenges."""
     global _pw, _browser, _context
     _pw = sync_playwright().start()
     _browser = _pw.chromium.launch(
@@ -65,86 +110,96 @@ def init_playwright():
             '--no-sandbox',
             '--disable-setuid-sandbox',
             '--disable-dev-shm-usage',
-            '--disable-blink-features=AutomationControlled',
         ]
     )
     _context = _browser.new_context(
-        user_agent=(
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-            'AppleWebKit/537.36 (KHTML, like Gecko) '
-            'Chrome/130.0.0.0 Safari/537.36'
-        ),
         viewport={'width': 1280, 'height': 720},
         locale='en-US',
-        extra_http_headers={
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Cache-Control': 'max-age=0',
-        }
     )
-    # 预热：访问 AMC 首页让浏览器通过 JS Cookie Challenge，建立合法 session
-    page = _context.new_page()
-    try:
-        logger.info("Playwright 预热：访问 AMC 首页...")
-        page.goto('https://www.amctheatres.com/', wait_until='domcontentloaded', timeout=30000)
-        logger.info("Playwright 预热完成")
-    except Exception as e:
-        logger.warning(f"Playwright 预热失败（忽略）: {e}")
-    finally:
-        page.close()
     logger.info("Playwright 浏览器初始化完成")
 
 
 def close_playwright():
     """关闭 Playwright 浏览器，释放资源"""
-    global _pw, _browser
-    try:
-        if _browser:
-            _browser.close()
-        if _pw:
-            _pw.stop()
-    except Exception as e:
-        logger.warning(f"关闭 Playwright 时出错（忽略）: {e}")
+    global _pw, _browser, _context
+    for resource, method in ((_context, 'close'), (_browser, 'close'), (_pw, 'stop')):
+        try:
+            if resource:
+                getattr(resource, method)()
+        except Exception as e:
+            logger.warning(f"关闭 Playwright 时出错: {e}")
+    _pw = _browser = _context = None
     logger.info("Playwright 浏览器已关闭")
 
 
-def _is_queueit_page(html):
-    """检查是否被 QueueIt 虚拟排队页面拦截（特征：页面很小 + 包含 queueViewModel）"""
-    return len(html) < 60000 and 'queueViewModel' in html
+def _visible_page(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    for element in soup(['script', 'style', 'noscript']):
+        element.decompose()
+    for element in soup.select('[hidden], [aria-hidden="true"]'):
+        element.decompose()
+    return soup, ' '.join(soup.stripped_strings).lower()
 
 
-def fetch_html_with_playwright(url, retry=True):
-    """
-    用 Playwright 获取页面完整 HTML（包括执行 JS Challenge 后的内容）。
-    如果收到 QueueIt 虚拟排队页面，等待后自动重试一次。
-    """
-    global _context
-    page = _context.new_page()
+def validate_response(html, status, final_url, requested_url):
+    """Reject access/error pages before any missing fields can mean 'no shows'."""
+    if status in {401, 403, 429}:
+        raise AccessBlockedError(f'AMC refused access (HTTP {status}); no retry attempted.')
+    if not html or not html.strip():
+        raise ParseError('AMC returned an empty page.')
+
+    soup, visible = _visible_page(html)
+    title = soup.title.get_text(' ', strip=True).lower() if soup.title else ''
+    blocked_phrases = (
+        'sorry, you have been blocked', 'verify you are human',
+        'enable javascript and cookies to continue', 'checking your browser',
+    )
+    if ('queueViewModel' in html or 'attention required! | cloudflare' in title
+            or title.strip(' .') == 'just a moment'
+            or any(phrase in visible for phrase in blocked_phrases)):
+        raise AccessBlockedError('AMC returned an access challenge or waiting-room page; no retry attempted.')
+    # A normal AMC page can include a Cloudflare footer/script; that alone is not a block.
+    if status is None or status < 200 or status >= 300:
+        raise FetchError(f'AMC returned unexpected HTTP status {status}.')
+
+    actual, expected = urlsplit(final_url), urlsplit(requested_url)
+    if (actual.scheme != 'https' or actual.hostname not in {'amctheatres.com', 'www.amctheatres.com'}
+            or actual.path.rstrip('/') != expected.path.rstrip('/')):
+        raise FetchError('AMC navigation ended at an unexpected page.')
+    actual_query, expected_query = parse_qs(actual.query), parse_qs(expected.query)
+    for key in ('date', 'premium-offering'):
+        if actual_query.get(key) != expected_query.get(key):
+            raise FetchError(f'AMC navigation changed the requested {key}.')
+    if not soup.html or not soup.body or not re.search(r'\bamc\b', visible):
+        raise ParseError('Response is not a recognizable AMC page.')
+
+
+def fetch_html_with_playwright(url):
+    """Read one normal page. Access blocks stop the run, without retries or bypasses."""
+    page = None
     try:
-        page.goto(url, wait_until='networkidle', timeout=30000)
+        page = _context.new_page()
+        response = page.goto(url, wait_until='domcontentloaded', timeout=30000)
         html = page.content()
-
-        if _is_queueit_page(html):
-            logger.warning(f"  [QueueIt] 收到排队页面（{len(html)}字节），等待后重试: {url}")
-            page.close()
-            # 随机等待 8~15 秒让 QueueIt 放行
-            wait_sec = random.uniform(8, 15)
-            logger.info(f"  [QueueIt] 等待 {wait_sec:.1f} 秒后重试...")
-            time.sleep(wait_sec)
-
-            if retry:
-                return fetch_html_with_playwright(url, retry=False)
-            else:
-                logger.error(f"  [QueueIt] 重试后仍为排队页面，放弃: {url}")
-                return html
-
+        validate_response(html, response.status if response else None, page.url, url)
         return html
+    except CrawlError:
+        raise
     except Exception as e:
-        logger.error(f"Playwright 抓取失败 ({url}): {e}")
-        return ''
+        # A timed-out navigation may already show an explicit block. Detect it
+        # to stop promptly; never treat an incomplete timeout page as success.
+        if page is not None:
+            try:
+                validate_response(page.content(), 200, page.url, url)
+            except AccessBlockedError:
+                raise
+            except Exception:
+                pass
+        raise FetchError(f'AMC navigation failed: {type(e).__name__}.') from e
     finally:
         try:
-            page.close()
+            if page is not None:
+                page.close()
         except Exception:
             pass
 
@@ -284,7 +339,7 @@ def validate_format_in_html(html, format_name):
     通过检查RSC payload中的格式标识ID来判断：
       IMAX有排片时：会出现 'imaxwithlaseratamc-' 或 'imax70mm-' （带连字符，表示具体场次条目）
       Dolby有排片时：会出现 'dolbycinemaatamcprime-' （带连字符，表示具体场次条目，而非URL参数）
-    如果这些标识不存在，说明页面显示的是fallback内容（其他格式的排片），应返回False。
+    标识缺失只返回 False；调用方仍须区分明确的空状态和页面错误。
     """
     if not format_name:
         return True
@@ -303,7 +358,7 @@ def validate_format_in_html(html, format_name):
             logger.info("  [FORMAT] 找到IMAX 70MM场次标识 'imax70mm-'，确认有IMAX 70MM排片")
             return True
 
-        logger.info("  [FORMAT] 未找到IMAX场次标识，该日期无IMAX排片")
+        logger.info("  [FORMAT] 未找到IMAX场次标识，需验证页面状态")
         return False
 
     elif format_name == 'Dolby':
@@ -311,77 +366,59 @@ def validate_format_in_html(html, format_name):
         if 'dolbycinemaatamcprime-' in html_lower:
             logger.info("  [FORMAT] 找到Dolby场次标识 'dolbycinemaatamcprime-'，确认有Dolby排片")
             return True
-        logger.info("  [FORMAT] 未找到Dolby场次标识，该日期无Dolby排片")
+        logger.info("  [FORMAT] 未找到Dolby场次标识，需验证页面状态")
         return False
 
     return True
 
 
+def explicit_empty_reason(html, format_name):
+    """Recognize an explicit schedule empty state, never a missing selector.
+
+    This must be visible inside <main> on an AMC showtimes document with its
+    Next.js payload. A format/filter-specific message is represented separately
+    from a date whose entire schedule has not been released.
+    """
+    soup, _ = _visible_page(html)
+    main = soup.find('main')
+    if main is None or '__next_f' not in html:
+        return None
+    text = ' '.join(main.stripped_strings).lower()
+    pattern = r"no (?:showtimes|show times)(?: are)? (?:currently )?(?:available|found|scheduled)"
+    match = re.search(pattern, text)
+    if not match:
+        return None
+    message = text[match.start():match.start() + 180].split('.')[0]
+    if 'filter' in message or 'format' in message or (format_name and format_name.lower() in message):
+        return 'format_not_scheduled'
+    return 'schedule_not_released'
+
+
 def fetch_showtimes(theater, date_str):
-    """
-    抓取指定影厅和日期的排片信息
-    从 RSC Payload 中用正则提取电影和场次数据
-    """
+    """Return a validated schedule result or raise a typed failure."""
     url = f"{theater['url']}{date_str}"
     logger.info(f"抓取 {theater['name']} {date_str} -> {url}")
-
-    # 请求前随机等待 2~5 秒，模拟人类浏览节奏，避免触发 QueueIt
-    sleep_sec = random.uniform(2, 5)
-    logger.info(f"  [delay] 等待 {sleep_sec:.1f} 秒...")
-    time.sleep(sleep_sec)
-
+    # Modest request pacing; this is not a retry or a challenge workaround.
+    time.sleep(random.uniform(2, 5))
     try:
-        # 使用 Playwright 抓取，自动处理 JS Cookie Challenge 和 QueueIt
         html = fetch_html_with_playwright(url)
-        if not html:
-            logger.error(f"Playwright 返回空内容 ({theater['name']} {date_str})")
-            return []
-        logger.info(f"获取到 HTML，长度: {len(html)}")
-
-        # 诊断1: 搜索 Next.js RSC payload 格式 (__next_f)
-        next_f = re.findall(r'self\.__next_f\.push\(\[.*?\]\)', html[:200000])
-        logger.info(f"  [DEBUG] '__next_f' 出现: {len(next_f)} 次")
-        if next_f:
-            logger.info(f"  [DEBUG] 第一个: {next_f[0][:300]}")
-
-        # 诊断2: 搜索 option 下拉菜单里的电影 (这个之前确认存在)
-        option_movies = re.findall(r'<option value="([^"]+)">([^<]+)</option>', html)
-        logger.info(f"  [DEBUG] <option> 电影选项: {option_movies[:10]}")
-
-        # 诊断3: 全文搜索 script 标签内容（不限50000字符）
-        all_scripts = re.findall(r'<script[^>]*>([\s\S]*?)</script>', html)
-        non_empty = [(i, s) for i, s in enumerate(all_scripts) if len(s.strip()) > 10]
-        logger.info(f"  [DEBUG] 共 {len(all_scripts)} 个script标签, 非空 {len(non_empty)} 个")
-        for i, script in non_empty[:5]:
-            logger.info(f"  [DEBUG] script[{i}] 长度={len(script)}, 前300字符: {script[:300]}")
-
-        # 诊断4: 搜索HTML中间部分（250KB附近）是否有排片数据
-        mid = html[200000:210000]
-        for pat_label, pat in [('time/amPm', r'"amPm"'), ('display', r'"display"'), ('next_f', r'__next_f')]:
-            if re.search(pat, mid):
-                pos = re.search(pat, mid).start()
-                logger.info(f"  [DEBUG] 中部({pat_label}): ...{mid[max(0,pos-100):pos+200]}...")
-            else:
-                logger.info(f"  [DEBUG] 中部无 '{pat_label}'")
-
-        # 验证返回的HTML是否包含请求的格式
-        # 从theater['name']中提取格式（IMAX或Dolby Cinema）
         format_name = extract_format(theater['name'])
-        if format_name and not validate_format_in_html(html, format_name):
-            logger.warning(f"HTML中未找到格式 '{format_name}'，返回空列表以避免误匹配")
-            return []
-
-        # 从 RSC Payload 中提取电影和场次
-        movies = parse_rsc_payload(html)
-
+        if '__next_f' not in html:
+            raise ParseError('AMC showtimes payload is missing; schedule availability is unknown.')
+        has_format = not format_name or validate_format_in_html(html, format_name)
+        movies = parse_rsc_payload(html) if has_format else []
+        if not movies:
+            empty_reason = explicit_empty_reason(html, format_name)
+            if empty_reason:
+                logger.info(f"Validated empty schedule: {empty_reason}")
+                return ShowtimesResult([], empty_reason=empty_reason)
+            raise ParseError('AMC page did not yield movie sessions or an explicit empty state.')
         logger.info(f"成功获取 {theater['name']} {date_str}: {len(movies)} 部电影")
-        for m in movies:
-            logger.info(f"  - {m['title']}: {m['showtimes']}")
-        return movies
-
+        return ShowtimesResult(movies)
+    except CrawlError:
+        raise
     except Exception as e:
-        logger.error(f"抓取或解析失败 ({theater['name']} {date_str}): {e}")
-        return []
+        raise ParseError(f'AMC schedule parsing failed: {type(e).__name__}.') from e
 
 
 def extract_movie_ratings(html, movie_slug):
@@ -622,70 +659,162 @@ def parse_rsc_payload(html):
     return movies
 
 
-def main():
-    """主函数"""
-    logger.info("开始AMC排片爬虫任务...")
+def read_json(path):
+    try:
+        with path.open(encoding='utf-8') as handle:
+            return json.load(handle)
+    except (OSError, ValueError):
+        return None
 
-    # 初始化 Playwright 浏览器（复用同一实例以节省资源）
-    init_playwright()
 
-    weekend_dates = get_weekend_dates()
-    logger.info(f"计划抓取日期: {[d.strftime('%Y-%m-%d (%A)') for d in weekend_dates]}")
+def atomic_write_json(path, value):
+    """Stage next to the destination so os.replace is atomic on its filesystem."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
+                                         prefix=f'.{path.name}.', suffix='.tmp', delete=False) as handle:
+            temp_path = Path(handle.name)
+            json.dump(value, handle, ensure_ascii=False, indent=2)
+            handle.write('\n')
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temp_path, path)
+    finally:
+        if temp_path is not None:
+            temp_path.unlink(missing_ok=True)
 
-    if not weekend_dates:
-        logger.warning("未找到任何周末日期")
-        weekend_dates = [datetime.now(LA_TZ) + timedelta(days=5)]
 
+def previous_success_time(data_dir):
+    """Legacy empty datasets have an untrustworthy last_updated timestamp.
+
+    Nonempty legacy data may establish a previous success. An empty dataset
+    needs crawl_status evidence from this validator before its timestamp is used.
+    """
+    data = read_json(data_dir / 'showtimes.json')
+    updated = read_json(data_dir / 'last_updated.json')
+    status = read_json(data_dir / 'crawl_status.json')
+    if not isinstance(data, dict) or not isinstance(updated, dict):
+        return None
+    timestamp = updated.get('timestamp')
+    try:
+        parsed = datetime.fromisoformat(timestamp)
+        if parsed.tzinfo is None:
+            return None
+    except (ValueError, TypeError):
+        return None
+    if isinstance(status, dict) and status.get('last_successful_at') == timestamp:
+        return timestamp
+    for theater in data.values():
+        if not isinstance(theater, dict) or not isinstance(theater.get('dates'), dict):
+            continue
+        for day in theater['dates'].values():
+            if not isinstance(day, dict):
+                continue
+            for movie in day.get('movies', []) if isinstance(day.get('movies'), list) else []:
+                if (isinstance(movie, dict) and movie.get('title') and movie.get('slug')
+                        and isinstance(movie.get('showtimes'), list) and movie['showtimes']):
+                    return timestamp
+    return None
+
+
+def main(data_dir='data', source='fandango'):
+    """Publish schedules only after an entirely validated run; failures update status only."""
+    data_dir = Path(data_dir)
+    attempted_at = datetime.now(LA_TZ).isoformat()
+    last_successful_at = previous_success_time(data_dir)
+    successful_requests = failed_requests = 0
     all_showtimes = {}
+    errors = []
+    access_blocked = False
+    logger.info("开始AMC排片爬虫任务...")
+    try:
+        if source not in {'amc', 'fandango'}:
+            raise CrawlError('Unknown showtime source.')
+        weekend_dates = get_weekend_dates()
+        if not weekend_dates:
+            raise CrawlError('No target dates were generated.')
+        init_playwright()
+        fandango_source = FandangoSource(_context) if source == 'fandango' else None
+        for theater in THEATERS:
+            theater_data = {'name': theater['name'], 'url': theater['url'], 'dates': {}}
+            if source == 'fandango':
+                theater_data.update(source='Fandango', source_url=theater['source_url'])
+            for date_obj in weekend_dates:
+                date_str = date_obj.strftime('%Y-%m-%d')
+                try:
+                    if fandango_source is not None:
+                        try:
+                            day = fandango_source.fetch_day(theater['source_url'], date_str)
+                        except FandangoBlocked as e:
+                            raise AccessBlockedError(str(e)) from e
+                        except FandangoError as e:
+                            raise FetchError(str(e)) from e
+                        movies = day[extract_format(theater['name'])]
+                        result = ShowtimesResult(movies, None if movies else 'no_listed_showtimes')
+                        logger.info('%s %s: %d movies from Fandango', theater['name'], date_str, len(movies))
+                    else:
+                        result = fetch_showtimes(theater, date_str)
+                except AccessBlockedError as e:
+                    failed_requests += 1
+                    access_blocked = True
+                    errors.append(str(e))
+                    logger.error('%s %s: %s', theater['name'], date_str, e)
+                    break
+                except CrawlError as e:
+                    failed_requests += 1
+                    errors.append(str(e))
+                    logger.error('%s %s: %s', theater['name'], date_str, e)
+                    continue
+                successful_requests += 1
+                date_data = {'day': date_obj.strftime('%A'), 'movies': result.movies}
+                holiday = get_holiday_name(date_obj)
+                if holiday:
+                    date_data['holiday'] = holiday
+                theater_data['dates'][date_str] = date_data
+            all_showtimes[theater['name']] = theater_data
+            if access_blocked:
+                break
+    except Exception as e:
+        failed_requests += 1
+        access_blocked = access_blocked or isinstance(e, AccessBlockedError)
+        errors.append(str(e) if isinstance(e, CrawlError) else f'Crawler failed: {type(e).__name__}.')
+        logger.exception('Crawler run failed')
+    finally:
+        close_playwright()
 
-    for theater in THEATERS:
-        theater_data = {
-            'name': theater['name'],
-            'url': theater['url'],  # 保存购票URL用于前端跳转
-            'dates': {}
-        }
+    if failed_requests == 0 and successful_requests > 0:
+        completed_at = datetime.now(LA_TZ).isoformat()
+        atomic_write_json(data_dir / 'showtimes.json', all_showtimes)
+        atomic_write_json(data_dir / 'last_updated.json', {
+            'timestamp': completed_at, 'timezone': 'America/Los_Angeles',
+        })
+        last_successful_at = completed_at
+        state = 'ok'
+        message = 'Showtimes updated successfully.'
+    else:
+        # Do not mix newly read dates with uncertain results. Both previous data
+        # and its success timestamp remain byte-for-byte unchanged on a failed run.
+        state = 'error' if access_blocked or not successful_requests else 'partial'
+        detail = errors[0] if errors else 'No schedules were validated.'
+        message = f'{detail} Previous schedule data was preserved.'
+        if access_blocked:
+            message += ' Remaining requests were not attempted.'
 
-        for date_obj in weekend_dates:
-            date_str = date_obj.strftime('%Y-%m-%d')
-            day_name = date_obj.strftime('%A')
-            holiday_name = get_holiday_name(date_obj)
-
-            movies = fetch_showtimes(theater, date_str)
-
-            date_data = {
-                'day': day_name,
-                'movies': movies
-            }
-            # 如果是节假日，添加节假日标记
-            if holiday_name:
-                date_data['holiday'] = holiday_name
-
-            theater_data['dates'][date_str] = date_data
-
-        all_showtimes[theater['name']] = theater_data
-
-    # 保存排片数据
-    output_dir = 'data'
-    os.makedirs(output_dir, exist_ok=True)
-
-    output_file = os.path.join(output_dir, 'showtimes.json')
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(all_showtimes, f, ensure_ascii=False, indent=2)
-    logger.info(f"排片数据已保存到 {output_file}")
-
-    # 保存更新时间（洛杉矶时区）
-    update_file = os.path.join(output_dir, 'last_updated.json')
-    with open(update_file, 'w', encoding='utf-8') as f:
-        json.dump({
-            'timestamp': datetime.now(LA_TZ).isoformat(),
-            'timezone': 'America/Los_Angeles'
-        }, f, ensure_ascii=False, indent=2)
-    logger.info(f"更新时间已保存到 {update_file}")
-
-    # 关闭 Playwright 浏览器
-    close_playwright()
-    logger.info("爬虫任务完成！")
+    atomic_write_json(data_dir / 'crawl_status.json', {
+        'status': state,
+        'attempted_at': attempted_at,
+        'last_successful_at': last_successful_at,
+        'message': message,
+        'failed_requests': failed_requests,
+        'successful_requests': successful_requests,
+        'stale': state != 'ok',
+        'source': 'Fandango' if source == 'fandango' else 'AMC',
+    })
+    logger.info('Crawler status: %s (%d successful, %d failed)', state, successful_requests, failed_requests)
+    return 0 if state == 'ok' else 1
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main(source=os.environ.get('SHOWTIMES_SOURCE', 'fandango')))

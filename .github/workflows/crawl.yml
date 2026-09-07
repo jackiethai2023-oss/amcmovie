@@ -9,9 +9,18 @@ on:
     - cron: '0 0-6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: amc-showtimes
+  cancel-in-progress: false
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
     - name: Checkout repository
@@ -30,18 +39,73 @@ jobs:
     - name: Install Playwright browsers
       run: playwright install chromium --with-deps
 
+    - name: Test crawler failure handling
+      run: python -m unittest discover -s tests -v
+
+    - name: Test frontend data health states
+      run: node --test tests/frontend_health.test.cjs
+
     - name: Run crawler
+      id: crawl
       run: python crawler/scraper.py
 
     - name: Configure Git
+      if: ${{ always() && (steps.crawl.outcome == 'success' || steps.crawl.outcome == 'failure') }}
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
-    - name: Commit and push changes
+    - name: Publish validated data or failure status
+      id: publish
+      if: ${{ always() && (steps.crawl.outcome == 'success' || steps.crawl.outcome == 'failure') }}
+      env:
+        CRAWL_OUTCOME: ${{ steps.crawl.outcome }}
       run: |
-        git add data/showtimes.json data/last_updated.json
-        git diff --quiet && git diff --staged --quiet || (
-            git commit -m "chore: update showtimes data" &&
-            git push
-        )
+        if [ -f data/crawl_status.json ]; then
+          git add data/crawl_status.json
+        fi
+        if [ "$CRAWL_OUTCOME" = "success" ]; then
+          git add data/showtimes.json data/last_updated.json
+        fi
+        if ! git diff --staged --quiet; then
+          git commit -m "chore: update AMC crawl status and validated schedules"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+        fi
+
+    # GITHUB_TOKEN pushes do not trigger branch-based Pages builds. Request the
+    # existing legacy/main/root build explicitly; no Pages settings migration.
+    - name: Rebuild Pages and verify the published commit
+      if: ${{ always() && steps.publish.outcome == 'success' && steps.publish.outputs.changed == 'true' }}
+      timeout-minutes: 7
+      env:
+        GH_TOKEN: ${{ github.token }}
+        PAGES_COMMIT: ${{ steps.publish.outputs.commit }}
+      run: |
+        python - <<'PY'
+        import json
+        import os
+        import subprocess
+        import time
+
+        endpoint = f"repos/{os.environ['GITHUB_REPOSITORY']}/pages/builds"
+        headers = ['-H', 'Accept: application/vnd.github+json',
+                   '-H', 'X-GitHub-Api-Version: 2022-11-28']
+        subprocess.run(['gh', 'api', '--method', 'POST', endpoint, *headers], check=True)
+        expected = os.environ['PAGES_COMMIT']
+        for attempt in range(36):
+            result = subprocess.run(['gh', 'api', endpoint + '/latest', *headers],
+                                    check=True, text=True, capture_output=True)
+            build = json.loads(result.stdout)
+            if build.get('commit') == expected:
+                if build.get('status') == 'built':
+                    print(f'GitHub Pages published {expected}.')
+                    break
+                if build.get('status') == 'errored':
+                    raise SystemExit(f"GitHub Pages build failed: {build.get('error')}")
+            print(f"Waiting for Pages build {expected[:12]}: {build.get('status')}", flush=True)
+            time.sleep(10)
+        else:
+            raise SystemExit('Timed out confirming the new commit on GitHub Pages.')
+        PY
