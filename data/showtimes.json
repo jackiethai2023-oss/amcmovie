@@ -3,21 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-07": {
-        "day": "Monday",
-        "movies": [
-          {
-            "title": "Akira 4K Re-Release (2026)",
-            "slug": "fandango-246840",
-            "showtimes": [
-              "9:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
-        "holiday": "Labor Day"
-      },
       "2026-09-12": {
         "day": "Saturday",
         "movies": [
@@ -232,21 +217,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-09-07": {
-        "day": "Monday",
-        "movies": [
-          {
-            "title": "Hope (2026)",
-            "slug": "fandango-246483",
-            "showtimes": [
-              "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ],
-        "holiday": "Labor Day"
-      },
       "2026-09-12": {
         "day": "Saturday",
         "movies": [
@@ -477,21 +447,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-07": {
-        "day": "Monday",
-        "movies": [
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ],
-        "holiday": "Labor Day"
-      },
       "2026-09-12": {
         "day": "Saturday",
         "movies": [
