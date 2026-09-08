@@ -304,6 +304,15 @@
             "is_70mm": false
           },
           {
+            "title": "Forgotten Island (2026)",
+            "slug": "fandango-246370",
+            "showtimes": [
+              "1:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "Heart of the Beast (2026)",
             "slug": "fandango-246224",
             "showtimes": [
@@ -322,6 +331,15 @@
             "slug": "fandango-246870",
             "showtimes": [
               "6:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Forgotten Island (2026)",
+            "slug": "fandango-246370",
+            "showtimes": [
+              "1:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
