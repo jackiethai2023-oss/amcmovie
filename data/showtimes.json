@@ -3,29 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-12": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Oasis: Don't Look Back in Anger (2026)",
-            "slug": "fandango-246559",
-            "showtimes": [
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-09-13": {
         "day": "Sunday",
         "movies": [
@@ -206,6 +183,10 @@
       "2026-11-29": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-12-05": {
+        "day": "Saturday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -215,21 +196,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-09-12": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Practical Magic 2 (2026)",
-            "slug": "fandango-246473",
-            "showtimes": [
-              "7:40pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-09-13": {
         "day": "Sunday",
         "movies": [
@@ -451,6 +417,10 @@
       "2026-11-29": {
         "day": "Sunday",
         "movies": []
+      },
+      "2026-12-05": {
+        "day": "Saturday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -460,20 +430,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-12": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
-      },
       "2026-09-13": {
         "day": "Sunday",
         "movies": [
@@ -649,6 +605,10 @@
       },
       "2026-11-29": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2026-12-05": {
+        "day": "Saturday",
         "movies": []
       }
     },
