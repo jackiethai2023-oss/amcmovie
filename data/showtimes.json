@@ -327,7 +327,17 @@
       },
       "2026-10-25": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Wicker (2026)",
+            "slug": "fandango-246507",
+            "showtimes": [
+              "4:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-31": {
         "day": "Saturday",
