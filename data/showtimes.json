@@ -307,11 +307,31 @@
       },
       "2026-10-10": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Other Mommy (2026)",
+            "slug": "fandango-246464",
+            "showtimes": [
+              "4:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-11": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Other Mommy (2026)",
+            "slug": "fandango-246464",
+            "showtimes": [
+              "4:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-17": {
         "day": "Saturday",
