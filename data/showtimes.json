@@ -3,21 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-20": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Resident Evil (2026)",
-            "slug": "fandango-245893",
-            "showtimes": [
-              "7:45pm",
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-09-26": {
         "day": "Saturday",
         "movies": [
@@ -84,11 +69,39 @@
       },
       "2026-10-17": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-18": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "10:00am",
+              "1:00pm",
+              "4:00pm",
+              "7:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-24": {
         "day": "Saturday",
@@ -169,6 +182,10 @@
       "2026-12-12": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-12-13": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -178,21 +195,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-09-20": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Resident Evil (2026)",
-            "slug": "fandango-245893",
-            "showtimes": [
-              "8:40pm",
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-09-26": {
         "day": "Saturday",
         "movies": [
@@ -323,11 +325,31 @@
       },
       "2026-10-17": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "7:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-18": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "7:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-24": {
         "day": "Saturday",
@@ -408,6 +430,10 @@
       "2026-12-12": {
         "day": "Saturday",
         "movies": []
+      },
+      "2026-12-13": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -417,20 +443,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-09-20": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
-      },
       "2026-09-26": {
         "day": "Saturday",
         "movies": [
@@ -483,11 +495,39 @@
       },
       "2026-10-17": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "11:00am",
+              "2:00pm",
+              "5:00pm",
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-18": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "11:00am",
+              "2:00pm",
+              "5:00pm",
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-24": {
         "day": "Saturday",
@@ -567,6 +607,10 @@
       },
       "2026-12-12": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2026-12-13": {
+        "day": "Sunday",
         "movies": []
       }
     },
