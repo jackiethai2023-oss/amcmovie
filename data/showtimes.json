@@ -57,11 +57,39 @@
       },
       "2026-10-03": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "9:30am",
+              "12:45pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-04": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "9:30am",
+              "12:45pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-10": {
         "day": "Saturday",
@@ -271,6 +299,17 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "10:30am",
+              "4:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "Verity (2026)",
             "slug": "fandango-240033",
             "showtimes": [
@@ -285,6 +324,17 @@
       "2026-10-04": {
         "day": "Sunday",
         "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "10:30am",
+              "4:45pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "Verity (2026)",
             "slug": "fandango-240033",
@@ -525,11 +575,39 @@
       },
       "2026-10-03": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "9:30am",
+              "12:45pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-04": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "9:30am",
+              "12:45pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-10": {
         "day": "Saturday",
