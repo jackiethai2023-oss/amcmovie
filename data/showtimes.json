@@ -216,7 +216,6 @@
             "title": "Avengers Endgame: Encore (2026)",
             "slug": "fandango-246870",
             "showtimes": [
-              "6:45pm",
               "10:50pm"
             ],
             "is_coming_soon": false,
@@ -268,6 +267,7 @@
             "title": "Verity (2026)",
             "slug": "fandango-240033",
             "showtimes": [
+              "1:45pm",
               "8:00pm"
             ],
             "is_coming_soon": false,
@@ -475,7 +475,6 @@
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
-              "6:00pm",
               "10:00pm"
             ],
             "is_coming_soon": false,
@@ -534,6 +533,7 @@
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
+              "11:00am",
               "2:00pm",
               "5:00pm",
               "8:00pm",
