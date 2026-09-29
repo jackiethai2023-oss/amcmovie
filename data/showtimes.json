@@ -41,11 +41,31 @@
       },
       "2026-10-10": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Portrait of an Artist: Stephen Curry (2026)",
+            "slug": "fandango-247665",
+            "showtimes": [
+              "1:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-11": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Portrait of an Artist: Stephen Curry (2026)",
+            "slug": "fandango-247665",
+            "showtimes": [
+              "1:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-17": {
         "day": "Saturday",
@@ -321,6 +341,15 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Sense and Sensibility (2026)",
+            "slug": "fandango-244998",
+            "showtimes": [
+              "1:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
@@ -335,6 +364,15 @@
       "2026-10-18": {
         "day": "Sunday",
         "movies": [
+          {
+            "title": "Sense and Sensibility (2026)",
+            "slug": "fandango-244998",
+            "showtimes": [
+              "1:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
