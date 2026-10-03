@@ -10,7 +10,6 @@
             "title": "Digger (2026)",
             "slug": "fandango-245150",
             "showtimes": [
-              "4:00pm",
               "7:15pm",
               "10:30pm"
             ],
@@ -285,7 +284,6 @@
             "title": "Verity (2026)",
             "slug": "fandango-240033",
             "showtimes": [
-              "1:45pm",
               "8:00pm"
             ],
             "is_coming_soon": false,
@@ -610,7 +608,6 @@
             "title": "Digger (2026)",
             "slug": "fandango-245150",
             "showtimes": [
-              "4:00pm",
               "7:15pm",
               "10:30pm"
             ],
@@ -774,7 +771,6 @@
             "showtimes": [
               "6:00am",
               "9:20am",
-              "12:40pm",
               "4:00pm",
               "11:00pm",
               "2:30am (+1 day)"
