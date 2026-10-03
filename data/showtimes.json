@@ -243,6 +243,24 @@
           }
         ],
         "holiday": "Christmas Eve"
+      },
+      "2026-12-25": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "11:00am",
+              "2:30pm",
+              "6:00pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
+        "holiday": "Christmas Day"
       }
     },
     "source": "Fandango",
@@ -561,6 +579,24 @@
           }
         ],
         "holiday": "Christmas Eve"
+      },
+      "2026-12-25": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "Avengers: Doomsday (2026)",
+            "slug": "fandango-237176",
+            "showtimes": [
+              "11:00am",
+              "2:45pm",
+              "6:30pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
+        "holiday": "Christmas Day"
       }
     },
     "source": "Fandango",
@@ -789,6 +825,27 @@
           }
         ],
         "holiday": "Christmas Eve"
+      },
+      "2026-12-25": {
+        "day": "Friday",
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "6:00am",
+              "9:20am",
+              "12:40pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm",
+              "2:30am (+1 day)"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ],
+        "holiday": "Christmas Day"
       }
     },
     "source": "Fandango",
