@@ -135,11 +135,39 @@
       },
       "2026-11-07": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "9:45am",
+              "1:00pm",
+              "4:15pm",
+              "7:30pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-08": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "9:45am",
+              "1:00pm",
+              "4:15pm",
+              "7:30pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-14": {
         "day": "Saturday",
@@ -185,11 +213,31 @@
       },
       "2026-12-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "George Michael: The Faith Tour (2026)",
+            "slug": "fandango-247189",
+            "showtimes": [
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "George Michael: The Faith Tour (2026)",
+            "slug": "fandango-247189",
+            "showtimes": [
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-19": {
         "day": "Saturday",
@@ -628,11 +676,53 @@
     "dates": {
       "2026-10-10": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "10:30am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-10-11": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Digger (2026)",
+            "slug": "fandango-245150",
+            "showtimes": [
+              "10:30am"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Odyssey (2026)",
+            "slug": "fandango-241283",
+            "showtimes": [
+              "2:00pm",
+              "6:00pm",
+              "10:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       },
       "2026-10-17": {
         "day": "Saturday",
@@ -698,11 +788,39 @@
       },
       "2026-11-07": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "9:15am",
+              "12:40pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-08": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "9:15am",
+              "12:40pm",
+              "4:00pm",
+              "7:15pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-14": {
         "day": "Saturday",
@@ -748,11 +866,31 @@
       },
       "2026-12-12": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "George Michael: The Faith Tour (2026)",
+            "slug": "fandango-247189",
+            "showtimes": [
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "George Michael: The Faith Tour (2026)",
+            "slug": "fandango-247189",
+            "showtimes": [
+              "6:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-19": {
         "day": "Saturday",
@@ -800,7 +938,6 @@
             "showtimes": [
               "7:30am",
               "11:00am",
-              "2:30pm",
               "6:00pm",
               "9:30pm"
             ],
