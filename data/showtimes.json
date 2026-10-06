@@ -30,7 +30,7 @@
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
-              "10:30pm"
+              "10:25pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -64,7 +64,7 @@
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
-              "10:30pm"
+              "10:25pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -938,6 +938,7 @@
             "showtimes": [
               "7:30am",
               "11:00am",
+              "2:30pm",
               "6:00pm",
               "9:30pm"
             ],
