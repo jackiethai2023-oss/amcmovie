@@ -374,7 +374,6 @@
             "title": "The Social Reckoning (2026)",
             "slug": "fandango-246392",
             "showtimes": [
-              "1:45pm",
               "7:30pm"
             ],
             "is_coming_soon": false,
@@ -624,6 +623,7 @@
             "title": "Avengers: Doomsday (2026)",
             "slug": "fandango-237176",
             "showtimes": [
+              "11:00am",
               "2:45pm",
               "6:30pm",
               "10:15pm"
