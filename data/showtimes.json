@@ -7,19 +7,9 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Portrait of an Artist: Stephen Curry (2026)",
-            "slug": "fandango-247665",
-            "showtimes": [
-              "1:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "Digger (2026)",
             "slug": "fandango-245150",
             "showtimes": [
-              "10:30am",
               "4:00pm",
               "7:15pm"
             ],
@@ -381,7 +371,6 @@
             "title": "Other Mommy (2026)",
             "slug": "fandango-246464",
             "showtimes": [
-              "11:00am",
               "4:45pm",
               "10:30pm"
             ],
@@ -392,7 +381,6 @@
             "title": "The Social Reckoning (2026)",
             "slug": "fandango-246392",
             "showtimes": [
-              "1:45pm",
               "7:30pm"
             ],
             "is_coming_soon": false,
@@ -754,15 +742,6 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Digger (2026)",
-            "slug": "fandango-245150",
-            "showtimes": [
-              "10:30am"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
@@ -956,17 +935,7 @@
       },
       "2026-12-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "George Michael: The Faith Tour (2026)",
-            "slug": "fandango-247189",
-            "showtimes": [
-              "6:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-12-19": {
         "day": "Saturday",
