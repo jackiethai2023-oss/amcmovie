@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-10-10": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:25pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-10-11": {
         "day": "Sunday",
         "movies": [
@@ -249,7 +235,8 @@
               "11:00am",
               "2:30pm",
               "6:00pm",
-              "9:30pm"
+              "9:30pm",
+              "1:00am (+1 day)"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -344,6 +331,23 @@
           }
         ],
         "holiday": "New Year's Day"
+      },
+      "2027-01-02": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "11:00am",
+              "2:30pm",
+              "6:00pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       }
     },
     "source": "Fandango",
@@ -353,20 +357,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-10-10": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Other Mommy (2026)",
-            "slug": "fandango-246464",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-10-11": {
         "day": "Sunday",
         "movies": [
@@ -646,7 +636,6 @@
             "title": "Avengers: Doomsday (2026)",
             "slug": "fandango-237176",
             "showtimes": [
-              "11:00am",
               "2:45pm",
               "6:30pm",
               "10:15pm"
@@ -708,6 +697,23 @@
           }
         ],
         "holiday": "New Year's Day"
+      },
+      "2027-01-02": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Avengers: Doomsday (2026)",
+            "slug": "fandango-237176",
+            "showtimes": [
+              "11:00am",
+              "2:45pm",
+              "6:30pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       }
     },
     "source": "Fandango",
@@ -717,20 +723,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-10-10": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "The Odyssey (2026)",
-            "slug": "fandango-241283",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": true
-          }
-        ]
-      },
       "2026-10-11": {
         "day": "Sunday",
         "movies": [
@@ -1060,6 +1052,26 @@
           }
         ],
         "holiday": "New Year's Day"
+      },
+      "2027-01-02": {
+        "day": "Saturday",
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "6:00am",
+              "9:20am",
+              "12:40pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm",
+              "2:30am (+1 day)"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
       }
     },
     "source": "Fandango",
