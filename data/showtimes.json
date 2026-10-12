@@ -265,7 +265,20 @@
       },
       "2026-12-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "11:00am",
+              "2:30pm",
+              "6:00pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2027-01-01": {
         "day": "Friday",
@@ -610,7 +623,20 @@
       },
       "2026-12-27": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Avengers: Doomsday (2026)",
+            "slug": "fandango-237176",
+            "showtimes": [
+              "10:55am",
+              "2:45pm",
+              "6:30pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2027-01-01": {
         "day": "Friday",
