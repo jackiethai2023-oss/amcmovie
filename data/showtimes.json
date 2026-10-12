@@ -7,15 +7,6 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Digger (2026)",
-            "slug": "fandango-245150",
-            "showtimes": [
-              "7:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
@@ -354,15 +345,6 @@
             "slug": "fandango-246464",
             "showtimes": [
               "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "The Social Reckoning (2026)",
-            "slug": "fandango-246392",
-            "showtimes": [
-              "7:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -717,7 +699,6 @@
             "title": "The Odyssey (2026)",
             "slug": "fandango-241283",
             "showtimes": [
-              "6:00pm",
               "10:00pm"
             ],
             "is_coming_soon": false,
