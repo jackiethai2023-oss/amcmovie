@@ -756,11 +756,33 @@
       },
       "2026-10-31": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Once Upon a Time in Hollywood",
+            "slug": "fandango-211527",
+            "showtimes": [
+              "2:40pm",
+              "6:40pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-01": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Once Upon a Time in Hollywood",
+            "slug": "fandango-211527",
+            "showtimes": [
+              "2:40pm",
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-07": {
         "day": "Saturday",
