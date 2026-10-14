@@ -41,7 +41,21 @@
       },
       "2026-10-24": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "10:00am",
+              "1:15pm",
+              "4:15pm",
+              "7:15pm",
+              "10:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-10-25": {
         "day": "Sunday",
@@ -54,16 +68,50 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Street Fighter (2026)",
+            "slug": "fandango-246472",
+            "showtimes": [
+              "9:30am",
+              "4:45pm",
+              "8:00pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
           }
         ]
       },
       "2026-10-31": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Once Upon a Time in Hollywood",
+            "slug": "fandango-211527",
+            "showtimes": [
+              "6:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-01": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Once Upon a Time in Hollywood",
+            "slug": "fandango-211527",
+            "showtimes": [
+              "6:45pm",
+              "10:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-07": {
         "day": "Saturday",
@@ -429,6 +477,16 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Wildwood (2026)",
+            "slug": "fandango-246438",
+            "showtimes": [
+              "9:30am",
+              "12:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
           }
         ]
       },
@@ -450,6 +508,16 @@
             "slug": "fandango-246507",
             "showtimes": [
               "4:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Wildwood (2026)",
+            "slug": "fandango-246438",
+            "showtimes": [
+              "10:00am",
+              "1:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
