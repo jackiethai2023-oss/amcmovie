@@ -249,8 +249,7 @@
               "11:00am",
               "2:30pm",
               "6:00pm",
-              "9:30pm",
-              "1:00am (+1 day)"
+              "9:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -283,7 +282,6 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
-              "11:00am",
               "2:30pm",
               "6:00pm",
               "9:30pm"
