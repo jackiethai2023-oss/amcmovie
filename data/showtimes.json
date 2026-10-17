@@ -10,7 +10,6 @@
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
-              "1:00pm",
               "4:00pm",
               "7:00pm",
               "10:00pm"
@@ -282,6 +281,7 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
+              "11:00am",
               "2:30pm",
               "6:00pm",
               "9:30pm"
@@ -390,15 +390,6 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Sense and Sensibility (2026)",
-            "slug": "fandango-244998",
-            "showtimes": [
-              "1:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
@@ -479,7 +470,8 @@
             "title": "Wildwood (2026)",
             "slug": "fandango-246438",
             "showtimes": [
-              "9:30am"
+              "9:30am",
+              "12:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -809,7 +801,6 @@
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
-              "2:00pm",
               "5:00pm",
               "8:00pm",
               "11:00pm"
