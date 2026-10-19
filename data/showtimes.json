@@ -51,6 +51,17 @@
         "day": "Saturday",
         "movies": [
           {
+            "title": "Everest: The Other Side (2026)",
+            "slug": "fandango-246958",
+            "showtimes": [
+              "9:45am",
+              "12:45pm",
+              "3:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
             "title": "Once Upon a Time in Hollywood",
             "slug": "fandango-211527",
             "showtimes": [
@@ -65,6 +76,17 @@
       "2026-11-01": {
         "day": "Sunday",
         "movies": [
+          {
+            "title": "Everest: The Other Side (2026)",
+            "slug": "fandango-246958",
+            "showtimes": [
+              "9:45am",
+              "12:45pm",
+              "3:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
           {
             "title": "Once Upon a Time in Hollywood",
             "slug": "fandango-211527",
@@ -773,6 +795,7 @@
             "title": "Godzilla Minus Zero (2026)",
             "slug": "fandango-243973",
             "showtimes": [
+              "9:15am",
               "12:40pm",
               "4:00pm",
               "7:15pm",
@@ -901,6 +924,7 @@
               "9:20am",
               "12:40pm",
               "4:00pm",
+              "7:30pm",
               "11:00pm"
             ],
             "is_coming_soon": false,
