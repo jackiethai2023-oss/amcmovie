@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-10-18": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Street Fighter (2026)",
-            "slug": "fandango-246472",
-            "showtimes": [
-              "10:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-10-24": {
         "day": "Saturday",
         "movies": [
@@ -361,6 +347,10 @@
       "2027-01-09": {
         "day": "Saturday",
         "movies": []
+      },
+      "2027-01-10": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -370,21 +360,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-10-18": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Street Fighter (2026)",
-            "slug": "fandango-246472",
-            "showtimes": [
-              "7:45pm",
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-10-24": {
         "day": "Saturday",
         "movies": [
@@ -730,6 +705,10 @@
       "2027-01-09": {
         "day": "Saturday",
         "movies": []
+      },
+      "2027-01-10": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -739,21 +718,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-10-18": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Street Fighter (2026)",
-            "slug": "fandango-246472",
-            "showtimes": [
-              "8:00pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-10-24": {
         "day": "Saturday",
         "movies": []
@@ -809,7 +773,6 @@
             "title": "Godzilla Minus Zero (2026)",
             "slug": "fandango-243973",
             "showtimes": [
-              "9:15am",
               "12:40pm",
               "4:00pm",
               "7:15pm",
@@ -1086,6 +1049,24 @@
       },
       "2027-01-09": {
         "day": "Saturday",
+        "movies": [
+          {
+            "title": "Dune: Part Three (2026)",
+            "slug": "fandango-244800",
+            "showtimes": [
+              "9:20am",
+              "12:40pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": true
+          }
+        ]
+      },
+      "2027-01-10": {
+        "day": "Sunday",
         "movies": [
           {
             "title": "Dune: Part Three (2026)",
