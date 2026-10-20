@@ -271,7 +271,8 @@
             "showtimes": [
               "11:00am",
               "2:30pm",
-              "6:00pm"
+              "6:00pm",
+              "9:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -521,21 +522,61 @@
       },
       "2026-11-26": {
         "day": "Thursday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Disney's Hexed (2026)",
+            "slug": "fandango-246251",
+            "showtimes": [
+              "4:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Thanksgiving Day"
       },
       "2026-11-27": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "Disney's Hexed (2026)",
+            "slug": "fandango-246251",
+            "showtimes": [
+              "4:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Day After Thanksgiving"
       },
       "2026-11-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disney's Hexed (2026)",
+            "slug": "fandango-246251",
+            "showtimes": [
+              "4:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Disney's Hexed (2026)",
+            "slug": "fandango-246251",
+            "showtimes": [
+              "4:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-05": {
         "day": "Saturday",
@@ -773,8 +814,8 @@
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
-              "7:00pm",
-              "10:00pm"
+              "6:00pm",
+              "9:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -1101,7 +1142,6 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
-              "9:20am",
               "12:40pm",
               "4:00pm",
               "7:30pm",
