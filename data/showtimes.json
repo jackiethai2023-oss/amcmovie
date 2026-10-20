@@ -271,8 +271,7 @@
             "showtimes": [
               "11:00am",
               "2:30pm",
-              "6:00pm",
-              "9:30pm"
+              "6:00pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
