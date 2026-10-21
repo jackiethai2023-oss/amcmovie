@@ -233,6 +233,7 @@
             "showtimes": [
               "7:30am",
               "11:00am",
+              "2:30pm",
               "6:00pm",
               "9:30pm",
               "1:00am (+1 day)"
@@ -505,11 +506,35 @@
       },
       "2026-11-14": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "I Play Rocky (2026)",
+            "slug": "fandango-246500",
+            "showtimes": [
+              "9:00am",
+              "3:15pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-15": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "I Play Rocky (2026)",
+            "slug": "fandango-246500",
+            "showtimes": [
+              "9:00am",
+              "3:15pm",
+              "9:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-21": {
         "day": "Saturday",
