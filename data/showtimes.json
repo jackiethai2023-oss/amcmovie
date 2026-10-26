@@ -10,7 +10,6 @@
             "title": "Street Fighter (2026)",
             "slug": "fandango-246472",
             "showtimes": [
-              "4:45pm",
               "8:00pm",
               "11:00pm"
             ],
@@ -367,15 +366,6 @@
             "showtimes": [
               "7:45pm",
               "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Wicker (2026)",
-            "slug": "fandango-246507",
-            "showtimes": [
-              "4:45pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -810,11 +800,11 @@
             "title": "Godzilla Minus Zero (2026)",
             "slug": "fandango-243973",
             "showtimes": [
-              "10:30pm",
               "9:15am",
               "12:40pm",
               "4:00pm",
-              "7:15pm"
+              "7:15pm",
+              "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
