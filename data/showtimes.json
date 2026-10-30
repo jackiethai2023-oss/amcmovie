@@ -93,11 +93,49 @@
       },
       "2026-11-14": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Dune: Part One Reissue (2026)",
+            "slug": "fandango-248261",
+            "showtimes": [
+              "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Dune: Part Two Reissue (2026)",
+            "slug": "fandango-248263",
+            "showtimes": [
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-15": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Dune: Part One Reissue (2026)",
+            "slug": "fandango-248261",
+            "showtimes": [
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Dune: Part Two Reissue (2026)",
+            "slug": "fandango-248263",
+            "showtimes": [
+              "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-21": {
         "day": "Saturday",
@@ -927,11 +965,49 @@
       },
       "2026-11-14": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Dune: Part One Reissue (2026)",
+            "slug": "fandango-248261",
+            "showtimes": [
+              "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Dune: Part Two Reissue (2026)",
+            "slug": "fandango-248263",
+            "showtimes": [
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-15": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Dune: Part One Reissue (2026)",
+            "slug": "fandango-248261",
+            "showtimes": [
+              "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Dune: Part Two Reissue (2026)",
+            "slug": "fandango-248263",
+            "showtimes": [
+              "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-21": {
         "day": "Saturday",
