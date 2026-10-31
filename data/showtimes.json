@@ -970,6 +970,7 @@
             "title": "Dune: Part One Reissue (2026)",
             "slug": "fandango-248261",
             "showtimes": [
+              "6:45am",
               "2:30pm"
             ],
             "is_coming_soon": false,
@@ -979,7 +980,17 @@
             "title": "Dune: Part Two Reissue (2026)",
             "slug": "fandango-248263",
             "showtimes": [
+              "10:30am",
               "6:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -993,6 +1004,7 @@
             "title": "Dune: Part One Reissue (2026)",
             "slug": "fandango-248261",
             "showtimes": [
+              "6:45am",
               "6:30pm"
             ],
             "is_coming_soon": false,
@@ -1002,7 +1014,17 @@
             "title": "Dune: Part Two Reissue (2026)",
             "slug": "fandango-248263",
             "showtimes": [
+              "10:30am",
               "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
