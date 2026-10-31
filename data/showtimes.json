@@ -98,6 +98,7 @@
             "title": "Dune: Part One Reissue (2026)",
             "slug": "fandango-248261",
             "showtimes": [
+              "10:40am",
               "2:30pm"
             ],
             "is_coming_soon": false,
@@ -107,7 +108,8 @@
             "title": "Dune: Part Two Reissue (2026)",
             "slug": "fandango-248263",
             "showtimes": [
-              "6:30pm"
+              "6:30pm",
+              "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -121,6 +123,7 @@
             "title": "Dune: Part One Reissue (2026)",
             "slug": "fandango-248261",
             "showtimes": [
+              "10:40am",
               "6:30pm"
             ],
             "is_coming_soon": false,
@@ -130,7 +133,8 @@
             "title": "Dune: Part Two Reissue (2026)",
             "slug": "fandango-248263",
             "showtimes": [
-              "2:30pm"
+              "2:30pm",
+              "10:20pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
