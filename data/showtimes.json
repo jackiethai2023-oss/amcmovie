@@ -10,7 +10,6 @@
             "title": "Everest: The Other Side (2026)",
             "slug": "fandango-246958",
             "showtimes": [
-              "12:45pm",
               "3:45pm"
             ],
             "is_coming_soon": false,
@@ -464,17 +463,7 @@
             "title": "Clayface (2026)",
             "slug": "fandango-244768",
             "showtimes": [
-              "10:45am",
               "8:10pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Wildwood (2026)",
-            "slug": "fandango-246438",
-            "showtimes": [
-              "1:40pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -900,7 +889,6 @@
             "title": "Once Upon a Time in Hollywood",
             "slug": "fandango-211527",
             "showtimes": [
-              "10:45am",
               "2:40pm",
               "6:30pm"
             ],
