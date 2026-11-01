@@ -10,7 +10,6 @@
             "title": "Everest: The Other Side (2026)",
             "slug": "fandango-246958",
             "showtimes": [
-              "9:45am",
               "12:45pm",
               "3:45pm"
             ],
@@ -153,21 +152,77 @@
       },
       "2026-11-26": {
         "day": "Thursday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:25pm",
+              "3:50pm",
+              "7:15pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Thanksgiving Day"
       },
       "2026-11-27": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:25pm",
+              "3:50pm",
+              "7:15pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Day After Thanksgiving"
       },
       "2026-11-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:25pm",
+              "3:50pm",
+              "7:15pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:25pm",
+              "3:50pm",
+              "7:15pm",
+              "10:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-05": {
         "day": "Saturday",
@@ -996,21 +1051,77 @@
       },
       "2026-11-26": {
         "day": "Thursday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Thanksgiving Day"
       },
       "2026-11-27": {
         "day": "Friday",
-        "movies": [],
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ],
         "holiday": "Day After Thanksgiving"
       },
       "2026-11-28": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-11-29": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "The Further Mis-Adventures of Cliff Booth (2026)",
+            "slug": "fandango-248037",
+            "showtimes": [
+              "9:00am",
+              "12:30pm",
+              "4:00pm",
+              "7:30pm",
+              "11:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-05": {
         "day": "Saturday",
