@@ -10,7 +10,6 @@
             "title": "Once Upon a Time in Hollywood",
             "slug": "fandango-211527",
             "showtimes": [
-              "6:45pm",
               "10:30pm"
             ],
             "is_coming_soon": false,
@@ -863,15 +862,6 @@
             "slug": "fandango-245893",
             "showtimes": [
               "10:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
-            "title": "Once Upon a Time in Hollywood",
-            "slug": "fandango-211527",
-            "showtimes": [
-              "6:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
