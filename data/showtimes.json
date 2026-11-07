@@ -683,7 +683,17 @@
       },
       "2026-12-13": {
         "day": "Sunday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Mars Attacks!",
+            "slug": "fandango-1453",
+            "showtimes": [
+              "7:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-19": {
         "day": "Saturday",
@@ -1101,31 +1111,11 @@
       },
       "2026-12-12": {
         "day": "Saturday",
-        "movies": [
-          {
-            "title": "George Michael: The Faith Tour (2026)",
-            "slug": "fandango-247189",
-            "showtimes": [
-              "6:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-12-13": {
         "day": "Sunday",
-        "movies": [
-          {
-            "title": "George Michael: The Faith Tour (2026)",
-            "slug": "fandango-247189",
-            "showtimes": [
-              "6:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
+        "movies": []
       },
       "2026-12-19": {
         "day": "Saturday",
