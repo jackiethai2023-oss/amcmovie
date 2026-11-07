@@ -581,7 +581,18 @@
             "title": "Focker In-Law (2026)",
             "slug": "fandango-241598",
             "showtimes": [
-              "1:30pm"
+              "1:30pm",
+              "7:20pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping (2026)",
+            "slug": "fandango-240138",
+            "showtimes": [
+              "9:45am",
+              "10:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -605,7 +616,18 @@
             "title": "Focker In-Law (2026)",
             "slug": "fandango-241598",
             "showtimes": [
-              "1:30pm"
+              "1:30pm",
+              "7:20pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping (2026)",
+            "slug": "fandango-240138",
+            "showtimes": [
+              "9:45am",
+              "10:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -629,7 +651,18 @@
             "title": "Focker In-Law (2026)",
             "slug": "fandango-241598",
             "showtimes": [
-              "1:30pm"
+              "1:30pm",
+              "7:20pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping (2026)",
+            "slug": "fandango-240138",
+            "showtimes": [
+              "9:30am",
+              "10:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -652,7 +685,18 @@
             "title": "Focker In-Law (2026)",
             "slug": "fandango-241598",
             "showtimes": [
-              "1:30pm"
+              "1:30pm",
+              "7:20pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping (2026)",
+            "slug": "fandango-240138",
+            "showtimes": [
+              "9:30am",
+              "10:15pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
