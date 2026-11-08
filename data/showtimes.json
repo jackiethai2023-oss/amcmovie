@@ -10,7 +10,6 @@
             "title": "Godzilla Minus Zero (2026)",
             "slug": "fandango-243973",
             "showtimes": [
-              "4:15pm",
               "7:30pm",
               "10:45pm"
             ],
@@ -184,10 +183,10 @@
             "title": "The Further Mis-Adventures of Cliff Booth (2026)",
             "slug": "fandango-248037",
             "showtimes": [
-              "3:50pm",
-              "7:15pm",
               "9:00am",
               "12:25pm",
+              "3:50pm",
+              "7:15pm",
               "10:45pm"
             ],
             "is_coming_soon": false,
@@ -430,7 +429,6 @@
             "title": "I Play Rocky (2026)",
             "slug": "fandango-246500",
             "showtimes": [
-              "4:30pm",
               "7:45pm",
               "11:00pm"
             ],
@@ -934,7 +932,6 @@
             "title": "Godzilla Minus Zero (2026)",
             "slug": "fandango-243973",
             "showtimes": [
-              "4:00pm",
               "7:15pm",
               "10:30pm"
             ],
