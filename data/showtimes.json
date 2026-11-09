@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-11-08": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Godzilla Minus Zero (2026)",
-            "slug": "fandango-243973",
-            "showtimes": [
-              "10:45pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-14": {
         "day": "Saturday",
         "movies": [
@@ -398,6 +384,10 @@
       "2027-01-30": {
         "day": "Saturday",
         "movies": []
+      },
+      "2027-01-31": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -407,21 +397,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-11-08": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "I Play Rocky (2026)",
-            "slug": "fandango-246500",
-            "showtimes": [
-              "7:45pm",
-              "11:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-14": {
         "day": "Saturday",
         "movies": [
@@ -666,7 +641,17 @@
       },
       "2026-12-05": {
         "day": "Saturday",
-        "movies": []
+        "movies": [
+          {
+            "title": "Behemoth! (2026)",
+            "slug": "fandango-248128",
+            "showtimes": [
+              "3:45pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          }
+        ]
       },
       "2026-12-06": {
         "day": "Sunday",
@@ -887,6 +872,10 @@
       "2027-01-30": {
         "day": "Saturday",
         "movies": []
+      },
+      "2027-01-31": {
+        "day": "Sunday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -896,20 +885,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-11-08": {
-        "day": "Sunday",
-        "movies": [
-          {
-            "title": "Godzilla Minus Zero (2026)",
-            "slug": "fandango-243973",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-14": {
         "day": "Saturday",
         "movies": [
@@ -1334,6 +1309,10 @@
       },
       "2027-01-30": {
         "day": "Saturday",
+        "movies": []
+      },
+      "2027-01-31": {
+        "day": "Sunday",
         "movies": []
       }
     },
