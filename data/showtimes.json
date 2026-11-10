@@ -24,6 +24,15 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "11:15pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
           }
         ]
       },
@@ -45,6 +54,15 @@
             "slug": "fandango-248263",
             "showtimes": [
               "2:30pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Godzilla Minus Zero (2026)",
+            "slug": "fandango-243973",
+            "showtimes": [
+              "10:20pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -1087,10 +1105,10 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "11:00pm",
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "11:05pm",
               "2:30am (+1 day)"
             ],
             "is_coming_soon": false,
@@ -1106,10 +1124,10 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "11:00pm"
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "11:05pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
@@ -1143,11 +1161,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm",
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm",
               "2:30am (+1 day)"
             ],
             "is_coming_soon": false,
@@ -1164,11 +1182,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm",
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm",
               "2:30am (+1 day)"
             ],
             "is_coming_soon": false,
@@ -1184,11 +1202,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
@@ -1203,11 +1221,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm",
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm",
               "2:30am (+1 day)"
             ],
             "is_coming_soon": false,
@@ -1224,11 +1242,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm",
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm",
               "2:30am (+1 day)"
             ],
             "is_coming_soon": false,
@@ -1244,11 +1262,11 @@
             "slug": "fandango-244800",
             "showtimes": [
               "6:00am",
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
@@ -1262,11 +1280,11 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
@@ -1280,11 +1298,11 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
-              "9:20am",
-              "12:40pm",
-              "4:00pm",
-              "7:30pm",
-              "11:00pm"
+              "9:25am",
+              "12:50pm",
+              "4:15pm",
+              "7:40pm",
+              "11:05pm"
             ],
             "is_coming_soon": false,
             "is_70mm": true
