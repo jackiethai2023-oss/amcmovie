@@ -668,6 +668,16 @@
             ],
             "is_coming_soon": false,
             "is_70mm": false
+          },
+          {
+            "title": "Violent Night 2 (2026)",
+            "slug": "fandango-246466",
+            "showtimes": [
+              "7:00pm",
+              "9:50pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
           }
         ]
       },
@@ -679,6 +689,16 @@
             "slug": "fandango-240282",
             "showtimes": [
               "3:00pm"
+            ],
+            "is_coming_soon": false,
+            "is_70mm": false
+          },
+          {
+            "title": "Violent Night 2 (2026)",
+            "slug": "fandango-246466",
+            "showtimes": [
+              "7:00pm",
+              "9:50pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
