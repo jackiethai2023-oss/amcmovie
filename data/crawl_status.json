@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "attempted_at": "2026-11-13T04:45:18.597908-08:00",
-  "last_successful_at": "2026-11-13T04:46:46.264972-08:00",
+  "attempted_at": "2026-11-13T12:22:57.019047-08:00",
+  "last_successful_at": "2026-11-13T12:24:41.317695-08:00",
   "message": "Showtimes updated successfully.",
   "failed_requests": 0,
   "successful_requests": 87,
