@@ -7,11 +7,10 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Dune: Part One Reissue (2026)",
-            "slug": "fandango-248261",
+            "title": "Dune: Part Two Reissue (2026)",
+            "slug": "fandango-248263",
             "showtimes": [
-              "10:40am",
-              "2:30pm"
+              "6:30pm"
             ],
             "is_coming_soon": false,
             "is_70mm": false
@@ -433,7 +432,6 @@
             "title": "Ebenezer (2026)",
             "slug": "fandango-246467",
             "showtimes": [
-              "12:15pm",
               "6:30pm"
             ],
             "is_coming_soon": false,
@@ -937,19 +935,9 @@
         "day": "Saturday",
         "movies": [
           {
-            "title": "Dune: Part One Reissue (2026)",
-            "slug": "fandango-248261",
-            "showtimes": [
-              "2:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "Dune: Part Two Reissue (2026)",
             "slug": "fandango-248263",
             "showtimes": [
-              "10:30am",
               "6:30pm"
             ],
             "is_coming_soon": false,
@@ -1176,6 +1164,7 @@
               "9:25am",
               "12:50pm",
               "4:15pm",
+              "7:40pm",
               "11:05pm"
             ],
             "is_coming_soon": false,
