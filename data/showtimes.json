@@ -3,20 +3,6 @@
     "name": "Century City IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-11-14": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Godzilla Minus Zero (2026)",
-            "slug": "fandango-243973",
-            "showtimes": [
-              "11:15pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-15": {
         "day": "Sunday",
         "movies": [
@@ -407,6 +393,10 @@
       "2027-01-31": {
         "day": "Sunday",
         "movies": []
+      },
+      "2027-02-06": {
+        "day": "Saturday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -416,20 +406,6 @@
     "name": "Century City Dolby Cinema",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15/showtimes?premium-offering=dolbycinemaatamcprime&date=",
     "dates": {
-      "2026-11-14": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "I Play Rocky (2026)",
-            "slug": "fandango-246500",
-            "showtimes": [
-              "9:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-15": {
         "day": "Sunday",
         "movies": [
@@ -903,6 +879,10 @@
       "2027-01-31": {
         "day": "Sunday",
         "movies": []
+      },
+      "2027-02-06": {
+        "day": "Saturday",
+        "movies": []
       }
     },
     "source": "Fandango",
@@ -912,20 +892,6 @@
     "name": "Universal CityWalk IMAX",
     "url": "https://www.amctheatres.com/movie-theatres/los-angeles/universal-cinema-amc-at-citywalk-hollywood/showtimes?premium-offering=imax&date=",
     "dates": {
-      "2026-11-14": {
-        "day": "Saturday",
-        "movies": [
-          {
-            "title": "Godzilla Minus Zero (2026)",
-            "slug": "fandango-243973",
-            "showtimes": [
-              "10:30pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          }
-        ]
-      },
       "2026-11-15": {
         "day": "Sunday",
         "movies": [
@@ -1341,6 +1307,10 @@
       },
       "2027-01-31": {
         "day": "Sunday",
+        "movies": []
+      },
+      "2027-02-06": {
+        "day": "Saturday",
         "movies": []
       }
     },
