@@ -10,8 +10,6 @@
             "title": "The Hunger Games: Sunrise on the Reaping (2026)",
             "slug": "fandango-240138",
             "showtimes": [
-              "12:30pm",
-              "4:15pm",
               "8:00pm",
               "11:45pm"
             ],
@@ -384,19 +382,9 @@
         "day": "Sunday",
         "movies": [
           {
-            "title": "Elsinore (2026)",
-            "slug": "fandango-247744",
-            "showtimes": [
-              "4:00pm"
-            ],
-            "is_coming_soon": false,
-            "is_70mm": false
-          },
-          {
             "title": "The Hunger Games: Sunrise on the Reaping (2026)",
             "slug": "fandango-240138",
             "showtimes": [
-              "12:15pm",
               "6:45pm",
               "10:30pm"
             ],
@@ -846,8 +834,6 @@
             "title": "The Hunger Games: Sunrise on the Reaping (2026)",
             "slug": "fandango-240138",
             "showtimes": [
-              "12:15pm",
-              "4:00pm",
               "7:45pm",
               "11:30pm"
             ],
