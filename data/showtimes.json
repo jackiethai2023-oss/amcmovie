@@ -358,6 +358,11 @@
       "2027-02-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2027-02-15": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "President's Day"
       }
     },
     "source": "Fandango",
@@ -796,6 +801,11 @@
       "2027-02-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2027-02-15": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "President's Day"
       }
     },
     "source": "Fandango",
@@ -1193,6 +1203,11 @@
       "2027-02-14": {
         "day": "Sunday",
         "movies": []
+      },
+      "2027-02-15": {
+        "day": "Monday",
+        "movies": [],
+        "holiday": "President's Day"
       }
     },
     "source": "Fandango",
