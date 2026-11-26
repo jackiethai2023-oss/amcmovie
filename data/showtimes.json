@@ -10,8 +10,6 @@
             "title": "The Further Mis-Adventures of Cliff Booth (2026)",
             "slug": "fandango-248037",
             "showtimes": [
-              "9:00am",
-              "12:25pm",
               "3:50pm",
               "7:15pm",
               "10:45pm"
@@ -388,7 +386,6 @@
             "title": "Focker In-Law (2026)",
             "slug": "fandango-241598",
             "showtimes": [
-              "1:30pm",
               "7:20pm"
             ],
             "is_coming_soon": false,
@@ -398,7 +395,6 @@
             "title": "The Hunger Games: Sunrise on the Reaping (2026)",
             "slug": "fandango-240138",
             "showtimes": [
-              "9:45am",
               "10:30pm"
             ],
             "is_coming_soon": false,
@@ -822,8 +818,6 @@
             "title": "The Further Mis-Adventures of Cliff Booth (2026)",
             "slug": "fandango-248037",
             "showtimes": [
-              "9:00am",
-              "12:30pm",
               "4:00pm",
               "7:30pm",
               "11:00pm"
@@ -1075,10 +1069,10 @@
             "title": "Dune: Part Three (2026)",
             "slug": "fandango-244800",
             "showtimes": [
+              "4:15pm",
               "6:00am",
               "9:25am",
               "12:50pm",
-              "4:15pm",
               "7:40pm",
               "11:05pm",
               "2:30am (+1 day)"
